@@ -259,7 +259,7 @@ const createScene = async function () {
   return scene;
 };
 
-const scene = await createScene();
+const scene =  await createScene();
 
 // Runs the engine
 engine.runRenderLoop(function () {

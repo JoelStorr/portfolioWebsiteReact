@@ -1,21 +1,25 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import logo from "./assets/react.svg";
+
+import Desktop from "./Pages/Desktop/Desktop";
+
+
 import "./App.css"
+import Console from "./Pages/Console/Console";
 
 
 function App() {
 
-  const[buttonValue, setButtonValue] = useState("hello")
+  const[displayState, setDisplayState] = useState("hello")
   window.addEventListener("click", () =>
-    setButtonValue(window.clickedObject)
+    setDisplayState(window.clickedObject)
   );
   
 
   useEffect(() => {
     
     console.log(window.clickedObject)
-  }, [ buttonValue]);
+  }, [ displayState]);
 
   
   
@@ -27,8 +31,10 @@ function App() {
 
   return (
     <div className="app">
-    <p>This is test text</p>
-      <button onClick={onClickHandler}>{buttonValue}</button>
+      <button className="mainCloseBtn" onClick={onClickHandler}>X</button>
+      {displayState == "WorkDesk" ? <Desktop /> : <Console />}
+      
+    
     </div>
   );
 }
