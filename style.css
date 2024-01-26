@@ -1,3 +1,13 @@
+
+@font-face {
+    font-family: 'Spline Sanse';
+    
+    src: url('./fonts/SplineSans.ttf'),
+       
+}
+
+
+
 html,
 body {
     overflow: hidden;
@@ -8,6 +18,11 @@ body {
 }
 
 
+html * {
+
+    font-family: "Spline Sanse" !important;
+}
+
 #base-ui {
     display: none;
 }
@@ -16,8 +31,10 @@ body {
 #root {
     position: absolute;
     z-index: 10;
-    width: 100vw;
-    height: 100vh;
+    top: 2.5vh;
+    left: 2.5vw;
+    width: 95vw;
+    height: 95vh;
     background-color: aqua;
     pointer-events: all;
     
