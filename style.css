@@ -35,7 +35,7 @@ html * {
     left: 2.5vw;
     width: 95vw;
     height: 95vh;
-    background-color: aqua;
+   
     pointer-events: all;
     
     display:none;

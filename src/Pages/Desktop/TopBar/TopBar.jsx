@@ -8,10 +8,10 @@ function TopBar(){
     return (
       <div className="topBar">
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
+          <li>Code</li>
+          <li>Eat</li>
+          <li>Sleep</li>
+          <li>Repeat</li>
         </ul>
       </div>
     );

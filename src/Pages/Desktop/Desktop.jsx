@@ -9,10 +9,10 @@ function Desktop (){
     return (
         <div className="desktop">
            <TopBar />
-           <div>
+           <div className="mainDeskTop">
                 <p> DeskTop</p>
            </div>
-           <div>
+           <div className="appBar">
                 <p>App Bar</p>
            </div>
         </div>
