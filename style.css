@@ -14,7 +14,7 @@ body {
 
 
 #root {
-    position: relative;
+    position: absolute;
     z-index: 10;
     width: 100vw;
     height: 100vh;
@@ -26,7 +26,6 @@ body {
 
 
 #canvas {
-
     position: static;
     top: 0;
     left: 0;
