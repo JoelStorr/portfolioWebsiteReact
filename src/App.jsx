@@ -1,21 +1,33 @@
+import React, { useEffect, useRef, useState } from "react";
+
 import logo from "./assets/react.svg";
 import "./App.css"
 
+
 function App() {
+
+  const[buttonValue, setButtonValue] = useState("hello")
+  window.addEventListener("click", () =>
+    setButtonValue(window.clickedObject)
+  );
+  
+
+  useEffect(() => {
+    
+    console.log(window.clickedObject)
+  }, [ buttonValue]);
+
+  
+  
+  function onClickHandler(){
+    document.getElementById("base-ui").style.display = "none"
+    document.getElementById("root").style.display = "none"
+  }
+
   return (
     <div className="app">
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-        <p className="header">Vite React Starter 💯</p>
-        <p>
-          Vite + React <br />
-          ESLint + Prettier + Stylelint
-          <br />
-          Sass + Emotion + Tailwind
-          <br />
-          Jest + Testing Library
-        </p>
-      </header>
+    <p>This is test text</p>
+      <button onClick={onClickHandler}>{buttonValue}</button>
     </div>
   );
 }

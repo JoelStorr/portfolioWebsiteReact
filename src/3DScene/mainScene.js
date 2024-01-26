@@ -8,6 +8,8 @@ import AnimationHelper from "./helper/AnimationHelper";
 import EnviornmentHelper from "./helper/EnviornmentHelper";
 import ActionManager from "./ActionMannger";
 
+
+
 window.CANNON = CANNON;
 
 
@@ -24,6 +26,10 @@ const characterHelper = new CharacterHelper();
 const animationHelper = new AnimationHelper();
 const enviornmentHelper = new EnviornmentHelper();
 var actionManger;
+
+
+window.clickedObject = "";
+
 
 // Creates a new scene for the engine to run in
 const createScene = async function () {
@@ -161,7 +167,25 @@ const createScene = async function () {
       hit.pickedMesh.material.diffuseColor = BABYLON.Color3.Red();
       baseUIDiv.style.display = "block"
       reactRoot.style.display = "block"
+
+      window.clickedObject = "WorkDesk";
+
+      
+
     }
+
+    if(hit.pickedMesh && hit.pickedMesh.name == "Teleporter") {
+      hit.pickedMesh.material.diffuseColor = BABYLON.Color3.Red();
+      baseUIDiv.style.display = "block";
+      reactRoot.style.display = "block";
+
+      window.clickedObject = "Teleporter";
+
+      
+
+    }
+
+
   };
 
 
