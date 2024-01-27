@@ -1,6 +1,8 @@
 
 import React from "react";
 import TopBar from "./TopBar/TopBar";
+import MainDesktop from "./MainDesktop/MainDesktop";
+import AppBar from "./AppBar/AppBar";
 import "./Desktop.css";
 
 function Desktop (){
@@ -9,12 +11,8 @@ function Desktop (){
     return (
         <div className="desktop">
            <TopBar />
-           <div className="mainDeskTop">
-                <p> DeskTop</p>
-           </div>
-           <div className="appBar">
-                <p>App Bar</p>
-           </div>
+           <MainDesktop />
+           <AppBar />
         </div>
     )
 }
