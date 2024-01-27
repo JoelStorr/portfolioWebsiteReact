@@ -45,7 +45,7 @@ export default function AppStore() {
   return (
     <div className="appStore">
       <div className="appStore-sideBar">
-        {/* TODO: Add list of side bar elements */}
+        
         <h3>Main Projects</h3>
         <ul>
           <li
@@ -105,7 +105,7 @@ export default function AppStore() {
         </ul>
       </div>
       <div className="appStore-mainView">
-        {/* TODO:  Add view to display the App */}
+        
         {showApp()}
       </div>
     </div>
