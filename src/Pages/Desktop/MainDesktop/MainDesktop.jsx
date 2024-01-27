@@ -1,11 +1,6 @@
-import React from "react";
-
 import "./MainDesktop.css";
 
-export default function MainDesktop(props) {
-
-
-   
+export default function MainDesktop({changeProgramm, programmEnum}) {
 
 
 
@@ -14,19 +9,19 @@ export default function MainDesktop(props) {
       <div className="desktopSpacer"></div>
 
       <ul className="appIconList">
-        <li onClick={() => props.changeProgramm(props.programmEnum.AppStore)}>
+        <li onClick={() => changeProgramm(programmEnum.AppStore)}>
           <div className="appIconMoc"></div>
           <p>App Store</p>
         </li>
-        <li onClick={() => props.changeProgramm(props.programmEnum.Browser)}>
+        <li onClick={() => changeProgramm(programmEnum.Browser)}>
           <div className="appIconMoc"></div>
           <p>Browser</p>
         </li>
-        <li onClick={() => props.changeProgramm(props.programmEnum.Design)}>
+        <li onClick={() => changeProgramm(programmEnum.Design)}>
           <div className="appIconMoc"></div>
           <p>Design</p>
         </li>
-        <li onClick={() => props.changeProgramm(props.programmEnum.Writing)}>
+        <li onClick={() => changeProgramm(programmEnum.Writing)}>
           <div className="appIconMoc"></div>
           <p>Writing</p>
         </li>

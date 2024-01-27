@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import TopBar from "./TopBar/TopBar";
 import MainDesktop from "./MainDesktop/MainDesktop";
 import AppBar from "./AppBar/AppBar";
@@ -30,16 +30,33 @@ function Desktop() {
     }
 
 
+    function renderProgramm(){
+        switch(programm){
+            case Programm.None:
+                return <></>
+            case Programm.AppStore:
+                return <AppStore />
+            case Programm.Browser:
+                return <Browser />
+            case Programm.Design:
+                return <Design />
+            case Programm.Writing:
+                return <Writing />    
+        }
+    }
+
+
   return (
     <>
+      <div className="programmHolder">
+
+      {renderProgramm()}
+      </div>
       <div className="desktop">
         <TopBar />
         <MainDesktop changeProgramm={changeSowftware} programmEnum={Programm} />
         <AppBar />
       </div>
-
-        {programm == Programm.AppStore ? <AppStore /> : <></>}
-
     </>
   );
 }

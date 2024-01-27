@@ -47,3 +47,14 @@ li{
     margin-bottom: 1rem;
     display: block;
 }
+
+.programmHolder {
+    color: white;
+    background-color: #352827;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    z-index: 3;
+    width: 80%;
+    height: 80%;
+}
