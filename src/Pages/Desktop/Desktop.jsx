@@ -48,9 +48,14 @@ function Desktop() {
 
   return (
     <>
-      <div className="programmHolder">
-
-      {renderProgramm()}
+      <div
+        className={
+          programm == Programm.None
+            ? "programmHolder"
+            : "programmHolder programmHolderActive"
+        }
+      >
+        {renderProgramm()}
       </div>
       <div className="desktop">
         <TopBar />
