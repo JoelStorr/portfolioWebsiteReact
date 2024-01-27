@@ -33,8 +33,6 @@ function App() {
     <div className="app">
       <button className="mainCloseBtn" onClick={onClickHandler}>X</button>
       {displayState == "WorkDesk" ? <Desktop /> : <Console />}
-      
-    
     </div>
   );
 }
