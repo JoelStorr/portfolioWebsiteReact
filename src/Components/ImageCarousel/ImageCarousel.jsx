@@ -101,7 +101,7 @@ export default function ImageCarousel({ slides }) {
         &#10095;
       </div>
       <div style={{ display: "flex", width: "100%", height: "100%" }}>
-        <div style={{...slideStyles, ...slideStylesPrev}}></div>
+        {/* <div style={{...slideStyles, ...slideStylesPrev}}></div> */}
         <div style={{...slideStyles, ...slideStylesCurr}}></div>
         <div style={{...slideStyles, ...slideStylesNext}}></div>
       </div>

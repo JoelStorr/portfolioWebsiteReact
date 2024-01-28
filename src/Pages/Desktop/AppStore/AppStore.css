@@ -40,8 +40,11 @@
 .appStore-mainView {
     flex: 1;
     background-color: #2F211E;
+    width: 100%;
     height: 100%;
     border-radius: 0 5px 5px 0;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .activeListElement {
