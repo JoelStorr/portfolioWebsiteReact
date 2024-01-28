@@ -1,0 +1,30 @@
+
+
+.appDetailHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.appDetailAppIcon {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+
+.downloadBtn{
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.appDetailUsedTech{
+   display: flex; 
+   flex-direction: row;
+}

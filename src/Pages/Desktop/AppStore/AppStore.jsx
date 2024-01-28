@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './AppStore.css'
+import WhenIChanged from './WhenIChanged/WhenIChanged';
 
 export default function AppStore() {
 
@@ -27,7 +28,7 @@ export default function AppStore() {
   function showApp(){
     switch (shownProject){
       case Projects.WhenIChanged:
-        return <p>When I Changed Project</p>
+        return <WhenIChanged /> 
       case Projects.IssueTracker:
         return <p>Issue Tracker</p>
       case Projects.DubDubGrub:

@@ -3,19 +3,20 @@
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+    border-radius: 5px;
 }
 
 
 .appStore-sideBar {
     position: relative;
     background-color: #352827;
-    border-right: 1px solid white;
+    border-right: 1px solid black;
     
     display: flex;
     flex-direction: column;
 
     height: 100%;
-
+    border-radius: 5px 0 0 5px;
 
 }
 
@@ -38,8 +39,9 @@
 
 .appStore-mainView {
     flex: 1;
-    background-color: aqua;
+    background-color: #2F211E;
     height: 100%;
+    border-radius: 0 5px 5px 0;
 }
 
 .activeListElement {
