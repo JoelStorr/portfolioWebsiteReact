@@ -50,7 +50,7 @@ export default function AppStore() {
     <div className="appStore">
       <div className="appStore-sideBar">
         
-        <h3>Main Projects</h3>
+        <h2>Main Projects</h2>
         <ul>
           <li
             onClick={() => changeShownApps(Projects.WhenIChanged)}
@@ -88,7 +88,7 @@ export default function AppStore() {
           </li>
         </ul>
 
-        <h3>Expiriments</h3>
+        <h2>Expiriments</h2>
         <ul>
           <li
             onClick={() => changeShownApps(Projects.ARDemos)}

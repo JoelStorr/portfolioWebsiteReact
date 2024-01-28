@@ -11,25 +11,28 @@
     position: relative;
     background-color: #352827;
     border-right: 1px solid black;
-    
     display: flex;
     flex-direction: column;
-
     height: 100%;
     border-radius: 5px 0 0 5px;
-
+    padding: 2rem;
 }
+
+
 
 .appStore-sideBar ul {
     display: flex;
     flex-direction: column;
     list-style: none;
-    
+    margin: 0;
+    padding-left: 1rem;
 }
+
+
 
 .appStore-sideBar li{
     list-style: none;
-    padding: 0;
+    padding: .8rem;
 }
 
 
@@ -48,5 +51,6 @@
 }
 
 .activeListElement {
-    background-color: red;
+    background-color: rgba(127, 127, 127, 0.259);
+    border-radius: 5px;
 }
