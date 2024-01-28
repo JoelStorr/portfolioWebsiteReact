@@ -60,7 +60,7 @@ function Desktop() {
       <div className="desktop">
         <TopBar />
         <MainDesktop changeProgramm={changeSowftware} programmEnum={Programm} />
-        <AppBar />
+        <AppBar changeProgramm={changeSowftware} programmEnum={Programm} />
       </div>
     </>
   );

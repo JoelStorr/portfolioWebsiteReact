@@ -1,20 +1,20 @@
 import "./AppBar.css";
 
-export default function AppBar() {
+export default function AppBar({ changeProgramm, programmEnum }) {
   return (
     <div className="appBar">
       <div className="appContainer">
         <ul>
-          <li>
+          <li onClick={() => changeProgramm(programmEnum.AppStore)}>
             <div className="appIconMoc"></div>
           </li>
-          <li>
+          <li onClick={() => changeProgramm(programmEnum.Browser)}>
             <div className="appIconMoc"></div>
           </li>
-          <li>
+          <li onClick={() => changeProgramm(programmEnum.Design)}>
             <div className="appIconMoc"></div>
           </li>
-          <li>
+          <li onClick={() => changeProgramm(programmEnum.Writing)}>
             <div className="appIconMoc"></div>
           </li>
         </ul>
