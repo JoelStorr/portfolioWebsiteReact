@@ -1,7 +1,10 @@
 
 import { useState } from 'react';
 import './AppStore.css'
-import WhenIChanged from './WhenIChanged/WhenIChanged';
+import WhenIChanged from './AppDetail/IssueTracker';
+import IssueTracker from './AppDetail/IssueTracker';
+import DubDubGrub from './AppDetail/DubDubGrub';
+import GitHubFollowers from './AppDetail/GitHubFollowers';
 
 export default function AppStore() {
 
@@ -30,11 +33,11 @@ export default function AppStore() {
       case Projects.WhenIChanged:
         return <WhenIChanged /> 
       case Projects.IssueTracker:
-        return <p>Issue Tracker</p>
+        return <IssueTracker />
       case Projects.DubDubGrub:
-        return <p>Dub Dub Grub</p>
+        return <DubDubGrub />
       case Projects.GitHubFollowers:
-        return <p>Git Hub Followers</p>
+        return <GitHubFollowers />
       case Projects.ARDemos:
         return <p>AR Demos</p>
       case Projects.WidgetKit:

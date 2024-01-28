@@ -1,8 +1,8 @@
 import ImageCarousel from "../../../../Components/ImageCarousel/ImageCarousel";
-import "./WhenIChannged.css"
+import "./AppDetail.css"
 
 
-export default function WhenIChanged() {
+export default function IssueTracker() {
 
 
 
@@ -40,8 +40,8 @@ export default function WhenIChanged() {
       <div className="appDetailHeader">
         <div className="appDetailAppIcon"></div>
         <div>
-          <h1>When I Changed</h1>
-          <h3>Stay on Track to reach your golas</h3>
+          <h1>Issue Tracker</h1>
+          <h3>Cross Plattform Project to track reported Issues(Hacking With Swift Tutorial)</h3>
           {/* TODO: Make sure linke goes to repo */}
           <a
             className="downloadBtn"
