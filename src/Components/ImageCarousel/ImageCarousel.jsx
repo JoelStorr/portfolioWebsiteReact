@@ -4,8 +4,9 @@ export default function ImageCarousel({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
-    height: "100%",
+    height: "80%",
     position: "relative",
+    
   };
 
   const slideStyles = {
@@ -14,6 +15,18 @@ export default function ImageCarousel({ slides }) {
     borderRadius: "10px",
     backgroundPosition: "center",
     backgroundSize: "cover",
+   
+    margin: "10px"
+  };
+
+  const slideStylesNext = {
+    backgroundImage: `url(${slides[imageIndex(currentIndex + 1)].url})`,
+  };
+  const slideStylesPrev = {
+    backgroundImage: `url(${slides[imageIndex(currentIndex - 1)].url})`,
+  };
+
+  const slideStylesCurr = {
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
 
@@ -21,7 +34,7 @@ export default function ImageCarousel({ slides }) {
     position: "absolute",
     top: "50%",
     transform: "translate(0, -50%)",
-    left: "32px",
+    left: "-32px",
     fontSize: "45px",
     color: "#fff",
     zIndex: 1,
@@ -31,7 +44,7 @@ export default function ImageCarousel({ slides }) {
     position: "absolute",
     top: "50%",
     transform: "translate(0, -50%)",
-    right: "32px",
+    right: "-32px",
     fontSize: "45px",
     color: "#fff",
     zIndex: 1,
@@ -40,13 +53,27 @@ export default function ImageCarousel({ slides }) {
 
   const dotContainerStyles = {
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    marginTop: "2rem"
   }
 
   const dotStyle = {
     margin: "0 3px",
     cursor: "pointer",
     fontSize: "20px"
+  }
+
+  function imageIndex(index){
+
+    if (index === -1){
+        return slides.length -1
+    }
+
+    if (index === slides.length){
+        return 0
+    }
+
+    return index
   }
 
 
@@ -73,33 +100,34 @@ export default function ImageCarousel({ slides }) {
       <div style={rightArrowStyle} onClick={goToNext}>
         &#10095;
       </div>
-      <div style={slideStyles}></div>
+      <div style={{ display: "flex", width: "100%", height: "100%" }}>
+        <div style={{...slideStyles, ...slideStylesPrev}}></div>
+        <div style={{...slideStyles, ...slideStylesCurr}}></div>
+        <div style={{...slideStyles, ...slideStylesNext}}></div>
+      </div>
       <div style={dotContainerStyles}>
         {slides.map((slide, index) => {
-
-            if(index == currentIndex){
-                return (
-                  <div
-                    key={index}
-                    style={dotStyle}
-                    onClick={() => setCurrentIndex(index)}
-                  >
-                    &#10687;
-                  </div>
-                );
-            } else {
-
-                return (
-                  <div
-                    key={index}
-                    style={dotStyle}
-                    onClick={() => setCurrentIndex(index)}
-                  >
-                    &#9702;
-                  </div>
-                );
-            }
-
+          if (index == currentIndex) {
+            return (
+              <div
+                key={index}
+                style={dotStyle}
+                onClick={() => setCurrentIndex(index)}
+              >
+                &#10687;
+              </div>
+            );
+          } else {
+            return (
+              <div
+                key={index}
+                style={dotStyle}
+                onClick={() => setCurrentIndex(index)}
+              >
+                &#9702;
+              </div>
+            );
+          }
         })}
       </div>
     </div>
