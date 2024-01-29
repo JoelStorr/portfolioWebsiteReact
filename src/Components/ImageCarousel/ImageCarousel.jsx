@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 export default function ImageCarousel({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedImage, setSelectedImage] = useState("")
+  const [bigImage, setBigImage] = useState(false)
 
   const sliderStyles = {
     height: "80%",
@@ -63,6 +65,15 @@ export default function ImageCarousel({ slides }) {
     fontSize: "20px"
   }
 
+  const fullScaleImage = {
+    position: "fixed",
+    zIndex: "10",
+    width: "80vw",
+    height: "80vh",
+    top: "10vh",
+    left: "10vw",
+  };
+
   function imageIndex(index){
 
     if (index === -1){
@@ -91,6 +102,22 @@ export default function ImageCarousel({ slides }) {
     setCurrentIndex(newIndex)
   }
 
+  function clickeImage(nextImg){
+    setBigImage(true)
+    if(nextImg){
+
+      if(currentIndex + 1 > slides.length - 1){
+        setSelectedImage(slides[0].url);
+        return
+      }
+      setSelectedImage(slides[currentIndex + 1].url);
+
+    } else {
+      setSelectedImage(slides[currentIndex].url);
+    }
+
+    console.log(selectedImage)
+  }
 
   return (
     <div style={sliderStyles}>
@@ -102,8 +129,14 @@ export default function ImageCarousel({ slides }) {
       </div>
       <div style={{ display: "flex", width: "100%", height: "100%" }}>
         {/* <div style={{...slideStyles, ...slideStylesPrev}}></div> */}
-        <div style={{...slideStyles, ...slideStylesCurr}}></div>
-        <div style={{...slideStyles, ...slideStylesNext}}></div>
+        <div
+          style={{ ...slideStyles, ...slideStylesCurr }}
+          onClick={() => clickeImage()}
+        ></div>
+        <div
+          style={{ ...slideStyles, ...slideStylesNext }}
+          onClick={() => clickeImage(true)}
+        ></div>
       </div>
       <div style={dotContainerStyles}>
         {slides.map((slide, index) => {
@@ -130,6 +163,17 @@ export default function ImageCarousel({ slides }) {
           }
         })}
       </div>
+      {bigImage ? (
+        <div style={fullScaleImage} onClick={() => setBigImage(false)}>
+          <img
+            src={selectedImage}
+            style={{ width: "100%", height: "100%", objectFit: "contain"}}
+          ></img>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
+ 
