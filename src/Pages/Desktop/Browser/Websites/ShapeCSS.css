@@ -3,7 +3,7 @@
     position: relative;
     width: 90%;
     min-height: 100%;
-    
+    height: 100%;
     overflow: scroll;
 
 }
@@ -24,11 +24,26 @@
 
 .shapeCSSUsedTech{
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .shapeCSSUsedTech ul{
     display: flex;
     flex-direction: column;
+    
+}
+
+.shapeCSSUsedTech a{
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    
+    align-self: flex-end;
 }
 
 .shapeCSSAbout{
@@ -39,4 +54,14 @@
 .shapeCSSAbout ul {
     display: flex;
     flex-direction: column;
+}
+
+.shapeCSSAbout h4{
+    text-decoration: underline;
+    padding: 0;
+    margin: 3rem 0 0 0;
+}
+
+.shapeCSSAbout:last-child {
+    margin-bottom: 15rem;
 }
