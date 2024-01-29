@@ -1,0 +1,65 @@
+.browserHeader {
+    position: relative;
+    background-color: #202020;
+}
+
+.tabRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.browserTab {
+    margin: .4rem 0 0 0;
+    padding: 1rem 7rem;
+    background-color: #202020;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.browserTab h3 {
+    margin: 0;
+    padding: 0;
+
+}
+
+.activeTab {
+    background-color: #3D3D3D;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.backArrowBrowser {
+    transform: scale(-1, 1)
+}
+
+.searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3D3D3D;
+}
+
+.navigationButton {
+    font-size: 1.5rem;
+    padding: 0 .7rem;
+    margin: 0;
+}
+
+.reloadArrowBrowser {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.searchField {
+    margin: 0 1rem;
+    padding: 0 1rem;
+    background-color: #282828;
+    width: 80%;
+    border-radius: 25px;
+}

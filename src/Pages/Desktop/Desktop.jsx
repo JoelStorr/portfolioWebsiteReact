@@ -4,6 +4,7 @@ import MainDesktop from "./MainDesktop/MainDesktop";
 import AppBar from "./AppBar/AppBar";
 import "./Desktop.css";
 import AppStore from "./AppStore/AppStore";
+import Browser from "./Browser/Browser";
 
 
 
