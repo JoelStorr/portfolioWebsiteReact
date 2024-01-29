@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Browser.css"
 import BrowserHeader from './BrowserHeader/BrowserHeader'
+import ShapeCSS from './Websites/ShapeCSS'
 
 export default function Browser() {
 
@@ -15,7 +16,7 @@ export default function Browser() {
     function displayWebPage(){
         switch(activeTab){
             case BrowserSite.ShapeCSS:
-                return <p>Shape CSS</p>
+                return <ShapeCSS />
             case BrowserSite.Portfolio:
                 return <p>Portfolio</p>
         }
@@ -29,7 +30,7 @@ export default function Browser() {
             changeActiveTab={setActiveTab} 
             browserSite={BrowserSite} 
         />
-        
+        {displayWebPage()}
     </div>
   )
 }

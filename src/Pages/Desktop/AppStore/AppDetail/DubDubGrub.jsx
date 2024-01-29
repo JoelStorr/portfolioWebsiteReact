@@ -70,7 +70,7 @@ export default function DubDubGrub() {
       </div>
 
       <div className="sliderContainer">
-        <ImageCarousel slides={slides} />
+        <ImageCarousel slides={slides} file={false} />
       </div>
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">

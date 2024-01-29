@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ImageCarousel({ slides }) {
+export default function ImageCarousel({ slides, file }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
