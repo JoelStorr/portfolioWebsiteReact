@@ -1,0 +1,42 @@
+
+.shapeCSS{
+    position: relative;
+    width: 90%;
+    min-height: 100%;
+    
+    overflow: scroll;
+
+}
+
+.shapeCSSFirstSection{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    
+}
+
+.shapeCSSCarousel{
+    width: 60%;
+    padding: 0 5rem 0 5rem ;
+    
+}
+
+.shapeCSSUsedTech{
+    flex: 1;
+}
+
+.shapeCSSUsedTech ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.shapeCSSAbout{
+    font-size: 1.3rem;
+    padding-right: 10rem;
+}
+
+.shapeCSSAbout ul {
+    display: flex;
+    flex-direction: column;
+}

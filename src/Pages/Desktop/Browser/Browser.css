@@ -3,4 +3,13 @@
     height: 100%;
     background-color: bisque;
     border-radius: 5px;
+    overflow: hidden;
+}
+
+.browserContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
 }

@@ -30,7 +30,9 @@ export default function Browser() {
             changeActiveTab={setActiveTab} 
             browserSite={BrowserSite} 
         />
-        {displayWebPage()}
+        <div className='browserContent'>
+            {displayWebPage()}
+        </div>
     </div>
   )
 }
