@@ -1,7 +1,7 @@
 import ImageCarousel from "../../../../Components/ImageCarousel/ImageCarousel";
 import "./WebsiteConetent.css";
 
-export default function ShapeCSS() {
+export default function Portfolio() {
   const images = [
     {
       url: `./images/shapecss/shapecss1.png`,
@@ -20,7 +20,7 @@ export default function ShapeCSS() {
   console.log(images[0]);
   return (
     <div className="websiteContent">
-      <h1>Shape CSS</h1>
+      <h1>Portfolio</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
           <ImageCarousel slides={images} />
@@ -199,4 +199,3 @@ export default function ShapeCSS() {
     </div>
   );
 }
-

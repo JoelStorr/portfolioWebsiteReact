@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Browser.css"
 import BrowserHeader from './BrowserHeader/BrowserHeader'
 import ShapeCSS from './Websites/ShapeCSS'
+import Portfolio from './Websites/Portfolio'
 
 export default function Browser() {
 
@@ -18,7 +19,7 @@ export default function Browser() {
             case BrowserSite.ShapeCSS:
                 return <ShapeCSS />
             case BrowserSite.Portfolio:
-                return <p>Portfolio</p>
+                return <Portfolio />
         }
     }
 
