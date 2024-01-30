@@ -1,0 +1,32 @@
+.kontaktApp{
+    width: 70%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+.kontaktAppSideBar{
+    width: 25%;
+    background-color: aquamarine;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.kontaktAppMainView{
+    width: 75%;
+    background-color: bisque;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.kontaktAppHader{
+
+}
+
+
+.kontaktAppHader img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
