@@ -5,6 +5,7 @@ import AppBar from "./AppBar/AppBar";
 import "./Desktop.css";
 import AppStore from "./AppStore/AppStore";
 import Browser from "./Browser/Browser";
+import Kontakt from "./KontaktApp/Kontakt";
 
 
 
@@ -17,6 +18,7 @@ function Desktop() {
       Browser: "Browser",
       Design: "Design",
       Writing: "Writing",
+      Kontakt: "Kontakt"
     };
 
     const [programm, setProgramm] = useState(Programm.None)
@@ -43,6 +45,8 @@ function Desktop() {
                 return <Design />
             case Programm.Writing:
                 return <Writing />    
+            case Programm.Kontakt:
+              return <Kontakt />
         }
     }
 

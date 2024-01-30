@@ -25,6 +25,10 @@ export default function MainDesktop({changeProgramm, programmEnum}) {
           <div className="appIconMoc"></div>
           <p>Writing</p>
         </li>
+        <li onClick={() => changeProgramm(programmEnum.Kontakt)}>
+          <div className="appIconMoc"></div>
+          <p>Kontakt</p>
+        </li>
       </ul>
     </div>
   );
