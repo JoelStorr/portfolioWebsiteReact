@@ -1,5 +1,5 @@
 .kontaktApp{
-    width: 70%;
+    width: 75%;
     height: 100%;
     
     border-radius: 5px;
@@ -9,7 +9,7 @@
 }
 
 .kontaktAppSideBar{
-    width: 25%;
+    width: 20%;
     padding: 2rem;
     background-color: #352727;
     border-radius: .5rem 0 0 .5rem;
@@ -29,6 +29,7 @@
     width: 75%;
     background-color: #2D1E1E;
     border-radius: 0 0.5rem 0.5rem 0;
+    overflow: scroll;
 }
 
 .kontaktAppHader{
@@ -81,4 +82,41 @@
 
 .kontaktAppAboutMe p{
     font-size: 1.5rem;
+}
+
+.kontakSkillSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* .kontakSkillSection div ul {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .kontakSkillSection li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #514342;
+    
+} */
+
+.programmingLanguage{
+    display: flex;
+    align-items: center;
+    background-color: #514342 ;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.programmingLanguage img{
+    width: 5rem;
+    height: 5rem;
+    padding-right: 2rem;
 }
