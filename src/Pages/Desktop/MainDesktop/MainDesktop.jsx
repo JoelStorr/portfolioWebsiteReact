@@ -6,7 +6,7 @@ export default function MainDesktop({changeProgramm, programmEnum}) {
 
   return (
     <div className="mainDesktop">
-      <div className="desktopSpacer"></div>
+      <div className="desktopSpacer"  onClick={() => changeProgramm(programmEnum.None)}></div>
 
       <ul className="appIconList">
         <li onClick={() => changeProgramm(programmEnum.AppStore)}>

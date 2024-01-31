@@ -3,6 +3,12 @@ import "./AppBar.css";
 export default function AppBar({ changeProgramm, programmEnum }) {
   return (
     <div className="appBar">
+      <div
+        className="appBarSpacer"
+        onClick={() => changeProgramm(programmEnum.None)}
+      >
+        <p> </p>
+      </div>
       <div className="appContainer">
         <ul>
           <li onClick={() => changeProgramm(programmEnum.AppStore)}>
@@ -21,6 +27,12 @@ export default function AppBar({ changeProgramm, programmEnum }) {
             <div className="appIconMoc"></div>
           </li>
         </ul>
+      </div>
+      <div
+        className="appBarSpacer"
+        onClick={() => changeProgramm(programmEnum.None)}
+      >
+        <p> </p>
       </div>
     </div>
   );

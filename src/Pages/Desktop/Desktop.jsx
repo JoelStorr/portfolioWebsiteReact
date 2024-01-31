@@ -59,6 +59,7 @@ function Desktop() {
             ? "programmHolder"
             : "programmHolder programmHolderActive"
         }
+
       >
         {renderProgramm()}
       </div>
