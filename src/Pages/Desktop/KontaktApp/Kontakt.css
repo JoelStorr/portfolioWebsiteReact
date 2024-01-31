@@ -1,7 +1,7 @@
 .kontaktApp{
     width: 70%;
     height: 100%;
-    background-color: aqua;
+    
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -10,19 +10,30 @@
 
 .kontaktAppSideBar{
     width: 25%;
-    background-color: aquamarine;
+    padding: 2rem;
+    background-color: #352727;
     border-radius: .5rem 0 0 .5rem;
+}
+
+.kontaktAppSideBar ul{
+    padding: 0;
+}
+.kontaktAppSideBar li {
+    background-color: #514342;
+    width: 100%;
+    border-radius: 5px;
+    padding: .5rem;
 }
 
 .kontaktAppMainView{
     width: 75%;
-    background-color: bisque;
+    background-color: #2D1E1E;
     border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .kontaktAppHader{
     padding-top: 2.5rem;
-    padding-left: 10rem;
+    padding-left: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,19 +44,41 @@
     width: 80px;
     height: 80px;
     border-radius: 50px;
-    margin: 2rem
+    margin: 0 2rem
 }
 
 .kontaktIcons{
-    width: 30px;
-    height: 30px;
-    color: #2F5089;
+    width: 80%;
+    height: 80%;
     
 }
 
 .iconHolder{
-   width: 50px;
-   height: 50px;
-   display: flex;
-   flex-direction: row;
+   width: 30px;
+   height: 30px;
+    padding: .3rem;
+    margin: 0 1rem 1rem 0;
+    border-radius: 50px;
+    background-color: #1768E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconHolder:hover{
+    cursor: pointer;
+}
+
+.iconRow{
+    width: 100%;
+    display: flex;
+    padding-left: 15rem;
+}
+
+.kontaktAppAboutMe{
+    padding: 2rem 4rem;
+}
+
+.kontaktAppAboutMe p{
+    font-size: 1.5rem;
 }
