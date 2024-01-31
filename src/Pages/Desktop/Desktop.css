@@ -50,7 +50,7 @@ li{
 
 .programmHolder {
     color: white;
-    
+    cursor:default;
     position: absolute;
     top: 4rem;
     left: 0;

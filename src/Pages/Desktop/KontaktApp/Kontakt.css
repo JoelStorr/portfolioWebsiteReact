@@ -21,7 +21,11 @@
 }
 
 .kontaktAppHader{
-
+    padding-top: 2.5rem;
+    padding-left: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
@@ -29,4 +33,19 @@
     width: 80px;
     height: 80px;
     border-radius: 50px;
+    margin: 2rem
+}
+
+.kontaktIcons{
+    width: 30px;
+    height: 30px;
+    color: #2F5089;
+    
+}
+
+.iconHolder{
+   width: 50px;
+   height: 50px;
+   display: flex;
+   flex-direction: row;
 }
