@@ -17,7 +17,7 @@ export default function AppBar({ changeProgramm, programmEnum }) {
           <li onClick={() => changeProgramm(programmEnum.Browser)}>
             <div className="appIconMoc"></div>
           </li>
-          <li onClick={() => changeProgramm(programmEnum.Design)}>
+          <li onClick={() => changeProgramm(programmEnum.XCode)}>
             <div className="appIconMoc"></div>
           </li>
           <li onClick={() => changeProgramm(programmEnum.Writing)}>

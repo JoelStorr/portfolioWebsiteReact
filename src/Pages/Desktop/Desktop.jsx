@@ -16,7 +16,7 @@ function Desktop() {
       None: "None",
       AppStore: "AppStore",
       Browser: "Browser",
-      Design: "Design",
+      XCode: "XCode",
       Writing: "Writing",
       Kontakt: "Kontakt"
     };
@@ -41,8 +41,8 @@ function Desktop() {
                 return <AppStore />
             case Programm.Browser:
                 return <Browser />
-            case Programm.Design:
-                return <Design />
+            case Programm.XCode:
+                return <XCode />
             case Programm.Writing:
                 return <Writing />    
             case Programm.Kontakt:

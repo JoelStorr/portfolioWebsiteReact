@@ -55,10 +55,10 @@ export default function Kontakt() {
             <br />
             <a href="#">Lebenslauf</a>
           </p>
-
+          <hr />
           <h2>Skills</h2>
           <div>
-            <h3>Spoken Language</h3>
+            <h3>Spoken Languages</h3>
             <div className="kontakSkillSection">
               <div className="programmingLanguage">
                 <img src="/images/icons/comment-regular.svg"></img>
