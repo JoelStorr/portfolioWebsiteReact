@@ -10,7 +10,7 @@ import Console from "./Pages/Console/Console";
 
 function App() {
 
-  const[displayState, setDisplayState] = useState("hello")
+  const[displayState, setDisplayState] = useState("WorkDesk")
   window.addEventListener("click", () =>
     setDisplayState(window.clickedObject)
   );
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="app">
-      <button className="mainCloseBtn" onClick={onClickHandler}>X</button>
+      {/* <button className="mainCloseBtn" onClick={onClickHandler}>X</button> */}
       {displayState == "WorkDesk" ? <Desktop /> : <Console />}
     </div>
   );

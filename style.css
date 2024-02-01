@@ -38,14 +38,14 @@ html  {
 #root {
     position: absolute;
     z-index: 10;
-    top: 2.5vh;
-    left: 2.5vw;
-    width: 95vw;
-    height: 95vh;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
    
     pointer-events: all;
     
-    display:none;
+    /* display:none; */
 }
 
 

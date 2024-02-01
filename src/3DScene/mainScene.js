@@ -28,7 +28,7 @@ const enviornmentHelper = new EnviornmentHelper();
 var actionManger;
 
 
-window.clickedObject = "";
+window.clickedObject = "WorkDesk";
 
 
 // Creates a new scene for the engine to run in
