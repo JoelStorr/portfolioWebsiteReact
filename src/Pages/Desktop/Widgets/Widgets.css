@@ -1,0 +1,62 @@
+.widgets{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+  
+}
+
+
+.todoListWidget{
+    width: 70%;
+    background-color: #282C33;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todoListWidgetHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.todoListWidgetHeader img{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.todoListWidget h2 {
+    margin: 0;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+
+.todoListWidgetBody{
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoListWidget ul {
+    display: flex;
+    flex-direction: column;
+}
+.todoWidgetLabelDone{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todoWidgetAddButton{
+    align-self: flex-end;
+    width: 3rem;
+    height: 3rem;
+    font-weight: bolder;
+    color: white;
+    background-color: blue;
+    border-radius: 5rem;
+    border: none;
+    margin: 0 1rem 1rem 0;
+
+}

@@ -84,10 +84,20 @@ li{
     height: 80%;
     margin-left: 20px;
     border-radius: 10px;
-   
+   pointer-events: none;
+}
+
+
+.widgetHolder{
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    width: 30vw;
+    height: 40vh;
+    background-color: aqua;
 }
 
 .programmHolderActive{
-    
+    pointer-events:all;
     border-radius: 10px;
 }

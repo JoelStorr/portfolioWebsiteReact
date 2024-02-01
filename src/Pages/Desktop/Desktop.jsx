@@ -7,6 +7,7 @@ import AppStore from "./AppStore/AppStore";
 import Browser from "./Browser/Browser";
 import Kontakt from "./KontaktApp/Kontakt";
 import XCode from "./XCode/XCode";
+import Widgets from "./Widgets/Widgets";
 
 
 
@@ -44,8 +45,8 @@ function Desktop() {
                 return <Browser />
             case Programm.XCode:
                 return <XCode />
-            case Programm.Writing:
-                return <Writing />    
+            // case Programm.Writing:
+            //     return <Writing />    
             case Programm.Kontakt:
               return <Kontakt />
         }
@@ -63,6 +64,9 @@ function Desktop() {
 
       >
         {renderProgramm()}
+      </div>
+      <div className="widgetHolder">
+        <Widgets />
       </div>
       <div className="desktop">
         <TopBar />
