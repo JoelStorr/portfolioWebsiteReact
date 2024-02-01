@@ -30,10 +30,19 @@ p{
 }
 
 .appIconMoc {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    background: rgb(24, 97, 220);
+    background: linear-gradient(0deg, rgba(24, 97, 220, 1) 0%, rgba(21, 181, 237, 1) 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appIconMoc img {
+    width: 70%;
+    height: 70%;
 }
 
 .appIconList{

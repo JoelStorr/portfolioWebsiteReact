@@ -10,7 +10,9 @@ export default function MainDesktop({changeProgramm, programmEnum}) {
 
       <ul className="appIconList">
         <li onClick={() => changeProgramm(programmEnum.AppStore)}>
-          <div className="appIconMoc"></div>
+          <div className="appIconMoc">
+            <img src="/images/icons/compass-drafting-solid.svg"/>
+          </div>
           <p>App Store</p>
         </li>
         <li onClick={() => changeProgramm(programmEnum.Browser)}>

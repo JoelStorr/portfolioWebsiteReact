@@ -12,7 +12,9 @@ export default function AppBar({ changeProgramm, programmEnum }) {
       <div className="appContainer">
         <ul>
           <li onClick={() => changeProgramm(programmEnum.AppStore)}>
-            <div className="appIconMoc"></div>
+            <div className="appIconMoc">
+              <img src="/images/icons/compass-drafting-solid.svg" />
+            </div>
           </li>
           <li onClick={() => changeProgramm(programmEnum.Browser)}>
             <div className="appIconMoc"></div>
