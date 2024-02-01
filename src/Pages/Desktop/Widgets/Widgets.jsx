@@ -40,20 +40,17 @@ export default function Widgets() {
       setCheckedThree(!checkedThree);
     }
 
-    const arc_start = {
-      borderColor: "transparent red red red",
-      transform: `rotate(${(seconds * 6)+45}deg)`,
+    const gradiantStyle = {
+      background: `conic-gradient(from ${seconds * 6}deg, #282C33, #2a45b0)`,
     };
 
-    const arc_end = {
-      borderColor: "red red red transparent",
-      transform: `rotate(${0}deg)`,
-    };
-
+    
 
 
   return (
     <div className="widgets">
+
+    <div className='widgetRow1'>
       <div className="todoListWidget">
         <div className="todoListWidgetHeader">
           <h2>Todays Todos</h2>
@@ -107,10 +104,15 @@ export default function Widgets() {
           <button className="todoWidgetAddButton">+</button>
         </div>
       </div>
-      <div className="clockWidget">
+      <div className="clockWidget" style={gradiantStyle}>
         <p id="clockWidgetText">{time}</p>
-        
       </div>
+
+    </div>
+    <div className='widgetRow2'>
+      <p>Todo</p>
+    </div>
+
     </div>
   );
 }

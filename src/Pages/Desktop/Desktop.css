@@ -92,9 +92,9 @@ li{
     position: absolute;
     top: 15rem;
     left: 10rem;
-    width: 30vw;
+    width: 40vw;
     height: 40vh;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .programmHolderActive{
