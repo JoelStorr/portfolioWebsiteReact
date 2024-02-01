@@ -32,12 +32,28 @@ p{
 .appIconMoc {
     width: 60px;
     height: 60px;
-    background: rgb(24, 97, 220);
-    background: linear-gradient(0deg, rgba(24, 97, 220, 1) 0%, rgba(21, 181, 237, 1) 100%);
+    
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.appStoreIcon{
+    background: rgb(24, 97, 220);
+    background: linear-gradient(0deg, rgba(24, 97, 220, 1) 0%, rgba(21, 181, 237, 1) 100%);
+}
+.browserIcon{
+    background-color: #FFFEFC;
+}
+
+.xcodeIcon {
+    background-color: #FFFEFC;
+}
+
+.addressIcon{
+    background-color: #FFFEFC;
 }
 
 .appIconMoc img {

@@ -12,21 +12,28 @@ export default function AppBar({ changeProgramm, programmEnum }) {
       <div className="appContainer">
         <ul>
           <li onClick={() => changeProgramm(programmEnum.AppStore)}>
-            <div className="appIconMoc">
+            <div className="appIconMoc appStoreIcon">
               <img src="/images/icons/compass-drafting-solid.svg" />
             </div>
           </li>
           <li onClick={() => changeProgramm(programmEnum.Browser)}>
-            <div className="appIconMoc"></div>
+            <div className="appIconMoc browserIcon">
+              <img src="/images/icons/earth-europe-solid.svg" />
+            </div>
           </li>
           <li onClick={() => changeProgramm(programmEnum.XCode)}>
-            <div className="appIconMoc"></div>
+            <div className="appIconMoc xcodeIcon">
+              <img src="/images/icons/code-solid.svg" />
+            </div>
           </li>
-          <li onClick={() => changeProgramm(programmEnum.Writing)}>
+          {/* <li onClick={() => changeProgramm(programmEnum.Writing)}>
             <div className="appIconMoc"></div>
-          </li>
+          </li> */}
           <li onClick={() => changeProgramm(programmEnum.Kontakt)}>
-            <div className="appIconMoc"></div>
+            <div className="appIconMoc addressIcon">
+              <img src="/images/icons/address-book-regular.svg" />
+            </div>
+            <p></p>
           </li>
         </ul>
       </div>
