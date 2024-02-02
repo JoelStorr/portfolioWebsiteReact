@@ -38,7 +38,7 @@ export default function MainDesktop({changeProgramm, programmEnum}) {
           <div className="appIconMoc addressIcon">
             <img src="/images/icons/address-book-regular.svg" />
           </div>
-          <p>Kontakt</p>
+          <p>About Me</p>
         </li>
       </ul>
     </div>

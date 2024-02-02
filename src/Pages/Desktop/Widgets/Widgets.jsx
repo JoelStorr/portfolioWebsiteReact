@@ -112,7 +112,7 @@ export default function Widgets() {
     <div className='widgetRow2'>
       <p>Todo</p>
     </div>
-
+    
     </div>
   );
 }
