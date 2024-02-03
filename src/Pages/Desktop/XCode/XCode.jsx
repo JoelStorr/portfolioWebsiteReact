@@ -6,7 +6,10 @@ export default function XCode() {
     <div className='xcode'>
       
       <div className='xcodeSideView'>Side View Left</div>
-      <div className='xcodeMainView'>Main View</div>
+      <div className='xcodeMainView'>
+        <div className='xcodeCodeView'>Code View</div>
+        <div className='xcodePreviewView'>Code Preview</div>
+      </div>
       <div className='xcodeSideView'>Side View Right</div>
     
     </div>
