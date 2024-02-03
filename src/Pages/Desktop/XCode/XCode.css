@@ -3,4 +3,20 @@
     height: 100%;
     background-color: aqua;
     border-radius: 5px;
+    font-family: "Cutive-Mono" ;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.xcodeSideView{
+    width: 20%;
+    background-color: aquamarine;
+}
+
+.xcodeSideViewRight{
+    width: 20%;
+}
+.xcodeMainView{
+    flex: 1;
 }

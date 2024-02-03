@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import './AppStore.css'
-import WhenIChanged from './AppDetail/IssueTracker';
+import WhenIChanged from './AppDetail/WhenIChanged';
 import IssueTracker from './AppDetail/IssueTracker';
 import DubDubGrub from './AppDetail/DubDubGrub';
 import GitHubFollowers from './AppDetail/GitHubFollowers';

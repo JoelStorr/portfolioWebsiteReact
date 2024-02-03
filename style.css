@@ -1,15 +1,17 @@
 
 @font-face {
     font-family: 'Spline Sanse';
-    
-    src: url('./fonts/SplineSans.ttf'),
-       
+    src: url('./fonts/SplineSans.ttf'),   
 }
-
 
 @font-face {
     font-family: "Kanit";
     src: url("./fonts/Kanit/Kanit-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Cutive-Mono";
+    src: url("./fonts/Cutive_Mono/CutiveMono-Regular.ttf");
 }
 
 
