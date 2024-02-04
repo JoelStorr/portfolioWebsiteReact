@@ -1,34 +1,35 @@
-.xcode{
+.xcode {
     width: 100%;
     height: 100%;
     background-color: aqua;
     border-radius: 5px;
-    font-family: "Cutive-Mono" ;
+    font-family: "Cutive-Mono";
     display: flex;
     flex-direction: row;
 }
 
 
-.xcodeSideView{
+.xcodeSideView {
     width: 15%;
     background-color: aquamarine;
 }
 
-.xcodeSideViewRight{
+.xcodeSideViewRight {
     width: 20%;
 }
-.xcodeMainView{
+
+.xcodeMainView {
     flex: 1;
     display: flex;
     flex-direction: row;
 }
 
-.xcodeCodeView{
+.xcodeCodeView {
     width: 60%;
     background-color: blue;
 }
 
-.xcodePreviewView{
+.xcodePreviewView {
     width: 40%;
     background-color: red;
 }
