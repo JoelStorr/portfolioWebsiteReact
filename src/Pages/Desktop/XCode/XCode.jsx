@@ -1,4 +1,3 @@
-import React from "react";
 import "./XCode.css";
 
 export default function XCode() {

@@ -1,55 +1,48 @@
-
-import { useState } from 'react';
-import './AppStore.css'
-import WhenIChanged from './AppDetail/WhenIChanged';
-import IssueTracker from './AppDetail/IssueTracker';
-import DubDubGrub from './AppDetail/DubDubGrub';
-import GitHubFollowers from './AppDetail/GitHubFollowers';
+import { useState } from "react";
+import "./AppStore.css";
+import WhenIChanged from "./AppDetail/WhenIChanged";
+import IssueTracker from "./AppDetail/IssueTracker";
+import DubDubGrub from "./AppDetail/DubDubGrub";
+import GitHubFollowers from "./AppDetail/GitHubFollowers";
 
 export default function AppStore() {
-
-
-
   const Projects = {
     WhenIChanged: "WhenIChanged",
     IssueTracker: "IssueTracker",
     DubDubGrub: "DubDubGrub",
     GitHubFollowers: "GitHubFollowers",
     ARDemos: "ARDemos",
-    WidgetKit: "WidgetKit"
-  }
+    WidgetKit: "WidgetKit",
+  };
 
-  const [shownProject, setShownProject] = useState(Projects.WhenIChanged)
+  const [shownProject, setShownProject] = useState(Projects.WhenIChanged);
 
-  function changeShownApps(currApp){
-    if(currApp in Projects){
-      setShownProject(currApp)
+  function changeShownApps(currApp) {
+    if (currApp in Projects) {
+      setShownProject(currApp);
     }
   }
 
-
-  function showApp(){
-    switch (shownProject){
+  function showApp() {
+    switch (shownProject) {
       case Projects.WhenIChanged:
-        return <WhenIChanged /> 
+        return <WhenIChanged />;
       case Projects.IssueTracker:
-        return <IssueTracker />
+        return <IssueTracker />;
       case Projects.DubDubGrub:
-        return <DubDubGrub />
+        return <DubDubGrub />;
       case Projects.GitHubFollowers:
-        return <GitHubFollowers />
+        return <GitHubFollowers />;
       case Projects.ARDemos:
-        return <p>AR Demos</p>
+        return <p>AR Demos</p>;
       case Projects.WidgetKit:
-        return <p>Widget Kit</p>
+        return <p>Widget Kit</p>;
     }
   }
-
 
   return (
     <div className="appStore">
       <div className="appStore-sideBar">
-        
         <h2>Main Projects</h2>
         <ul>
           <li
@@ -108,11 +101,7 @@ export default function AppStore() {
           </li>
         </ul>
       </div>
-      <div className="appStore-mainView">
-        
-        {showApp()}
-      </div>
+      <div className="appStore-mainView">{showApp()}</div>
     </div>
   );
 }
-
