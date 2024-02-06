@@ -7,9 +7,17 @@ export default function Widgets() {
     const [checkedOne, setCheckedOne] = React.useState(true);
     const [checkedTwo, setCheckedTwo] = React.useState(true);
     const [checkedThree, setCheckedThree] = React.useState(false);
-    const [time, setTime] = React.useState(
-      new Date().getHours() + ":" + new Date().getMinutes()
+    
+
+    const [hour, setHour] = React.useState(
+      new Date().getHours()
     );
+
+    const [minute, setMinute] = React.useState(
+      new Date().getMinutes()
+    );
+
+
     const [seconds, setSeconds] = React.useState(new Date().getSeconds())
 
     
@@ -19,12 +27,21 @@ export default function Widgets() {
         intervalId = setInterval(() => {
 
           let now = new Date();
-          let hour = now.getHours();
-          let minute = now.getMinutes()
-          let second = now.getSeconds()
+          let newHour = now.getHours();
+          let newMinute = now.getMinutes()
+          let newSecond = now.getSeconds()
 
-        setTime( hour + ":" + minute)
-        setSeconds(second)
+          
+
+          if (newHour != hour){
+            setHour(newHour)
+          }
+
+          if (newMinute != minute){
+            setMinute(newMinute)
+          }
+
+        setSeconds(newSecond)
       }, 1000);
     }
 
@@ -104,7 +121,7 @@ export default function Widgets() {
           </div>
         </div>
         <div className="clockWidget" style={gradiantStyle}>
-          <p id="clockWidgetText">{time}</p>
+          <p id="clockWidgetText">{hour + ' : ' + (minute < 10 ? '0' + minute : minute)}</p>
         </div>
       </div>
       <div className="widgetRow2">
