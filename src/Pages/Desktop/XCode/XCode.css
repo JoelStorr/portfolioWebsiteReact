@@ -1,7 +1,7 @@
 .xcode {
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     border-radius: 5px;
     font-family: "Cutive-Mono";
     display: flex;
@@ -11,17 +11,31 @@
 
 .xcodeSideView {
     width: 15%;
-    background-color: aquamarine;
+    background-color: #382a279c;
+    backdrop-filter: blur(20px);
+    border-radius: 10px 0 0 10px;
 }
 
 .xcodeSideViewRight {
-    width: 20%;
+    
+    border-radius: 0 10px 10px 0;
 }
 
 .xcodeMainView {
     flex: 1;
     display: flex;
+    flex-direction: column;
+}
+
+.xcodeMainEditView{
+    display: flex;
     flex-direction: row;
+    flex: 1;
+}
+
+.xcodeMainViewHeader{
+    background-color: #382A27;
+    height: 5rem;
 }
 
 .xcodeCodeView {
@@ -32,4 +46,30 @@
 .xcodePreviewView {
     width: 40%;
     background-color: red;
+}
+
+.xcodeFolderStructure{
+    display: flex;
+    flex-direction: column;
+}
+
+.xcodeSubFiels p {
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.xcodeSubFiels ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 3rem;
+}
+
+.xcodeSubFiels li {
+    cursor: pointer;
+}
+
+.xcodeSubFielsHider{
+    display:none !important;
 }

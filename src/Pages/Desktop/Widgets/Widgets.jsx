@@ -21,17 +21,15 @@ export default function Widgets() {
     const [seconds, setSeconds] = React.useState(new Date().getSeconds())
 
     
-    let intervalId
+ 
 
     function getTime(){
-        intervalId = setInterval(() => {
+         setInterval(() => {
 
           let now = new Date();
           let newHour = now.getHours();
           let newMinute = now.getMinutes()
           let newSecond = now.getSeconds()
-
-          
 
           if (newHour != hour){
             setHour(newHour)

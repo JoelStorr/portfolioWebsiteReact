@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     
-    console.log(window.clickedObject)
+    // console.log(window.clickedObject)
   }, [ displayState]);
 
   
