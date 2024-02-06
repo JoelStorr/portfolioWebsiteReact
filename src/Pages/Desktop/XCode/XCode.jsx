@@ -60,7 +60,8 @@ export default function XCode() {
         </div>
       </div>
       <div className="xcodeMainView">
-        <div className="xcodeMainViewHeader">Header</div>
+        <XCodeMainViewHeader filename={codeView} />
+        
         {chooseCodeView()}
       </div>
       <div className="xcodeSideView xcodeSideViewRight"> </div>
@@ -85,6 +86,27 @@ function WidgetKit(){
     <div className="xcodeMainEditView">
       <div className="xcodeCodeView">Widget Kit View</div>
       <div className="xcodePreviewView ">Code Preview</div>
+    </div>
+  );
+}
+
+
+function XCodeMainViewHeader({filename}){
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+
+  return (
+    <div className="xcodeMainViewHeader">
+      <h2>{capitalizeFirstLetter(filename)}.swift</h2>
+      <div>
+        <p>
+          <span>E</span>
+          {capitalizeFirstLetter(filename) + " >"}  iPhone Simulator 15
+        </p>
+      </div>
     </div>
   );
 }

@@ -27,6 +27,29 @@
     flex-direction: column;
 }
 
+.xcodeMainViewHeader{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:  0 2rem;
+}
+
+.xcodeMainViewHeader div{
+    flex: 1;
+    margin-left: 3rem;
+    background-color: #493C39;
+    border-radius: 2px;
+
+
+}
+
+.xcodeMainViewHeader div p {
+    margin: 0;
+    padding: .6rem;
+}
+
+
 .xcodeMainEditView{
     display: flex;
     flex-direction: row;
