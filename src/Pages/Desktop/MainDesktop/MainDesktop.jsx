@@ -1,9 +1,6 @@
 import "./MainDesktop.css";
 
-export default function MainDesktop({changeProgramm, programmEnum}) {
-
-
-
+export default function MainDesktop({ changeProgramm, programmEnum }) {
   return (
     <div className="mainDesktop">
       <div
