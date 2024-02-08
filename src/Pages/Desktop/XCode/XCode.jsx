@@ -5,6 +5,8 @@ import "./XCode.css";
 let CodeView = {
   arProject: 'arProject',
   widgetKit: 'widgetKit',
+  reactNative: 'reactNative',
+  flutter: 'flutter',
   fastApi: 'fastApi'
 }
 
@@ -23,6 +25,10 @@ export default function XCode() {
           return <XCodeARView />
         case CodeView.widgetKit:
           return <WidgetKit />
+        case CodeView.reactNative:
+          return <ReactNative />
+        case CodeView.flutter:
+          return <Flutter />
         case CodeView.fastApi:
           return <FastAPI />
       }
@@ -37,6 +43,7 @@ export default function XCode() {
         <div>
           <ul className="xcodeFolderStructure">
             <li className="xcodeSubFiels">
+              {/* NOTE: Ar View Folder */}
               <div
                 className="codefolder"
                 onClick={() => setSubFolderOne(!subFolderOne)}
@@ -51,11 +58,14 @@ export default function XCode() {
                 />
                 AR View
               </div>
+              {/* NOTE: Sub Fiels */}
               <ul className={subFolderOne ? " " : "xcodeSubFielsHider"}>
                 <li
                   onClick={() => setCodeView(CodeView.arProject)}
                   className={
-                    codeView == CodeView.arProject ? "codefile codefileActive" : "codefile"
+                    codeView == CodeView.arProject
+                      ? "codefile codefileActive"
+                      : "codefile"
                   }
                 >
                   <img
@@ -84,8 +94,23 @@ export default function XCode() {
                 </li>
               </ul>
             </li>
+            {/* NOTE: Widget Kit Folder */}
             <li className="xcodeSubFiels">
-              <p onClick={() => setSubFolderTwo(!subFolderTwo)}>Widget Kit</p>
+              <div
+                onClick={() => setSubFolderTwo(!subFolderTwo)}
+                className="codefolder"
+              >
+                <img
+                  src={
+                    subFolderTwo
+                      ? "/images/icons/folder-open-regular.svg"
+                      : "/images/icons/folder-regular.svg"
+                  }
+                  className="codefileIcon"
+                />
+                Widget Kit
+              </div>
+              {/* NOTE: Sub Files */}
               <ul className={subFolderTwo ? " " : "xcodeSubFielsHider"}>
                 <li
                   onClick={() => setCodeView(CodeView.arProject)}
@@ -117,8 +142,71 @@ export default function XCode() {
                 </li>
               </ul>
             </li>
+            {/* NOTE: Cross Plattform */}
             <li className="xcodeSubFiels">
-              <p onClick={() => setSubFolderThree(!subFolderThree)}>Back End</p>
+              <div
+                onClick={() => setSubFolderThree(!subFolderThree)}
+                className="codefolder"
+              >
+                <img
+                  src={
+                    subFolderThree
+                      ? "/images/icons/folder-open-regular.svg"
+                      : "/images/icons/folder-regular.svg"
+                  }
+                  className="codefileIcon"
+                />
+                Cross Plattform
+              </div>
+              {/* NOTE: Sub Files */}
+              <ul className={subFolderThree ? " " : "xcodeSubFielsHider"}>
+                <li
+                  onClick={() => setCodeView(CodeView.reactNative)}
+                  className="codefile"
+                >
+                  <img
+                    src={
+                      codeView == CodeView.reactNative
+                        ? "/images/icons/react-color.svg"
+                        : "/images/icons/react.svg"
+                    }
+                    className="codefileIcon"
+                  />
+                  react-native.jsx
+                </li>
+                <li
+                  onClick={() => setCodeView(CodeView.flutter)}
+                  className="codefile"
+                >
+                  <img
+                    src={
+                      codeView == CodeView.flutter
+                        ? "/images/icons/android-color.svg"
+                        : "/images/icons/android.svg"
+                    }
+                    className="codefileIcon"
+                  />
+                  flutter-dart.dart
+                </li>
+              </ul>
+            </li>
+            {/* NOTE: Backend */}
+            <li className="xcodeSubFiels">
+              <div
+                onClick={() => setSubFolderThree(!subFolderThree)}
+                className="codefolder"
+              >
+                <img
+                  src={
+                    subFolderThree
+                      ? "/images/icons/folder-open-regular.svg"
+                      : "/images/icons/folder-regular.svg"
+                  }
+                  className="codefileIcon"
+                />
+                Back End
+              </div>
+              {/* NOTE: Sub Files */}
               <ul className={subFolderThree ? " " : "xcodeSubFielsHider"}>
                 <li
                   onClick={() => setCodeView(CodeView.fastApi)}
@@ -126,7 +214,7 @@ export default function XCode() {
                 >
                   <img
                     src={
-                      codeView == CodeView.widgetKit
+                      codeView == CodeView.fastApi
                         ? "/images/icons/python-color.svg"
                         : "/images/icons/python.svg"
                     }
@@ -169,6 +257,25 @@ function WidgetKit(){
     </div>
   );
 }
+
+function ReactNative() {
+  return (
+    <div className="xcodeMainEditView">
+      <div className="xcodeCodeView">Widget Kit View</div>
+      <div className="xcodePreviewView ">Code Preview</div>
+    </div>
+  );
+}
+
+function Flutter() {
+  return (
+    <div className="xcodeMainEditView">
+      <div className="xcodeCodeView">Widget Kit View</div>
+      <div className="xcodePreviewView ">Code Preview</div>
+    </div>
+  );
+}
+
 
 function FastAPI() {
   return (
