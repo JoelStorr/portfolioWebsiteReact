@@ -22,17 +22,14 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Spline Sanse" ;
+    
     font-size: 10px;
 }
 
 
-html  {
-
-    font-family: "Spline Sanse" ;
-    font-size: 10px;
+body{
+    font-family: "Spline Sanse";
 }
-
 
 
 

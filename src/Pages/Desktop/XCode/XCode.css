@@ -3,7 +3,7 @@
     height: 100%;
     /* background-color: aqua; */
     border-radius: 5px;
-    font-family: "Cutive-Mono";
+    
     display: flex;
     flex-direction: row;
 }
@@ -66,7 +66,7 @@
 
 .xcodeCodeView {
     width: 60%;
-    background-color: blue;
+    background-color: #272C34;
 }
 
 .xcodePreviewView {
@@ -103,6 +103,7 @@
 .xcodeMainViewHeader img {
     width: 2rem;
     height: 2rem;
+    user-select: none;
 }
 
 .xcodeMainViewHeader img:first-of-type {
@@ -142,6 +143,7 @@
     width: 100%;
     border-radius: 2px;
     padding-left: 0.5rem;
+    user-select: none;
 }
 
 .codefileActive{

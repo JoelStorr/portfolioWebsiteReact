@@ -1,5 +1,9 @@
 import { useState } from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "./XCode.css";
+
+
 
 
 let CodeView = {
@@ -49,10 +53,34 @@ export default function XCode() {
 
 
 function XCodeARView(){
-  return (
 
+
+  const codeString = `
+  console.log('Hello World');
+  let test = "Test String"
+  class myDemoClass{
+    init(name){
+      self.name = name
+    }
+  }
+  `;
+
+
+  let editorCustomStyle = {
+    padding: "25px",
+    fontSize: "1.5rem",
+    fontFamily: "Cutive-Mono",
+  };
+
+  return (
     <div className="xcodeMainEditView">
-      <div className="xcodeCodeView">Ar View</div>
+      <div className="xcodeCodeView">
+        <div className="code">
+          <SyntaxHighlighter language="javascript" style={atomOneDark} customStyle={editorCustomStyle} wrapLongLines = {true}>
+            {codeString}
+          </SyntaxHighlighter>
+        </div>
+      </div>
       <div className="xcodePreviewView ">Code Preview</div>
     </div>
   );
