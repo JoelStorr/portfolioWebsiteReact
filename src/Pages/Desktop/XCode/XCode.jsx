@@ -17,6 +17,7 @@ export default function XCode() {
     let [subFolderOne, setSubFolderOne] = useState(true)
     let [subFolderTwo, setSubFolderTwo] = useState(false);
     let [subFolderThree, setSubFolderThree] = useState(false);
+    let [subFolderFour, setSubFolderFour] = useState(false);
 
 
     function chooseCodeView(){
@@ -193,12 +194,12 @@ export default function XCode() {
             {/* NOTE: Backend */}
             <li className="xcodeSubFiels">
               <div
-                onClick={() => setSubFolderThree(!subFolderThree)}
+                onClick={() => setSubFolderFour(!subFolderFour)}
                 className="codefolder"
               >
                 <img
                   src={
-                    subFolderThree
+                    subFolderFour
                       ? "/images/icons/folder-open-regular.svg"
                       : "/images/icons/folder-regular.svg"
                   }
@@ -207,7 +208,7 @@ export default function XCode() {
                 Back End
               </div>
               {/* NOTE: Sub Files */}
-              <ul className={subFolderThree ? " " : "xcodeSubFielsHider"}>
+              <ul className={subFolderFour ? " " : "xcodeSubFielsHider"}>
                 <li
                   onClick={() => setCodeView(CodeView.fastApi)}
                   className="codefile"
@@ -261,7 +262,7 @@ function WidgetKit(){
 function ReactNative() {
   return (
     <div className="xcodeMainEditView">
-      <div className="xcodeCodeView">Widget Kit View</div>
+      <div className="xcodeCodeView">React Native View</div>
       <div className="xcodePreviewView ">Code Preview</div>
     </div>
   );
@@ -270,7 +271,7 @@ function ReactNative() {
 function Flutter() {
   return (
     <div className="xcodeMainEditView">
-      <div className="xcodeCodeView">Widget Kit View</div>
+      <div className="xcodeCodeView">Flutter View</div>
       <div className="xcodePreviewView ">Code Preview</div>
     </div>
   );
@@ -280,7 +281,7 @@ function Flutter() {
 function FastAPI() {
   return (
     <div className="xcodeMainEditView">
-      <div className="xcodeCodeView">Widget Kit View</div>
+      <div className="xcodeCodeView">Fast API View</div>
       <div className="xcodePreviewView ">Code Preview</div>
     </div>
   );
@@ -294,9 +295,26 @@ function XCodeMainViewHeader({filename}){
   }
 
 
+  function fileExt(){
+    switch(filename){
+      case CodeView.flutter:
+        return <h2>{capitalizeFirstLetter(filename)}.dart</h2>;
+
+      case CodeView.reactNative:
+        return <h2>{capitalizeFirstLetter(filename)}.jsx</h2>;
+
+      case CodeView.fastApi:
+        return <h2>{capitalizeFirstLetter(filename)}.py</h2>;
+      
+      default:
+        return <h2>{capitalizeFirstLetter(filename)}.swift</h2>;
+    }
+  }
+
+
   return (
     <div className="xcodeMainViewHeader">
-      <h2>{capitalizeFirstLetter(filename)}.swift</h2>
+      {fileExt()}
       <div>
           <p className="eIcon">E</p>
           <p>
