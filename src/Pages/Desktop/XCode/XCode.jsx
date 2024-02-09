@@ -65,21 +65,17 @@ function XCodeARView(){
   }
   `;
 
-
-  let editorCustomStyle = {
-    padding: "25px",
-    fontSize: "1.5rem",
-    fontFamily: "Cutive-Mono",
-  };
+  const codeString2 = `
+    print("Hello World")
+    func myName() -> str {
+      return "my name".lower()
+    }
+  `;
 
   return (
     <div className="xcodeMainEditView">
       <div className="xcodeCodeView">
-        <div className="code">
-          <SyntaxHighlighter language="javascript" style={atomOneDark} customStyle={editorCustomStyle} wrapLongLines = {true}>
-            {codeString}
-          </SyntaxHighlighter>
-        </div>
+        <XCodeCodeElement codeString={codeString2} language="swift" />
       </div>
       <div className="xcodePreviewView ">Code Preview</div>
     </div>
@@ -370,4 +366,31 @@ function XCodeSideBarLeft({codeView, setCodeView}){
       </div>
     </div>
   );
+}
+
+
+function XCodeCodeElement({codeString, language}){
+
+
+
+  let editorCustomStyle = {
+    padding: "25px",
+    fontSize: "1.5rem",
+    fontFamily: "Cutive-Mono",
+  };
+
+
+  return (
+    <div className="code">
+      <SyntaxHighlighter
+        language={language}
+        style={atomOneDark}
+        customStyle={editorCustomStyle}
+        wrapLongLines={true}
+      >
+        {codeString}
+      </SyntaxHighlighter>
+    </div>
+  );
+
 }
