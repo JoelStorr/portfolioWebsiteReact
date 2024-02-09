@@ -326,11 +326,11 @@ function XCodeMainViewHeader({filename}){
     <div className="xcodeMainViewHeader">
       {fileExt()}
       <div>
-          <p className="eIcon">E</p>
-          <p>
-          {capitalizeFirstLetter(filename) + " >"}  iPhone Simulator 15
-        </p>
+        <p className="eIcon">E</p>
+        <p>{capitalizeFirstLetter(filename) + " >"} iPhone Simulator 15</p>
       </div>
+      <img src="/images/icons/cloud-solid.svg" />
+      <img src="/images/icons/plus-solid.svg" />
     </div>
   );
 }
