@@ -39,8 +39,18 @@ export default function XCode() {
   return (
     <div className="xcode">
       <div className="xcodeSideView">
-        <div>Play BTN</div>
-        <div>Icon Row</div>
+        <div className="xcodeSideBarHeader">
+          <img src="/images/icons/play-solid.svg" />
+        </div>
+        <hr />
+        <div className="xcodeSidebarIconRow">
+          <img src="/images/icons/folder-regular.svg" />
+          <img src="/images/icons/bookmark-regular.svg" />
+          <img src="/images/icons/triangle-exclamation-solid.svg" />
+          <img src="/images/icons/square-check-regular.svg" />
+          <img src="/images/icons/magnifying-glass-solid.svg" />
+        </div>
+        <hr />
         <div>
           <ul className="xcodeFolderStructure">
             <li className="xcodeSubFiels">
