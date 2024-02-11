@@ -55,27 +55,43 @@ export default function XCode() {
 function XCodeARView(){
 
 
-  const codeString = `
-  console.log('Hello World');
-  let test = "Test String"
-  class myDemoClass{
-    init(name){
-      self.name = name
+  const codeString = `  import ArKit
+  import SwiftUI
+
+  struct ARView: View {
+    let objectTracker: () -> Experience{"Tracks and Reacts to Images"}
+
+    class Points {
+      p1: "Deteckts images within the Envionrment"
+      p2: "Places pre definde 3D Object on the Image"
     }
+
+
+    func useCase () -> Ideas {
+
+      let id1 = "Can be used to make advertisment more interactable"
+      let id2 = "Addes new interactive layer to media expirences like Books or Movies" 
+      let id3 = "Adds a more emersive feal to exising app"
+      let id4 = "Improves Product display"
+    }
+
+
+    var body: some View {
+
+      ARView(
+        addTrackingPoints: Points, 
+        addIdeas: new useCase()
+      )
+    }
+
   }
   `;
 
-  const codeString2 = `
-    print("Hello World")
-    func myName() -> str {
-      return "my name".lower()
-    }
-  `;
 
   return (
     <div className="xcodeMainEditView">
       <div className="xcodeCodeView">
-        <XCodeCodeElement codeString={codeString2} language="swift" />
+        <XCodeCodeElement codeString={codeString} language="swift" />
       </div>
       <div className="xcodePreviewView ">Code Preview</div>
     </div>
