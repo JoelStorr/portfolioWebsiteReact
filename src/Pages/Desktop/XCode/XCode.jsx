@@ -67,8 +67,7 @@ function XCodeARView(){
     }
 
 
-    func useCase () -> Ideas {
-
+    func useCases () -> Ideas {
       let id1 = "Can be used to make advertisment more interactable"
       let id2 = "Addes new interactive layer to media expirences like Books or Movies" 
       let id3 = "Adds a more emersive feal to exising app"
@@ -80,10 +79,11 @@ function XCodeARView(){
 
       ARView(
         addTrackingPoints: Points, 
-        addIdeas: new useCase()
+        addIdeas: new useCases()
       )
     }
 
+    print(test)
   }
   `;
 
