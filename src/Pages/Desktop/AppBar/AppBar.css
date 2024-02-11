@@ -1,9 +1,11 @@
 
 
 .appBar{
+    height: 7.5rem;
    width: 100%; 
    margin: 0;
    padding: 0;
+   background-color: aqua;
 }
 
 .appBar {
@@ -21,6 +23,8 @@
 }
 
 .appContainer {
+    position: relative;
+    z-index: 10;
     padding: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -29,7 +33,15 @@
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
+    top: 500px;
+    transition: top .8s ease-in-out;
+    
 }
+
+.appBar:hover .appContainer{
+    top: 0;
+}
+
 
 .appContainer li:hover {
     cursor: pointer;

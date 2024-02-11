@@ -81,10 +81,11 @@ li{
     left: 0;
     z-index: 3;
     width: 80%;
-    height: 80%;
+    height: 90%;
     margin-left: 20px;
     border-radius: 10px;
    pointer-events: none;
+   background-color: red;
 }
 
 

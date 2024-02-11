@@ -11,30 +11,39 @@ export default function AppBar({ changeProgramm, programmEnum }) {
       </div>
       <div className="appContainer">
         <ul>
-          <li onClick={() => changeProgramm(programmEnum.AppStore)}>
-            <div className="appIconMoc appStoreIcon">
-              <img src="/images/icons/compass-drafting-solid.svg" />
-            </div>
+          <li>
+            <a href="https://github.com/JoelStorr" target="blank">
+              <div className="appIconMoc browserIcon">
+                <img src="/images/icons/github-color.svg" />
+              </div>
+            </a>
           </li>
-          <li onClick={() => changeProgramm(programmEnum.Browser)}>
-            <div className="appIconMoc browserIcon">
-              <img src="/images/icons/earth-europe-solid.svg" />
-            </div>
+          <li>
+            <a
+              href="https://de.linkedin.com/in/joel-storr-190316137"
+              target="blank"
+            >
+              <div className="appIconMoc browserIcon">
+                <img src="/images/icons/linkedin-color.svg" />
+              </div>
+            </a>
           </li>
-          <li onClick={() => changeProgramm(programmEnum.XCode)}>
-            <div className="appIconMoc xcodeIcon">
-              <img src="/images/icons/code-solid.svg" />
-            </div>
+          <li>
+            <a href="mailto:joel.storr@ewe.net">
+              <div className="appIconMoc xcodeIcon">
+                <img src="/images/icons/envelope-solid-color.svg" />
+              </div>
+            </a>
           </li>
           {/* <li onClick={() => changeProgramm(programmEnum.Writing)}>
             <div className="appIconMoc"></div>
           </li> */}
-          <li onClick={() => changeProgramm(programmEnum.Kontakt)}>
+          {/* <li onClick={() => changeProgramm(programmEnum.Kontakt)}>
             <div className="appIconMoc addressIcon">
               <img src="/images/icons/address-book-regular.svg" />
             </div>
             <p></p>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div
