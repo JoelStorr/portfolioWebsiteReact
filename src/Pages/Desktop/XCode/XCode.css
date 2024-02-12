@@ -3,7 +3,7 @@
     height: 100%;
     /* background-color: aqua; */
     border-radius: 5px;
-    
+
     display: flex;
     flex-direction: row;
 }
@@ -17,7 +17,7 @@
 }
 
 .xcodeSideViewRight {
-    
+
     border-radius: 0 10px 10px 0;
 }
 
@@ -28,18 +28,18 @@
     max-height: 100%;
     overflow: hidden;
     overflow-x: none;
-    scrollbar-color:  #C7C7C7 #272C34;
+    scrollbar-color: #C7C7C7 #272C34;
 }
 
-.xcodeMainViewHeader{
+.xcodeMainViewHeader {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding:  0 2rem;
+    padding: 0 2rem;
 }
 
-.xcodeMainViewHeader div{
+.xcodeMainViewHeader div {
     flex: 1;
     margin-left: 3rem;
     padding-left: 1rem;
@@ -57,17 +57,17 @@
 }
 
 
-.xcodeMainEditView{
+.xcodeMainEditView {
     display: flex;
     flex-direction: row;
     flex: 1;
-   height: 100%;
-   overflow: none;
+    height: 100%;
+    overflow: none;
 
-    
+
 }
 
-.xcodeMainViewHeader{
+.xcodeMainViewHeader {
     background-color: #382A27;
     height: 5rem;
 }
@@ -85,7 +85,7 @@
     background-color: red;
 }
 
-.xcodeFolderStructure{
+.xcodeFolderStructure {
     display: flex;
     flex-direction: column;
 }
@@ -96,7 +96,7 @@
 }
 
 
-.xcodeSubFiels ul{
+.xcodeSubFiels ul {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -107,8 +107,8 @@
     cursor: pointer;
 }
 
-.xcodeSubFielsHider{
-    display:none !important;
+.xcodeSubFielsHider {
+    display: none !important;
 }
 
 .xcodeMainViewHeader img {
@@ -124,7 +124,7 @@
 
 
 
-.eIcon{
+.eIcon {
     width: 4px;
     height: 4px;
     padding: 0;
@@ -135,7 +135,7 @@
     align-items: center;
     justify-content: center;
 }
-    
+
 
 .codefolder {
     user-select: none;
@@ -146,7 +146,7 @@
 }
 
 
-.codefile{
+.codefile {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -157,13 +157,13 @@
     user-select: none;
 }
 
-.codefileActive{
+.codefileActive {
     background-color: #534542;
-    
+
 }
 
 .codefileIcon {
-    margin-right:.5rem ;
+    margin-right: .5rem;
     width: 1.6rem;
     height: 1.6rem;
 }
@@ -182,19 +182,19 @@
     margin: 0;
     padding: 0;
 
-    
+
 }
 
 
-.xcodeSideBarHeader img:first-of-type{
+.xcodeSideBarHeader img:first-of-type {
     width: 20px;
     height: 20px;
     margin-right: 3rem;
     user-select: none;
-    
+
 }
 
-.xcodeSidebarIconRow{
+.xcodeSidebarIconRow {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -202,21 +202,22 @@
     padding: 0 2rem;
 }
 
-.xcodeSidebarIconRow img{
+.xcodeSidebarIconRow img {
     width: 1.5rem;
     height: 1.5rem;
     user-select: none;
 }
 
-.xcodeSideView hr{
+.xcodeSideView hr {
     display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1.5px solid #4f4f4f;
-        margin: 1em 0;
-        padding: 0;
-    
+    height: 1px;
+    border: 0;
+    border-top: 1.5px solid #4f4f4f;
+    margin: 1em 0;
+    padding: 0;
+
 }
+
 .xcodeSideView hr:first-of-type {
     margin-top: 0;
 

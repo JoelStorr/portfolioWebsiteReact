@@ -3,43 +3,35 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "./XCode.css";
 
-
-
-
 let CodeView = {
-  arProject: 'arProject',
-  widgetKit: 'widgetKit',
-  reactNative: 'reactNative',
-  flutter: 'flutter',
-  fastApi: 'fastApi'
-}
-
+  arProject: "arProject",
+  widgetKit: "widgetKit",
+  reactNative: "reactNative",
+  flutter: "flutter",
+  fastApi: "fastApi",
+};
 
 export default function XCode() {
+  let [codeView, setCodeView] = useState(CodeView.arProject);
 
-    let [codeView, setCodeView] = useState(CodeView.arProject)
-    
-
-
-    function chooseCodeView(){
-      switch(codeView){
-        case CodeView.arProject:
-          return <XCodeARView />
-        case CodeView.widgetKit:
-          return <WidgetKit />
-        case CodeView.reactNative:
-          return <ReactNative />
-        case CodeView.flutter:
-          return <Flutter />
-        case CodeView.fastApi:
-          return <FastAPI />
-      }
+  function chooseCodeView() {
+    switch (codeView) {
+      case CodeView.arProject:
+        return <XCodeARView />;
+      case CodeView.widgetKit:
+        return <WidgetKit />;
+      case CodeView.reactNative:
+        return <ReactNative />;
+      case CodeView.flutter:
+        return <Flutter />;
+      case CodeView.fastApi:
+        return <FastAPI />;
     }
-
+  }
 
   return (
     <div className="xcode">
-      <XCodeSideBarLeft codeView={codeView} setCodeView={setCodeView}/>
+      <XCodeSideBarLeft codeView={codeView} setCodeView={setCodeView} />
       <div className="xcodeMainView">
         <XCodeMainViewHeader filename={codeView} />
 
@@ -50,11 +42,7 @@ export default function XCode() {
   );
 }
 
-
-
-function XCodeARView(){
-
-
+function XCodeARView() {
   const codeString = `  import ArKit
   import SwiftUI
 
@@ -87,7 +75,6 @@ function XCodeARView(){
   }
   `;
 
-
   return (
     <div className="xcodeMainEditView">
       <div className="xcodeCodeView">
@@ -98,7 +85,7 @@ function XCodeARView(){
   );
 }
 
-function WidgetKit(){
+function WidgetKit() {
   return (
     <div className="xcodeMainEditView">
       <div className="xcodeCodeView">Widget Kit View</div>
@@ -125,7 +112,6 @@ function Flutter() {
   );
 }
 
-
 function FastAPI() {
   return (
     <div className="xcodeMainEditView">
@@ -135,16 +121,13 @@ function FastAPI() {
   );
 }
 
-
-function XCodeMainViewHeader({filename}){
-
+function XCodeMainViewHeader({ filename }) {
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-
-  function fileExt(){
-    switch(filename){
+  function fileExt() {
+    switch (filename) {
       case CodeView.flutter:
         return <h2>{capitalizeFirstLetter(filename)}.dart</h2>;
 
@@ -153,12 +136,11 @@ function XCodeMainViewHeader({filename}){
 
       case CodeView.fastApi:
         return <h2>{capitalizeFirstLetter(filename)}.py</h2>;
-      
+
       default:
         return <h2>{capitalizeFirstLetter(filename)}.swift</h2>;
     }
   }
-
 
   return (
     <div className="xcodeMainViewHeader">
@@ -173,12 +155,11 @@ function XCodeMainViewHeader({filename}){
   );
 }
 
-function XCodeSideBarLeft({codeView, setCodeView}){
+function XCodeSideBarLeft({ codeView, setCodeView }) {
   let [subFolderOne, setSubFolderOne] = useState(true);
   let [subFolderTwo, setSubFolderTwo] = useState(false);
   let [subFolderThree, setSubFolderThree] = useState(false);
   let [subFolderFour, setSubFolderFour] = useState(false);
-
 
   return (
     <div className="xcodeSideView">
@@ -384,17 +365,12 @@ function XCodeSideBarLeft({codeView, setCodeView}){
   );
 }
 
-
-function XCodeCodeElement({codeString, language}){
-
-
-
+function XCodeCodeElement({ codeString, language }) {
   let editorCustomStyle = {
     padding: "25px",
     fontSize: "1.5rem",
     fontFamily: "Cutive-Mono",
   };
-
 
   return (
     <div className="code">
@@ -408,5 +384,4 @@ function XCodeCodeElement({codeString, language}){
       </SyntaxHighlighter>
     </div>
   );
-
 }
