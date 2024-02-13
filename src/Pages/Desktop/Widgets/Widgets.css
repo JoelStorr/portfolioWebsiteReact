@@ -1,6 +1,7 @@
 .widgets{
     position: relative;
     width: 100%;
+    max-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -99,6 +100,9 @@
 
 .widgetRow2 {
    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   
 }
 
 .specialDayWidget{
@@ -122,4 +126,28 @@
 
 .specialDayWidget span{
     color: rgb(6, 49, 136)
+}
+
+
+@media screen and (max-width: 950px) {
+    .widgets{
+       
+    }
+
+    .widgetRow1{
+        margin: 2rem;
+        padding: 0;
+        width: auto;
+    }
+    .widgetRow2{
+        width: auto;
+        margin: 2rem;
+        
+    }
+
+    
+
+    .todoListWidget{
+        width: 100%;
+    }
 }

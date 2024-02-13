@@ -61,15 +61,15 @@ function Desktop() {
             ? "programmHolder"
             : "programmHolder programmHolderActive"
         }
-
       >
         {renderProgramm()}
       </div>
-      <div className="widgetHolder">
-        <Widgets />
-      </div>
+
       <div className="desktop">
         <TopBar />
+        <div className="widgetHolder">
+          <Widgets />
+        </div>
         <MainDesktop changeProgramm={changeSowftware} programmEnum={Programm} />
         <AppBar changeProgramm={changeSowftware} programmEnum={Programm} />
       </div>

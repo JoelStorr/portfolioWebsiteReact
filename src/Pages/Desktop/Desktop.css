@@ -29,49 +29,6 @@ p{
     flex: 1;
 }
 
-.appIconMoc {
-    width: 60px;
-    height: 60px;
-    
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.appStoreIcon{
-    background: rgb(24, 97, 220);
-    background: linear-gradient(0deg, rgba(24, 97, 220, 1) 0%, rgba(21, 181, 237, 1) 100%);
-}
-.browserIcon{
-    background-color: #FFFEFC;
-}
-
-.xcodeIcon {
-    background-color: #FFFEFC;
-}
-
-.addressIcon{
-    background-color: #FFFEFC;
-}
-
-.appIconMoc img {
-    width: 70%;
-    height: 70%;
-}
-
-.appIconList{
-    display: flex;
-    flex-direction: column;
-    padding-right: 2rem;
-    padding-top: 2rem;
-}
-
-li{
-    margin-bottom: 1rem;
-    display: block;
-}
 
 .programmHolder {
     color: white;
@@ -101,4 +58,30 @@ li{
 .programmHolderActive{
     pointer-events:all;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 950px){
+    
+    .widgetHolder{
+        position:initial;
+        width: 100%;
+        height: 40%;
+        top: 5rem;
+        left: 2rem;
+    }
+
+    .desktop{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    
+     .programmHolder{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        border-radius: 0;
+     }
 }
