@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import TopBar from "./TopBar/TopBar";
 import MainDesktop from "./MainDesktop/MainDesktop";
 import AppBar from "./AppBar/AppBar";
@@ -9,49 +9,40 @@ import Kontakt from "./KontaktApp/Kontakt";
 import XCode from "./XCode/XCode";
 import Widgets from "./Widgets/Widgets";
 
-
-
-
 function Desktop() {
+  const Programm = {
+    None: "None",
+    AppStore: "AppStore",
+    Browser: "Browser",
+    XCode: "XCode",
+    Writing: "Writing",
+    Kontakt: "Kontakt",
+  };
 
-    const Programm = {
-      None: "None",
-      AppStore: "AppStore",
-      Browser: "Browser",
-      XCode: "XCode",
-      Writing: "Writing",
-      Kontakt: "Kontakt"
-    };
+  const [programm, setProgramm] = useState(Programm.None);
 
-    const [programm, setProgramm] = useState(Programm.None)
-
-
-
-
-    function changeSowftware(newProgramm){
-        if (newProgramm in Programm) {
-            setProgramm(newProgramm)
-        }
+  function changeSowftware(newProgramm) {
+    if (newProgramm in Programm) {
+      setProgramm(newProgramm);
     }
+  }
 
-
-    function renderProgramm(){
-        switch(programm){
-            case Programm.None:
-                return <></>
-            case Programm.AppStore:
-                return <AppStore />
-            case Programm.Browser:
-                return <Browser />
-            case Programm.XCode:
-                return <XCode />
-            // case Programm.Writing:
-            //     return <Writing />    
-            case Programm.Kontakt:
-              return <Kontakt />
-        }
+  function renderProgramm() {
+    switch (programm) {
+      case Programm.None:
+        return <></>;
+      case Programm.AppStore:
+        return <AppStore />;
+      case Programm.Browser:
+        return <Browser />;
+      case Programm.XCode:
+        return <XCode />;
+      // case Programm.Writing:
+      //     return <Writing />
+      case Programm.Kontakt:
+        return <Kontakt />;
     }
-
+  }
 
   return (
     <>

@@ -1,4 +1,4 @@
-.widgets{
+.widgets {
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -7,10 +7,10 @@
     flex-direction: column;
     /* justify-content: space-between; */
     /* background-color: azure; */
-  
+
 }
 
-.widgetRow1{
+.widgetRow1 {
     position: relative;
     width: 100%;
     display: flex;
@@ -18,23 +18,23 @@
     margin-bottom: 3rem;
 }
 
-.todoListWidget{
+.todoListWidget {
     width: 60%;
     background-color: #282C33;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.todoListWidgetHeader{
+.todoListWidgetHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
     user-select: none;
 }
 
-.todoListWidgetHeader img{
+.todoListWidgetHeader img {
     width: 2rem;
     height: 2rem;
 }
@@ -48,7 +48,7 @@
 }
 
 
-.todoListWidgetBody{
+.todoListWidgetBody {
     display: flex;
     justify-content: space-between;
 }
@@ -57,12 +57,13 @@
     display: flex;
     flex-direction: column;
 }
-.todoWidgetLabelDone{
+
+.todoWidgetLabelDone {
     text-decoration: line-through;
     color: gray;
 }
 
-.todoWidgetAddButton{
+.todoWidgetAddButton {
     align-self: flex-end;
     width: 3rem;
     height: 3rem;
@@ -76,36 +77,36 @@
 }
 
 
-.clockWidget{
-   width: 15rem;
-   height: 15rem;
-   color: red;
-   /* background-color: cornflowerblue; */
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 1rem;
-   user-select: none;
-    
-    
+.clockWidget {
+    width: 15rem;
+    height: 15rem;
+    color: red;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    user-select: none;
+
+
 }
 
 #clockWidgetText {
     color: white;
     font-size: 5rem;
     font-family: "Kanit" !important;
-    
-    
+
+
 }
 
 .widgetRow2 {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.specialDayWidget{
+.specialDayWidget {
     width: 15rem;
     height: 15rem;
     background-color: rgb(10, 126, 220);
@@ -118,36 +119,35 @@
 }
 
 
-.specialDayWidget h1{
+.specialDayWidget h1 {
     color: white;
     padding-left: 1rem;
-    
+
 }
 
-.specialDayWidget span{
+.specialDayWidget span {
     color: rgb(6, 49, 136)
 }
 
 
 @media screen and (max-width: 950px) {
-    .widgets{
-       
-    }
+    .widgets {}
 
-    .widgetRow1{
+    .widgetRow1 {
         margin: 2rem;
         padding: 0;
         width: auto;
     }
-    .widgetRow2{
+
+    .widgetRow2 {
         width: auto;
         margin: 2rem;
-        
+
     }
 
-    
 
-    .todoListWidget{
+
+    .todoListWidget {
         width: 100%;
     }
 }
