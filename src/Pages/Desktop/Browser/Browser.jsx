@@ -4,7 +4,7 @@ import BrowserHeader from './BrowserHeader/BrowserHeader'
 import ShapeCSS from './Websites/ShapeCSS'
 import Portfolio from './Websites/Portfolio'
 
-export default function Browser() {
+export default function Browser({width, setProgramm, Programm}) {
 
 
     const BrowserSite = {
@@ -30,6 +30,9 @@ export default function Browser() {
             activeBrowserTab={activeTab} 
             changeActiveTab={setActiveTab} 
             browserSite={BrowserSite} 
+            width={width}
+            setProgramm={setProgramm}
+            Programm={Programm}
         />
         <div className='browserContent'>
             {displayWebPage()}

@@ -53,7 +53,7 @@ function Desktop() {
       case Programm.AppStore:
         return <AppStore width={width} setProgramm={setProgramm} Programm={Programm} />;
       case Programm.Browser:
-        return <Browser />;
+        return <Browser width={width} setProgramm={setProgramm} Programm={Programm}/>;
       case Programm.XCode:
         return <XCode />;
       // case Programm.Writing:

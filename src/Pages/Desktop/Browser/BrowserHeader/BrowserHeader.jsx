@@ -1,14 +1,14 @@
-import React from 'react'
-import "./BrowserHeader.css"
+import React from "react";
+import "./BrowserHeader.css";
 
-export default function BrowserHeader({ activeBrowserTab, changeActiveTab, browserSite }) {
-
-
-
-    
-
-
-
+export default function BrowserHeader({
+  activeBrowserTab,
+  changeActiveTab,
+  browserSite,
+  width,
+  setProgramm,
+  Programm,
+}) {
   return (
     <div className="browserHeader">
       <div className="tabRow">
@@ -34,10 +34,20 @@ export default function BrowserHeader({ activeBrowserTab, changeActiveTab, brows
         </div>
       </div>
       <div className="searchBar">
-        <p className="backArrowBrowser navigationButton">&#10132;</p>
-        <p className="navigationButton">&#x2794;</p>
-        <p className="reloadArrowBrowser navigationButton">&#x27F3;</p>
-        <div className='searchField'>
+        {width <= 450 ? (
+          <button onClick={()=>setProgramm(Programm.None)}>
+            <img src='/images/icons/chevron-left-solid.svg'/>
+            <p>Home</p>
+          </button>
+        ) : (
+          <>
+            <p className="backArrowBrowser navigationButton">&#10132;</p>
+            <p className="navigationButton">&#x2794;</p>
+            <p className="reloadArrowBrowser navigationButton">&#x27F3;</p>
+          </>
+        )}
+
+        <div className="searchField">
           <p>www.{activeBrowserTab.toLowerCase()}.com</p>
         </div>
       </div>
