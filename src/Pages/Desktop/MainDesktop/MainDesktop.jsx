@@ -1,28 +1,56 @@
+import { useEffect, useState } from "react";
 import "./MainDesktop.css";
 
 export default function MainDesktop({ changeProgramm, programmEnum }) {
+
+   const [width, setWidth] = useState(window.innerWidth);
+
+   function handleWindowSizeChange() {
+     setWidth(window.innerWidth);
+   }
+   useEffect(() => {
+     window.addEventListener("resize", handleWindowSizeChange);
+     return () => {
+       window.removeEventListener("resize", handleWindowSizeChange);
+     };
+   }, []);
+
+
+
+
   return (
     <div className="mainDesktop">
-      <div
-        className="desktopSpacer"
-        onClick={() => changeProgramm(programmEnum.None)}
-      ></div>
+      {width <= 450 ? null : (
+        <div
+          className="desktopSpacer"
+          onClick={() => changeProgramm(programmEnum.None)}
+        ></div>
+      )}
 
       <ul className="appIconList">
-        <li onClick={() => changeProgramm(programmEnum.AppStore)}>
-          <div className="appIconMoc appStoreIcon">
+        <li>
+          <div
+            className="appIconMoc appStoreIcon"
+            onClick={() => changeProgramm(programmEnum.AppStore)}
+          >
             <img src="/images/icons/compass-drafting-solid.svg" />
           </div>
           <p>App Store</p>
         </li>
-        <li onClick={() => changeProgramm(programmEnum.Browser)}>
-          <div className="appIconMoc browserIcon">
+        <li>
+          <div
+            className="appIconMoc browserIcon"
+            onClick={() => changeProgramm(programmEnum.Browser)}
+          >
             <img src="/images/icons/earth-europe-solid.svg" />
           </div>
           <p>Browser</p>
         </li>
-        <li onClick={() => changeProgramm(programmEnum.XCode)}>
-          <div className="appIconMoc xcodeIcon">
+        <li>
+          <div
+            className="appIconMoc xcodeIcon"
+            onClick={() => changeProgramm(programmEnum.XCode)}
+          >
             <img src="/images/icons/code-solid.svg" />
           </div>
           <p>XCode</p>
@@ -31,8 +59,11 @@ export default function MainDesktop({ changeProgramm, programmEnum }) {
           <div className="appIconMoc"></div>
           <p>Writing</p>
         </li> */}
-        <li onClick={() => changeProgramm(programmEnum.Kontakt)}>
-          <div className="appIconMoc addressIcon">
+        <li>
+          <div
+            className="appIconMoc addressIcon"
+            onClick={() => changeProgramm(programmEnum.Kontakt)}
+          >
             <img src="/images/icons/address-book-regular.svg" />
           </div>
           <p>About Me</p>

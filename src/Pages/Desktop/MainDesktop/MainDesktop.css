@@ -73,3 +73,20 @@ li {
     margin-bottom: 1rem;
     display: block;
 }
+
+
+@media screen and (max-width: 950px) {
+
+    .appIconList{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items:flex-start;
+    }
+
+    .appIconMoc{
+        width: 8rem;
+        height: 8rem;
+    }
+}
