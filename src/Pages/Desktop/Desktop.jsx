@@ -59,7 +59,7 @@ function Desktop() {
       // case Programm.Writing:
       //     return <Writing />
       case Programm.Kontakt:
-        return <Kontakt />;
+        return <Kontakt width={width} setProgramm={setProgramm} Programm={Programm}/>;
     }
   }
 

@@ -120,3 +120,39 @@
     height: 5rem;
     padding-right: 2rem;
 }
+
+@media screen and (max-width: 950px) {
+    .kontaktApp{
+        width: 100%;
+
+    }
+
+    .kontaktAppMainView{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .kontaktAppMainView button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .kontaktAppMainView button img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+        .kontaktAppMainView button p {
+            font-weight: bolder;
+            font-size: 2rem;
+            color: #1768E3;
+            margin: 0;
+            padding: 0;
+        }
+}

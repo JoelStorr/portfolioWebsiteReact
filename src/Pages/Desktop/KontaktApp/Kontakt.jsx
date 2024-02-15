@@ -1,17 +1,32 @@
 import React from "react";
 import "./Kontakt.css";
 
-export default function Kontakt() {
+export default function Kontakt({width, setProgramm, Programm}) {
   return (
     <div className="kontaktApp">
-      <div className="kontaktAppSideBar">
-        <h2>About ME</h2>
-        <hr />
-        <ul>
-          <li>Joel Storr</li>
-        </ul>
-      </div>
+      {width <= 450 ? (
+        <></>
+      ) : (
+        <div className="kontaktAppSideBar">
+          <h2>About ME</h2>
+          <hr />
+          <ul>
+            <li>Joel Storr</li>
+          </ul>
+        </div>
+      )}
+
       <div className="kontaktAppMainView">
+
+        {width <= 450 ? (
+          <button onClick={()=> setProgramm(Programm.None)}>
+          <img src="/images/icons/chevron-left-solid.svg" />
+          <p>Home</p>
+          </button>
+        ) : (<></>)}
+
+
+
         <div className="kontaktAppHader">
           <img src="images/ProfilePic.PNG" />
           <h1>Joel Storr</h1>
