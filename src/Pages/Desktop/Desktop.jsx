@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TopBar from "./TopBar/TopBar";
 import MainDesktop from "./MainDesktop/MainDesktop";
 import AppBar from "./AppBar/AppBar";
@@ -21,6 +21,25 @@ function Desktop() {
 
   const [programm, setProgramm] = useState(Programm.None);
 
+  const [width, setWidth] = useState(window.innerWidth);
+
+    function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+      window.addEventListener("resize", handleWindowSizeChange);
+      return () => {
+        window.removeEventListener("resize", handleWindowSizeChange);
+      };
+    }, []);
+
+
+
+
+
+
+
+
   function changeSowftware(newProgramm) {
     if (newProgramm in Programm) {
       setProgramm(newProgramm);
@@ -32,7 +51,7 @@ function Desktop() {
       case Programm.None:
         return <></>;
       case Programm.AppStore:
-        return <AppStore />;
+        return <AppStore width={width} setProgramm={setProgramm} Programm={Programm} />;
       case Programm.Browser:
         return <Browser />;
       case Programm.XCode:
@@ -59,9 +78,9 @@ function Desktop() {
       <div className="desktop">
         <TopBar />
         <div className="widgetHolder">
-          <Widgets />
+          <Widgets width={width}/>
         </div>
-        <MainDesktop changeProgramm={changeSowftware} programmEnum={Programm} />
+        <MainDesktop changeProgramm={changeSowftware} programmEnum={Programm} width={width} />
         <AppBar changeProgramm={changeSowftware} programmEnum={Programm} />
       </div>
     </>

@@ -1,21 +1,9 @@
 import { useEffect, useState } from "react";
 import "./MainDesktop.css";
 
-export default function MainDesktop({ changeProgramm, programmEnum }) {
+export default function MainDesktop({ width,changeProgramm, programmEnum }) {
 
-   const [width, setWidth] = useState(window.innerWidth);
-
-   function handleWindowSizeChange() {
-     setWidth(window.innerWidth);
-   }
-   useEffect(() => {
-     window.addEventListener("resize", handleWindowSizeChange);
-     return () => {
-       window.removeEventListener("resize", handleWindowSizeChange);
-     };
-   }, []);
-
-
+ 
 
 
   return (

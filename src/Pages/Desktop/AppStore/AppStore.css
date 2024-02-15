@@ -54,3 +54,55 @@
     background-color: rgba(127, 127, 127, 0.259);
     border-radius: 5px;
 }
+
+@media screen and (max-width: 950px) {
+    .appStore{
+        display: flex;
+    }
+    .appStore-sideBar{
+        width: 100%;
+    }
+
+    .appStore-mainViewMobile-Holder{
+        display: flex;
+        flex-direction: column;
+        background-color: #2F211E;
+        width: 100%;
+    }
+
+        .appStore-sideViewMobile-Holder{
+            display: flex;
+                flex-direction: column;
+                background-color: #352827;
+                width: 100%;
+        }
+
+
+    .appStore-mainView{
+        border-radius: 0;
+    }
+
+    .appStore-backButton{
+        width: 100%;
+        
+        padding: 2rem;
+    }
+
+    .appStore-backButton button{
+        display: flex;
+        align-items: center;
+        
+        
+        width: 10rem;
+        background-color:rgba(0, 0, 0, 0);
+        border: none;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: rgb(40, 135, 250)
+    }
+
+        .appStore-backButton button img{
+            height: 15%;
+            width: 15%;
+        }
+}

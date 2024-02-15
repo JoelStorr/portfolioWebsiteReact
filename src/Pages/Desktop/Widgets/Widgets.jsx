@@ -2,20 +2,10 @@ import React, { useState, useEffect } from "react"
 
 import "./Widgets.css"
 
-export default function Widgets() {
+export default function Widgets({width}) {
 
 
-  const [width, setWidth] = useState(window.innerWidth);
 
-  function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-  }
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
 
     
   function setDeviceLayout(){
