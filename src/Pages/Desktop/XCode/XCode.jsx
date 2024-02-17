@@ -11,38 +11,57 @@ let CodeView = {
   fastApi: "fastApi",
 };
 
-export default function XCode() {
+export default function XCode({width, setProgramm, Programm}) {
   let [codeView, setCodeView] = useState(CodeView.arProject);
-
+  let [sidebar, setSideBar] = useState(true)
   function chooseCodeView() {
     switch (codeView) {
       case CodeView.arProject:
-        return <XCodeARView />;
+        return <XCodeARView width={width} />;
       case CodeView.widgetKit:
-        return <WidgetKit />;
+        return <WidgetKit width={width} />;
       case CodeView.reactNative:
-        return <ReactNative />;
+        return <ReactNative width={width} />;
       case CodeView.flutter:
-        return <Flutter />;
+        return <Flutter width={width} />;
       case CodeView.fastApi:
-        return <FastAPI />;
+        return <FastAPI width={width} />;
     }
   }
 
   return (
-    <div className="xcode">
-      <XCodeSideBarLeft codeView={codeView} setCodeView={setCodeView} />
-      <div className="xcodeMainView">
-        <XCodeMainViewHeader filename={codeView} />
+    <>
+      {width <= 450 ? (
+        <div className="xcode">
+          {sidebar ? (
+            <XCodeSideBarLeft width={width} codeView={codeView} setCodeView={setCodeView} setProgramm={setProgramm} Programm={Programm} setSideBar={setSideBar} sidebar={sidebar}/>
+          ) : (
+            <div className="xcodeMainView">
+          
+              <XCodeMainViewHeader filename={codeView} setSideBar={setSideBar} sidebar={sidebar} width={width}/>
 
-        {chooseCodeView()}
-      </div>
-      <div className="xcodeSideView xcodeSideViewRight"> </div>
-    </div>
+              {chooseCodeView()}
+            </div>
+          )}
+
+          
+        </div>
+      ) : (
+        <div className="xcode">
+          <XCodeSideBarLeft codeView={codeView} setCodeView={setCodeView} />
+          <div className="xcodeMainView">
+            <XCodeMainViewHeader filename={codeView} />
+
+            {chooseCodeView()}
+          </div>
+          <div className="xcodeSideView xcodeSideViewRight"> </div>
+        </div>
+      )}
+    </>
   );
 }
 
-function XCodeARView() {
+function XCodeARView({width}) {
   const codeString = `  import ArKit
   import SwiftUI
 
@@ -77,10 +96,19 @@ function XCodeARView() {
 
   return (
     <div className="xcodeMainEditView">
-      <div className="xcodeCodeView">
-        <XCodeCodeElement codeString={codeString} language="swift" />
-      </div>
-      <div className="xcodePreviewView ">Code Preview</div>
+      {width <= 450 ? (
+        <div className="xcodeCodeView">
+          <XCodeCodeElement codeString={codeString} language="swift" />
+        </div>
+      ) : (
+        <>
+          <div className="xcodeCodeView">
+            <XCodeCodeElement codeString={codeString} language="swift" />
+          </div>
+
+          <div className="xcodePreviewView ">Code Preview</div>
+        </>
+      )}
     </div>
   );
 }
@@ -121,7 +149,7 @@ function FastAPI() {
   );
 }
 
-function XCodeMainViewHeader({ filename }) {
+function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
@@ -129,41 +157,86 @@ function XCodeMainViewHeader({ filename }) {
   function fileExt() {
     switch (filename) {
       case CodeView.flutter:
-        return <h2>{capitalizeFirstLetter(filename)}.dart</h2>;
+        return <h2 className="xcodeHeaderFileName">{capitalizeFirstLetter(filename)}.dart</h2>;
 
       case CodeView.reactNative:
-        return <h2>{capitalizeFirstLetter(filename)}.jsx</h2>;
+        return (
+          <h2 className="xcodeHeaderFileName">
+            {capitalizeFirstLetter(filename)}.jsx
+          </h2>
+        );
 
       case CodeView.fastApi:
-        return <h2>{capitalizeFirstLetter(filename)}.py</h2>;
+        return (
+          <h2 className="xcodeHeaderFileName">
+            {capitalizeFirstLetter(filename)}.py
+          </h2>
+        );
 
       default:
-        return <h2>{capitalizeFirstLetter(filename)}.swift</h2>;
+        return (
+          <h2 className="xcodeHeaderFileName">
+            {capitalizeFirstLetter(filename)}.swift
+          </h2>
+        );
     }
   }
 
   return (
     <div className="xcodeMainViewHeader">
+      {width <= 450 ? (
+        <button className="xcodeMainViewBackButton" onClick={()=>setSideBar(!sidebar)}>
+          <img src="/images/icons/chevron-left-solid.svg" />
+          <p>
+            Projects
+          </p>
+        </button>
+      ) : (
+        <></>
+      )}
+
       {fileExt()}
-      <div>
-        <p className="eIcon">E</p>
-        <p>{capitalizeFirstLetter(filename) + " >"} iPhone Simulator 15</p>
-      </div>
+
+      {width <= 450 ? (
+        <></>
+      ) : (
+        <div>
+          <p className="eIcon">E</p>
+          <p>{capitalizeFirstLetter(filename) + " >"} iPhone Simulator 15</p>
+        </div>
+      )}
+
       <img src="/images/icons/cloud-solid.svg" />
       <img src="/images/icons/plus-solid.svg" />
     </div>
   );
 }
 
-function XCodeSideBarLeft({ codeView, setCodeView }) {
+function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,setSideBar, sidebar }) {
   let [subFolderOne, setSubFolderOne] = useState(true);
   let [subFolderTwo, setSubFolderTwo] = useState(false);
   let [subFolderThree, setSubFolderThree] = useState(false);
   let [subFolderFour, setSubFolderFour] = useState(false);
 
+  function changeCodeView(codeView){
+
+    setCodeView(codeView);
+
+    setSideBar(!sidebar)
+  }
+
+
   return (
     <div className="xcodeSideView">
       <div className="xcodeSideBarHeader">
+        {width <= 450 ? (
+          <button onClick={() => setProgramm(Programm.None)}>
+            <img src="/images/icons/chevron-left-solid.svg" />
+            Home
+          </button>
+        ) : (
+          <></>
+        )}
         <img src="/images/icons/play-solid.svg" />
       </div>
       <hr />
@@ -196,7 +269,7 @@ function XCodeSideBarLeft({ codeView, setCodeView }) {
             {/* NOTE: Sub Fiels */}
             <ul className={subFolderOne ? " " : "xcodeSubFielsHider"}>
               <li
-                onClick={() => setCodeView(CodeView.arProject)}
+                onClick={() => changeCodeView(CodeView.arProject)}
                 className={
                   codeView == CodeView.arProject
                     ? "codefile codefileActive"
@@ -214,7 +287,7 @@ function XCodeSideBarLeft({ codeView, setCodeView }) {
                 main.swift
               </li>
               <li
-                onClick={() => setCodeView(CodeView.widgetKit)}
+                onClick={() => changeCodeView(CodeView.widgetKit)}
                 className="codefile"
               >
                 <img
@@ -248,7 +321,7 @@ function XCodeSideBarLeft({ codeView, setCodeView }) {
             {/* NOTE: Sub Files */}
             <ul className={subFolderTwo ? " " : "xcodeSubFielsHider"}>
               <li
-                onClick={() => setCodeView(CodeView.arProject)}
+                onClick={() => changeCodeView(CodeView.arProject)}
                 className="codefile"
               >
                 <img
@@ -262,7 +335,7 @@ function XCodeSideBarLeft({ codeView, setCodeView }) {
                 main.swift
               </li>
               <li
-                onClick={() => setCodeView(CodeView.widgetKit)}
+                onClick={() => changeCodeView(CodeView.widgetKit)}
                 className="codefile"
               >
                 <img
@@ -296,7 +369,7 @@ function XCodeSideBarLeft({ codeView, setCodeView }) {
             {/* NOTE: Sub Files */}
             <ul className={subFolderThree ? " " : "xcodeSubFielsHider"}>
               <li
-                onClick={() => setCodeView(CodeView.reactNative)}
+                onClick={() => changeCodeView(CodeView.reactNative)}
                 className="codefile"
               >
                 <img
@@ -310,7 +383,7 @@ function XCodeSideBarLeft({ codeView, setCodeView }) {
                 react-native.jsx
               </li>
               <li
-                onClick={() => setCodeView(CodeView.flutter)}
+                onClick={() => changeCodeView(CodeView.flutter)}
                 className="codefile"
               >
                 <img
@@ -344,7 +417,7 @@ function XCodeSideBarLeft({ codeView, setCodeView }) {
             {/* NOTE: Sub Files */}
             <ul className={subFolderFour ? " " : "xcodeSubFielsHider"}>
               <li
-                onClick={() => setCodeView(CodeView.fastApi)}
+                onClick={() => changeCodeView(CodeView.fastApi)}
                 className="codefile"
               >
                 <img

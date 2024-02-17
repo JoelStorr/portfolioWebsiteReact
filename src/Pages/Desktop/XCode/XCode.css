@@ -186,7 +186,7 @@
 }
 
 
-.xcodeSideBarHeader img:first-of-type {
+.xcodeSideBarHeader img {
     width: 20px;
     height: 20px;
     margin-right: 3rem;
@@ -220,5 +220,105 @@
 
 .xcodeSideView hr:first-of-type {
     margin-top: 0;
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .xcodeSideView{
+        width: 100%;
+        border-radius: 0;
+        
+    }
+
+    .xcodeSideBarHeader{
+        margin-left: 2rem;
+        justify-content: space-between;
+        
+    }
+
+    .xcodeSideBarHeader button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+        font-weight: bolder;
+        color: rgb(40, 135, 250);
+        background-color: rgba(0,0,0,0);
+        border: none;
+        
+    }
+
+    .xcodeSideBarHeader button img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .codefolder {
+        font-size: 2rem;
+    }
+
+    .codefile {
+        font-size: 1.5rem;
+    }
+
+   .codefileIcon {
+       margin-right: .5rem;
+       width: 2rem;
+       height: 2rem;
+   }
+
+   .xcodeCodeView{
+    width: 100%;
+   }
+
+   .xcodeMainView{
+    background-color: #382A27;
+   }
+
+   .xcodeMainViewHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+   }
+
+
+   .xcodeMainViewBackButton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(0,0,0,0);
+    border: none;
+    
+   }
+
+
+   .xcodeMainViewBackButton img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+   }
+
+
+   .xcodeMainViewBackButton p{
+        color: #2887FA;
+        font-size: 2rem;
+        font-weight: bolder;
+   }
+
+
+   .xcodeHeaderFileName{
+    
+   }
+
+   .xcodeMainViewHeader img:first-of-type{
+    margin-right: 0;
+    margin-left: 0;
+   }
 
 }

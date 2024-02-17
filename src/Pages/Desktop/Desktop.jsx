@@ -55,7 +55,9 @@ function Desktop() {
       case Programm.Browser:
         return <Browser width={width} setProgramm={setProgramm} Programm={Programm}/>;
       case Programm.XCode:
-        return <XCode />;
+        return (
+          <XCode width={width} setProgramm={setProgramm} Programm={Programm} />
+        );
       // case Programm.Writing:
       //     return <Writing />
       case Programm.Kontakt:
@@ -65,6 +67,9 @@ function Desktop() {
 
   return (
     <>
+      
+
+
       <div
         className={
           programm == Programm.None
