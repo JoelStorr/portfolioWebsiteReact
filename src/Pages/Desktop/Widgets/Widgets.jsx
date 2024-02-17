@@ -10,9 +10,8 @@ export default function Widgets({width}) {
     
   function setDeviceLayout(){
 
-    if (width <= 825 ){
-
-      
+   
+    if (width <= 825  && width > 390){
 
        return (
          <div className="widgets">
@@ -26,18 +25,27 @@ export default function Widgets({width}) {
          </div>
        );
 
+    } else if (width <= 435) {
+      return (
+        <div className="widgets">
+          <div className="widgetRow2">
+            <SpecialeDayWidget />
+            <ClockWidget />
+          </div>
+        </div>
+      );
     } else {
-     return (
-       <div className="widgets">
-         <div className="widgetRow1">
-           <TodoListWidget />
-           <ClockWidget />
-         </div>
-         <div className="widgetRow2">
-           <SpecialeDayWidget />
-         </div>
-       </div>
-     );
+      return (
+        <div className="widgets">
+          <div className="widgetRow1">
+            <TodoListWidget />
+            <ClockWidget />
+          </div>
+          <div className="widgetRow2">
+            <SpecialeDayWidget />
+          </div>
+        </div>
+      );
     }
   }
 
