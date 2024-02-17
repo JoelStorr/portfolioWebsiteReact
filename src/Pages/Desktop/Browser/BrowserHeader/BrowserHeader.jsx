@@ -34,7 +34,7 @@ export default function BrowserHeader({
         </div>
       </div>
       <div className="searchBar">
-        {width <= 450 ? (
+        {width <= 825 ? (
           <button onClick={()=>setProgramm(Programm.None)}>
             <img src='/images/icons/chevron-left-solid.svg'/>
             <p>Home</p>

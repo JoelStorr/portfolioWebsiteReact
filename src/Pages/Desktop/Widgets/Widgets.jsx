@@ -10,7 +10,7 @@ export default function Widgets({width}) {
     
   function setDeviceLayout(){
 
-    if (width <= 450 ){
+    if (width <= 825 ){
 
       
 

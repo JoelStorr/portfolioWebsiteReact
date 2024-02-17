@@ -44,7 +44,7 @@ export default function AppStore({width, setProgramm, Programm}) {
 
   return (
     <>
-      {width <= 450 ? (
+      {width <= 825 ? (
         <div className="appStore">
           {sidebarState ? (
             <div className="appStore-sideViewMobile-Holder">

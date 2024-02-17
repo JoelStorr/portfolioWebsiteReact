@@ -31,7 +31,7 @@ export default function XCode({width, setProgramm, Programm}) {
 
   return (
     <>
-      {width <= 450 ? (
+      {width <= 825 ? (
         <div className="xcode">
           {sidebar ? (
             <XCodeSideBarLeft width={width} codeView={codeView} setCodeView={setCodeView} setProgramm={setProgramm} Programm={Programm} setSideBar={setSideBar} sidebar={sidebar}/>
@@ -96,7 +96,7 @@ function XCodeARView({width}) {
 
   return (
     <div className="xcodeMainEditView">
-      {width <= 450 ? (
+      {width <= 825 ? (
         <div className="xcodeCodeView">
           <XCodeCodeElement codeString={codeString} language="swift" />
         </div>
@@ -184,12 +184,13 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
 
   return (
     <div className="xcodeMainViewHeader">
-      {width <= 450 ? (
-        <button className="xcodeMainViewBackButton" onClick={()=>setSideBar(!sidebar)}>
+      {width <= 825 ? (
+        <button
+          className="xcodeMainViewBackButton"
+          onClick={() => setSideBar(!sidebar)}
+        >
           <img src="/images/icons/chevron-left-solid.svg" />
-          <p>
-            Projects
-          </p>
+          <p>Projects</p>
         </button>
       ) : (
         <></>
@@ -197,7 +198,7 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
 
       {fileExt()}
 
-      {width <= 450 ? (
+      {width <= 825 ? (
         <></>
       ) : (
         <div>
@@ -229,7 +230,7 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
   return (
     <div className="xcodeSideView">
       <div className="xcodeSideBarHeader">
-        {width <= 450 ? (
+        {width <= 825 ? (
           <button onClick={() => setProgramm(Programm.None)}>
             <img src="/images/icons/chevron-left-solid.svg" />
             Home

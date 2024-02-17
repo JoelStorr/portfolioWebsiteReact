@@ -8,7 +8,7 @@ export default function MainDesktop({ width,changeProgramm, programmEnum }) {
 
   return (
     <div className="mainDesktop">
-      {width <= 450 ? null : (
+      {width <= 825 ? null : (
         <div
           className="desktopSpacer"
           onClick={() => changeProgramm(programmEnum.None)}

@@ -4,7 +4,7 @@ import "./Kontakt.css";
 export default function Kontakt({width, setProgramm, Programm}) {
   return (
     <div className="kontaktApp">
-      {width <= 450 ? (
+      {width <= 825 ? (
         <></>
       ) : (
         <div className="kontaktAppSideBar">
@@ -18,7 +18,7 @@ export default function Kontakt({width, setProgramm, Programm}) {
 
       <div className="kontaktAppMainView">
 
-        {width <= 450 ? (
+        {width <= 825 ? (
           <button onClick={()=> setProgramm(Programm.None)}>
           <img src="/images/icons/chevron-left-solid.svg" />
           <p>Home</p>
