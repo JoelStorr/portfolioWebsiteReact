@@ -52,6 +52,28 @@ export default function ImageCarousel({ slides }) {
     zIndex: 1,
     cursor: "pointer",
   };
+  
+  const leftArrowStyleFull = {
+    position: "absolute",
+    top: "50%",
+    transform: "translate(0, -50%)",
+    left: "50px",
+    fontSize: "45px",
+    color: "#fff",
+    zIndex: 1,
+    cursor: "pointer",
+  };
+  const rightArrowStyleFull = {
+    position: "absolute",
+    top: "50%",
+    transform: "translate(0, -50%)",
+    right: "150px",
+    fontSize: "45px",
+    color: "#fff",
+    zIndex: 1,
+    cursor: "pointer",
+  };
+
 
   const dotContainerStyles = {
     display: "flex",
@@ -68,11 +90,22 @@ export default function ImageCarousel({ slides }) {
   const fullScaleImage = {
     position: "fixed",
     zIndex: "10",
-    width: "80vw",
-    height: "80vh",
-    top: "10vh",
-    left: "10vw",
+    width: "100vw",
+    height: "100vh",
+    top: "0vh",
+    left: "0vw",
+    backgroundColor: "rgba(0,0,0,0.4)",
   };
+
+  const imageHider = {
+    position: "absolute",
+    width: "100vw",
+    height: "100vh",
+    top: "0",
+    left:"0",
+    opacity: 0.5,
+    zIndex: -1,
+  }
 
   function imageIndex(index){
 
@@ -164,11 +197,22 @@ export default function ImageCarousel({ slides }) {
         })}
       </div>
       {bigImage ? (
-        <div style={fullScaleImage} onClick={() => setBigImage(false)}>
+        <div style={fullScaleImage}>
+          <div style={leftArrowStyleFull} onClick={()=>{clickeImage(imageIndex(currentIndex - 1)); setCurrentIndex(imageIndex(currentIndex - 1))}}>
+            &#10094;
+          </div>
+          <div style={rightArrowStyleFull} onClick={()=>{clickeImage(imageIndex(currentIndex + 1)); setCurrentIndex(imageIndex(currentIndex + 1))}}>
+            &#10095;
+          </div>
+
           <img
             src={selectedImage}
-            style={{ width: "100%", height: "100%", objectFit: "contain"}}
+            style={{ width: "80%", height: "80%", objectFit: "contain", top: "10%", position:"relative", left:"6%"}}
+            onClick={() => setBigImage(false)}
           ></img>
+          <div style={imageHider} onClick={() => setBigImage(false)}>
+            Hello
+          </div>
         </div>
       ) : (
         <></>
