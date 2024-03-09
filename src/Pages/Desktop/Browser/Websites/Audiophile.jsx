@@ -4,16 +4,40 @@ import "./WebsiteConetent.css";
 export default function Audiophile() {
   const images = [
     {
-      url: `./images/shapecss/shapecss1.png`,
-      title: "SunFlower",
+      url: `./images/audiophile/HomePage.png`,
+      title: "Home Page",
     },
     {
-      url: "./images/shapecss/shapecss2.png",
-      title: "SunFlower",
+      url: `./images/audiophile/Category.png`,
+      title: "Category Page",
     },
     {
-      url: "./images/shapecss/shapecss3.png",
-      title: "SunFlower",
+      url: `./images/audiophile/ProductPage.png`,
+      title: "Product Page",
+    },
+    {
+      url: `./images/audiophile/CartPopup.png`,
+      title: "Cart Popup",
+    },
+    {
+      url: `./images/audiophile/checkout.png`,
+      title: "Checkout Page",
+    },
+    {
+      url: `./images/audiophile/checkoutComplete.png`,
+      title: "Checkout Complete Popup",
+    },
+    {
+      url: `./images/audiophile/HomePageTablet.png`,
+      title: "Home Page Tablet",
+    },
+    {
+      url: `./images/audiophile/productTablet.png`,
+      title: "Product Page Tablet",
+    },
+    {
+      url: `./images/audiophile/CheckoutTablet.png`,
+      title: "Checkout Page Tablet",
     },
   ];
 
@@ -28,10 +52,14 @@ export default function Audiophile() {
         <div className="websiteContentUsedTech">
           <h3>Used Tech</h3>
           <ul>
-            <li>Vue JS Frontend Library</li>
-            <li>Matter JS (physics library)</li>
+            <li>Vue JS</li>
+            <li>Nuxt JS</li>
+            <li>Scss</li>
+            <li>Pinia (Nuxt Store)</li>
           </ul>
-          <a href="https://github.com/JoelStorr/shape-css">GitHub Repo</a>
+          <a href="https://github.com/JoelStorr/FM-Audiophile-FrontEnd">
+            GitHub Repo
+          </a>
         </div>
       </div>
       <div className="websiteContentAbout">
