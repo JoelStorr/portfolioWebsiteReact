@@ -15,6 +15,26 @@ export default function LinkShare() {
       url: `./images/linkshare/UserCardPreview.png`,
       title: "User Card Preview",
     },
+    {
+      url: `./images/linkshare/login.png`,
+      title: "Login View",
+    },
+    {
+      url: `./images/linkshare/register.png`,
+      title: "Register View",
+    },
+    {
+      url: `./images/linkshare/EditorTablet.png`,
+      title: "Editor Tablet View",
+    },
+    {
+      url: `./images/linkshare/ProfileTablet.png`,
+      title: "Profile Tablet View",
+    },
+    {
+      url: `./images/linkshare/PreviewTablet.png`,
+      title: "Profile Tablet View",
+    },
   ];
 
   console.log(images[0]);
