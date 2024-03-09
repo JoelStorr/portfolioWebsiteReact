@@ -3,13 +3,17 @@ import "./Browser.css"
 import BrowserHeader from './BrowserHeader/BrowserHeader'
 import ShapeCSS from './Websites/ShapeCSS'
 import Portfolio from './Websites/Portfolio'
+import Audiophile from './Websites/Audiophile'
+import LinkShare from './Websites/LinkShare'
 
 export default function Browser({width, setProgramm, Programm}) {
 
 
     const BrowserSite = {
         ShapeCSS: "ShapeCss",
-        Portfolio: "Portfolio"
+        Portfolio: "Portfolio",
+        Audiophile: "Audiophile",
+        LinkShare: "LinkShare"
     }
 
     const [activeTab, setActiveTab] = useState(BrowserSite.ShapeCSS)
@@ -20,6 +24,10 @@ export default function Browser({width, setProgramm, Programm}) {
                 return <ShapeCSS />
             case BrowserSite.Portfolio:
                 return <Portfolio />
+            case BrowserSite.Audiophile:
+                return <Audiophile />
+            case BrowserSite.LinkShare:
+                return <LinkShare />
         }
     }
 

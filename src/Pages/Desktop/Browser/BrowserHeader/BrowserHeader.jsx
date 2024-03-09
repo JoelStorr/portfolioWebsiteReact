@@ -32,11 +32,31 @@ export default function BrowserHeader({
         >
           <h3>Portfolio</h3>
         </div>
+        <div
+          className={
+            activeBrowserTab == browserSite.LinkShare
+              ? "browserTab activeTab"
+              : "browserTab"
+          }
+          onClick={() => changeActiveTab(browserSite.LinkShare)}
+        >
+          <h3>LinkShare</h3>
+        </div>
+        <div
+          className={
+            activeBrowserTab == browserSite.Audiophile
+              ? "browserTab activeTab"
+              : "browserTab"
+          }
+          onClick={() => changeActiveTab(browserSite.Audiophile)}
+        >
+          <h3>Audiophile</h3>
+        </div>
       </div>
       <div className="searchBar">
         {width <= 825 ? (
-          <button onClick={()=>setProgramm(Programm.None)}>
-            <img src='/images/icons/chevron-left-solid.svg'/>
+          <button onClick={() => setProgramm(Programm.None)}>
+            <img src="/images/icons/chevron-left-solid.svg" />
             <p>Home</p>
           </button>
         ) : (
