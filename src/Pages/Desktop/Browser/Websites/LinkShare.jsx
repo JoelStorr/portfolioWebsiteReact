@@ -4,16 +4,16 @@ import "./WebsiteConetent.css";
 export default function LinkShare() {
   const images = [
     {
-      url: `./images/shapecss/shapecss1.png`,
-      title: "SunFlower",
+      url: `./images/linkshare/EditorView.png`,
+      title: "Editor View",
     },
     {
-      url: "./images/shapecss/shapecss2.png",
-      title: "SunFlower",
+      url: `./images/linkshare/ProfileView.png`,
+      title: "Editor View",
     },
     {
-      url: "./images/shapecss/shapecss3.png",
-      title: "SunFlower",
+      url: `./images/linkshare/UserCardPreview.png`,
+      title: "User Card Preview",
     },
   ];
 
@@ -29,9 +29,18 @@ export default function LinkShare() {
           <h3>Used Tech</h3>
           <ul>
             <li>Vue JS Frontend Library</li>
-            <li>Matter JS (physics library)</li>
+            <li>Nuxt JS Vue Full Stack Library</li>
+            <li>Axios (HTTP Request Library)</li>
+            <li>Fast API Backend (Pyhton based Backend)</li>
           </ul>
-          <a href="https://github.com/JoelStorr/shape-css">GitHub Repo</a>
+          <div className="repoLinkHolder">
+            <a href="https://github.com/JoelStorr/FM-LinkSharing-App">
+              GitHub Repo
+            </a>
+            <a href="https://joelstorr.github.io/JSFMLinkSharing/editor">
+              Live Example
+            </a>
+          </div>
         </div>
       </div>
       <div className="websiteContentAbout">
