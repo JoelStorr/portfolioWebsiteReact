@@ -41,7 +41,9 @@ export default function ImageCarousel({ slides, fit }) {
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
+    userSelect: "none",
   };
+
   const rightArrowStyle = {
     position: "absolute",
     top: "50%",
@@ -51,6 +53,7 @@ export default function ImageCarousel({ slides, fit }) {
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
+    userSelect: "none",
   };
   
   const leftArrowStyleFull = {
@@ -62,7 +65,9 @@ export default function ImageCarousel({ slides, fit }) {
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
+    userSelect: "none",
   };
+  
   const rightArrowStyleFull = {
     position: "absolute",
     top: "50%",
@@ -72,6 +77,7 @@ export default function ImageCarousel({ slides, fit }) {
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
+    userSelect: "none"
   };
 
 
