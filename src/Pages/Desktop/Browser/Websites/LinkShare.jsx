@@ -43,7 +43,7 @@ export default function LinkShare() {
       <h1>LinkShare</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
-          <ImageCarousel slides={images} />
+          <ImageCarousel slides={images} fit={true} />
         </div>
         <div className="websiteContentUsedTech">
           <h3>Used Tech</h3>

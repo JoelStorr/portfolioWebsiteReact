@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ImageCarousel({ slides }) {
+export default function ImageCarousel({ slides, fit }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState("")
   const [bigImage, setBigImage] = useState(false)
@@ -95,6 +95,7 @@ export default function ImageCarousel({ slides }) {
     top: "0vh",
     left: "0vw",
     backgroundColor: "rgba(0,0,0,0.4)",
+    
   };
 
   const imageHider = {
@@ -105,6 +106,14 @@ export default function ImageCarousel({ slides }) {
     left:"0",
     opacity: 0.5,
     zIndex: -1,
+  }
+
+  const fullScaleImageHolder = {
+    width: "100vw",
+    height: "100vh",
+    overflowX: "hidden",
+    overflowY: "scroll", 
+
   }
 
   function imageIndex(index){
@@ -126,13 +135,15 @@ export default function ImageCarousel({ slides }) {
      const newIndex = isLastSlide ? 0 : currentIndex + 1;
 
      setCurrentIndex(newIndex);
+     return newIndex
   }
   function goToPrev(){
 
-    const isFirstSlide = currentIndex === 0
+    const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length -1: currentIndex -1;
 
     setCurrentIndex(newIndex)
+    return newIndex
   }
 
   function clickeImage(nextImg){
@@ -198,21 +209,53 @@ export default function ImageCarousel({ slides }) {
       </div>
       {bigImage ? (
         <div style={fullScaleImage}>
-          <div style={leftArrowStyleFull} onClick={()=>{clickeImage(imageIndex(currentIndex - 1)); setCurrentIndex(imageIndex(currentIndex - 1))}}>
+          <div
+            style={leftArrowStyleFull}
+            // onClick={() => {
+            //   clickeImage(imageIndex(currentIndex - 1));
+            //   setCurrentIndex(imageIndex(currentIndex - 1));
+            // }}
+            onClick={() => {
+              setCurrentIndex(imageIndex(currentIndex - 1));
+              clickeImage(true);
+            }}
+          >
             &#10094;
           </div>
-          <div style={rightArrowStyleFull} onClick={()=>{clickeImage(imageIndex(currentIndex + 1)); setCurrentIndex(imageIndex(currentIndex + 1))}}>
+          <div
+            style={rightArrowStyleFull}
+            // onClick={() => {
+            //   clickeImage(imageIndex(currentIndex + 1));
+            //   setCurrentIndex(imageIndex(currentIndex + 1));
+            // }}
+            onClick={() => {
+              setCurrentIndex(imageIndex(currentIndex + 1));
+              clickeImage(true);
+            }}
+          >
             &#10095;
           </div>
-
-          <img
-            src={selectedImage}
-            style={{ width: "80%", height: "80%", objectFit: "contain", top: "10%", position:"relative", left:"6%"}}
-            onClick={() => setBigImage(false)}
-          ></img>
-          <div style={imageHider} onClick={() => setBigImage(false)}>
-            Hello
+          <div
+            style={fullScaleImageHolder}
+            onClick={() => {
+              setBigImage(false);
+              console.log("Click handler");
+            }}
+          >
+            <img
+              src={selectedImage}
+              style={{
+                width: "70%",
+                height: fit ? "80%" : "auto",
+                objectFit: "contain",
+                top: "10%",
+                position: "relative",
+                left: "12%",
+              }}
+              onClick={() => setBigImage(false)}
+            ></img>
           </div>
+          <div style={imageHider}>Hello</div>
         </div>
       ) : (
         <></>
