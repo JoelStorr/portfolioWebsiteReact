@@ -2,13 +2,12 @@ import React, { useState } from "react";
 
 export default function ImageCarousel({ slides, fit }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState("")
-  const [bigImage, setBigImage] = useState(false)
+  const [selectedImage, setSelectedImage] = useState("");
+  const [bigImage, setBigImage] = useState(false);
 
   const sliderStyles = {
     height: "80%",
     position: "relative",
-    
   };
 
   const slideStyles = {
@@ -17,8 +16,8 @@ export default function ImageCarousel({ slides, fit }) {
     borderRadius: "10px",
     backgroundPosition: "center",
     backgroundSize: "cover",
-   
-    margin: "10px"
+
+    margin: "10px",
   };
 
   const slideStylesNext = {
@@ -55,7 +54,7 @@ export default function ImageCarousel({ slides, fit }) {
     cursor: "pointer",
     userSelect: "none",
   };
-  
+
   const leftArrowStyleFull = {
     position: "absolute",
     top: "50%",
@@ -67,7 +66,7 @@ export default function ImageCarousel({ slides, fit }) {
     cursor: "pointer",
     userSelect: "none",
   };
-  
+
   const rightArrowStyleFull = {
     position: "absolute",
     top: "50%",
@@ -77,21 +76,20 @@ export default function ImageCarousel({ slides, fit }) {
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
-    userSelect: "none"
+    userSelect: "none",
   };
-
 
   const dotContainerStyles = {
     display: "flex",
     justifyContent: "center",
-    marginTop: "2rem"
-  }
+    marginTop: "2rem",
+  };
 
   const dotStyle = {
     margin: "0 3px",
     cursor: "pointer",
-    fontSize: "20px"
-  }
+    fontSize: "20px",
+  };
 
   const fullScaleImage = {
     position: "fixed",
@@ -101,7 +99,6 @@ export default function ImageCarousel({ slides, fit }) {
     top: "0vh",
     left: "0vw",
     backgroundColor: "rgba(0,0,0,0.4)",
-    
   };
 
   const imageHider = {
@@ -109,64 +106,58 @@ export default function ImageCarousel({ slides, fit }) {
     width: "100vw",
     height: "100vh",
     top: "0",
-    left:"0",
+    left: "0",
     opacity: 0.5,
     zIndex: -1,
-  }
+  };
 
   const fullScaleImageHolder = {
     width: "100vw",
     height: "100vh",
     overflowX: "hidden",
-    overflowY: "scroll", 
+    overflowY: "scroll",
+  };
 
-  }
-
-  function imageIndex(index){
-
-    if (index === -1){
-        return slides.length -1
+  function imageIndex(index) {
+    if (index === -1) {
+      return slides.length - 1;
     }
 
-    if (index === slides.length){
-        return 0
+    if (index === slides.length) {
+      return 0;
     }
 
-    return index
+    return index;
   }
 
+  function goToNext() {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
 
-  function goToNext(){
-     const isLastSlide = currentIndex === slides.length - 1 ;
-     const newIndex = isLastSlide ? 0 : currentIndex + 1;
-
-     setCurrentIndex(newIndex);
-     return newIndex
+    setCurrentIndex(newIndex);
+    return newIndex;
   }
-  function goToPrev(){
-
+  function goToPrev() {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length -1: currentIndex -1;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
 
-    setCurrentIndex(newIndex)
-    return newIndex
+    setCurrentIndex(newIndex);
+    return newIndex;
   }
 
-  function clickeImage(nextImg){
-    setBigImage(true)
-    if(nextImg){
-
-      if(currentIndex + 1 > slides.length - 1){
+  function clickeImage(nextImg) {
+    setBigImage(true);
+    if (nextImg) {
+      if (currentIndex + 1 > slides.length - 1) {
         setSelectedImage(slides[0].url);
-        return
+        return;
       }
       setSelectedImage(slides[currentIndex + 1].url);
-
     } else {
       setSelectedImage(slides[currentIndex].url);
     }
 
-    console.log(selectedImage)
+    console.log(selectedImage);
   }
 
   return (
@@ -217,10 +208,6 @@ export default function ImageCarousel({ slides, fit }) {
         <div style={fullScaleImage}>
           <div
             style={leftArrowStyleFull}
-            // onClick={() => {
-            //   clickeImage(imageIndex(currentIndex - 1));
-            //   setCurrentIndex(imageIndex(currentIndex - 1));
-            // }}
             onClick={() => {
               setCurrentIndex(imageIndex(currentIndex - 1));
               clickeImage(true);
@@ -230,10 +217,6 @@ export default function ImageCarousel({ slides, fit }) {
           </div>
           <div
             style={rightArrowStyleFull}
-            // onClick={() => {
-            //   clickeImage(imageIndex(currentIndex + 1));
-            //   setCurrentIndex(imageIndex(currentIndex + 1));
-            // }}
             onClick={() => {
               setCurrentIndex(imageIndex(currentIndex + 1));
               clickeImage(true);
@@ -269,4 +252,3 @@ export default function ImageCarousel({ slides, fit }) {
     </div>
   );
 }
- 
