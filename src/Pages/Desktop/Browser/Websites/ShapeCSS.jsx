@@ -32,8 +32,8 @@ export default function ShapeCSS() {
             <li>Matter JS (physics library)</li>
           </ul>
           <div className="repoLinkHolder">
-          <a href="https://github.com/JoelStorr/shape-css">GitHub Repo</a>
-          <a href="https://github.com/JoelStorr/shape-css">Live Example</a>
+            <a href="https://github.com/JoelStorr/shape-css">GitHub Repo</a>
+            <a href="https://github.com/JoelStorr/shape-css">Live Example</a>
           </div>
         </div>
       </div>
@@ -202,4 +202,3 @@ export default function ShapeCSS() {
     </div>
   );
 }
-
