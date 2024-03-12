@@ -87,3 +87,42 @@
     width: 80%;
     border-radius: 25px;
 }
+
+
+.moreTab{
+    width: 100%;
+    height: 100vh;
+    background-color: #20202087;
+    position: absolute;
+    z-index: 5;
+    top: 5rem;
+    border-radius: 1rem;
+}
+
+.moreTabContainer{
+    width: 100%;
+        height: 30rem;
+        background-color: #202020;
+        position: absolute;
+       
+        top: 5rem;
+        border-radius: 1rem;
+}
+
+
+.moreTab ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.moreTab ul li{
+    padding: 2rem;
+    background-color: #3D3D3D;
+    margin: 1rem 1rem ;
+    border-radius: 1rem;
+}
+
+.activeli{
+    border: 1px solid white;
+}
