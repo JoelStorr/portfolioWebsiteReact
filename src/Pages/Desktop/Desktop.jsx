@@ -23,22 +23,15 @@ function Desktop() {
 
   const [width, setWidth] = useState(window.innerWidth);
 
-    function handleWindowSizeChange() {
-      setWidth(window.innerWidth);
-    }
-    useEffect(() => {
-      window.addEventListener("resize", handleWindowSizeChange);
-      return () => {
-        window.removeEventListener("resize", handleWindowSizeChange);
-      };
-    }, []);
-
-
-
-
-
-
-
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
 
   function changeSowftware(newProgramm) {
     if (newProgramm in Programm) {
@@ -51,9 +44,21 @@ function Desktop() {
       case Programm.None:
         return <></>;
       case Programm.AppStore:
-        return <AppStore width={width} setProgramm={setProgramm} Programm={Programm} />;
+        return (
+          <AppStore
+            width={width}
+            setProgramm={setProgramm}
+            Programm={Programm}
+          />
+        );
       case Programm.Browser:
-        return <Browser width={width} setProgramm={setProgramm} Programm={Programm}/>;
+        return (
+          <Browser
+            width={width}
+            setProgramm={setProgramm}
+            Programm={Programm}
+          />
+        );
       case Programm.XCode:
         return (
           <XCode width={width} setProgramm={setProgramm} Programm={Programm} />
@@ -61,15 +66,18 @@ function Desktop() {
       // case Programm.Writing:
       //     return <Writing />
       case Programm.Kontakt:
-        return <Kontakt width={width} setProgramm={setProgramm} Programm={Programm}/>;
+        return (
+          <Kontakt
+            width={width}
+            setProgramm={setProgramm}
+            Programm={Programm}
+          />
+        );
     }
   }
 
   return (
     <>
-      
-
-
       <div
         className={
           programm == Programm.None
@@ -83,9 +91,13 @@ function Desktop() {
       <div className="desktop">
         <TopBar />
         <div className="widgetHolder">
-          <Widgets width={width}/>
+          <Widgets width={width} />
         </div>
-        <MainDesktop changeProgramm={changeSowftware} programmEnum={Programm} width={width} />
+        <MainDesktop
+          changeProgramm={changeSowftware}
+          programmEnum={Programm}
+          width={width}
+        />
         <AppBar changeProgramm={changeSowftware} programmEnum={Programm} />
       </div>
     </>
