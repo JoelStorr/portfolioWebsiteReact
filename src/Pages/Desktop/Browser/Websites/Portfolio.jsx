@@ -23,7 +23,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
-          <ImageCarousel slides={images} />
+          <ImageCarousel slides={images} fullHeightImage={false} />
         </div>
         <div className="websiteContentUsedTech">
           <h3>Used Tech</h3>

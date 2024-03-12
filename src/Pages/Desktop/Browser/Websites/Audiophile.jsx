@@ -47,7 +47,7 @@ export default function Audiophile() {
       <h1>Audiophile</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
-          <ImageCarousel slides={images} />
+          <ImageCarousel slides={images} fullHeightImage={true} />
         </div>
         <div className="websiteContentUsedTech">
           <h3>Used Tech</h3>

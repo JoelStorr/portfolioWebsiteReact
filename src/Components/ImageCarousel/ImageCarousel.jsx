@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function ImageCarousel({ slides, fit }) {
+export default function ImageCarousel({ slides, fit, fullHeightImage }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState("");
   const [bigImage, setBigImage] = useState(false);
@@ -163,7 +163,7 @@ export default function ImageCarousel({ slides, fit }) {
 
   function clickeImage(nextImg) {
 
-    if(width < 450){
+    if(width < 450 && fullHeightImage == false){
       return
     }
 
@@ -230,6 +230,10 @@ export default function ImageCarousel({ slides, fit }) {
       </div>
       {bigImage ? (
         <div style={fullScaleImage}>
+
+
+        { width > 450 && 
+        <>
           <div
             style={leftArrowStyleFull}
             onClick={() => {
@@ -248,6 +252,10 @@ export default function ImageCarousel({ slides, fit }) {
           >
             &#10095;
           </div>
+        </>
+      
+        
+        }
           <div
             style={fullScaleImageHolder}
             onClick={() => {
