@@ -24,6 +24,8 @@ export default function ImageCarousel({ slides, fit, fullHeightImage }) {
   const sliderStyles = {
     height: "100%",
     position: "relative",
+    
+    
   };
 
   const slideStyles = {
@@ -195,14 +197,14 @@ export default function ImageCarousel({ slides, fit, fullHeightImage }) {
           style={{ ...slideStyles, ...slideStylesCurr }}
           onClick={() => clickeImage()}
         ></div>
-        { 
-          width > 1025 && 
+        {width > 1025 && (
           <div
             style={{ ...slideStyles, ...slideStylesNext }}
             onClick={() => clickeImage(true)}
           ></div>
-        }
+        )}
       </div>
+
       <div style={dotContainerStyles}>
         {slides.map((slide, index) => {
           if (index == currentIndex) {
@@ -228,34 +230,43 @@ export default function ImageCarousel({ slides, fit, fullHeightImage }) {
           }
         })}
       </div>
+      {fullHeightImage && (
+        <div>
+          <p
+            style={{
+              width: "100%",
+              textAlign: "center",
+              paddingTop: "0.5rem",
+            }}
+          >
+            Click image to see full page view
+          </p>
+        </div>
+      )}
       {bigImage ? (
         <div style={fullScaleImage}>
-
-
-        { width > 450 && 
-        <>
-          <div
-            style={leftArrowStyleFull}
-            onClick={() => {
-              setCurrentIndex(imageIndex(currentIndex - 1));
-              clickeImage(true);
-            }}
-          >
-            &#10094;
-          </div>
-          <div
-            style={rightArrowStyleFull}
-            onClick={() => {
-              setCurrentIndex(imageIndex(currentIndex + 1));
-              clickeImage(true);
-            }}
-          >
-            &#10095;
-          </div>
-        </>
-      
-        
-        }
+          {width > 450 && (
+            <>
+              <div
+                style={leftArrowStyleFull}
+                onClick={() => {
+                  setCurrentIndex(imageIndex(currentIndex - 1));
+                  clickeImage(true);
+                }}
+              >
+                &#10094;
+              </div>
+              <div
+                style={rightArrowStyleFull}
+                onClick={() => {
+                  setCurrentIndex(imageIndex(currentIndex + 1));
+                  clickeImage(true);
+                }}
+              >
+                &#10095;
+              </div>
+            </>
+          )}
           <div
             style={fullScaleImageHolder}
             onClick={() => {
