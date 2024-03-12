@@ -162,6 +162,11 @@ export default function ImageCarousel({ slides, fit }) {
   }
 
   function clickeImage(nextImg) {
+
+    if(width < 450){
+      return
+    }
+
     setBigImage(true);
     if (nextImg) {
       if (currentIndex + 1 > slides.length - 1) {
