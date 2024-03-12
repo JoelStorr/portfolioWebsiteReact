@@ -72,7 +72,6 @@
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 25px;
-    
     align-self: flex-end;
 }
 
@@ -123,6 +122,13 @@
     }
     .websiteContentSection{
         height: auto;
+    }
+
+    .websiteContentUsedTech{
+        justify-self: start;
+        align-self: flex-start;
+        padding-left: 5rem;
+        width: 80%;
     }
 
     .repoLinkHolder{
