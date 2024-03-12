@@ -1,10 +1,12 @@
 import ImageCarousel from "../../../../Components/ImageCarousel/ImageCarousel";
 import "./WebsiteConetent.css";
+import ImageGallery from "react-image-gallery";
+
 
 export default function ShapeCSS() {
   const images = [
     {
-      url: `./images/shapecss/shapecss1.png`,
+      url: './images/shapecss/shapecss1.png',
       title: "SunFlower",
     },
     {
@@ -17,6 +19,24 @@ export default function ShapeCSS() {
     },
   ];
 
+  const imagesUrl = [
+    {
+      original: './images/shapecss/shapecss1.png',
+      thumbnail: './images/shapecss/shapecss1.png',
+    },
+     {
+      original: "./images/shapecss/shapecss2.png",
+      thumbnail: "./images/shapecss/shapecss2.png",
+    },
+      {
+      original: "./images/shapecss/shapecss3.png",
+      thumbnail: "./images/shapecss/shapecss3.png",
+    }
+  ]
+
+  
+
+
   console.log(images[0]);
   return (
     <div className="websiteContent">
@@ -24,6 +44,7 @@ export default function ShapeCSS() {
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
           <ImageCarousel slides={images} />
+          {/* <ImageGallery items={imagesUrl} originalHeight="50px" originalWidth="50px"/> */}
         </div>
         <div className="websiteContentUsedTech">
           <h3>Used Tech</h3>

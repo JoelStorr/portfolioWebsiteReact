@@ -1,12 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function ImageCarousel({ slides, fit }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState("");
   const [bigImage, setBigImage] = useState(false);
 
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+      window.addEventListener("resize", handleWindowSizeChange);
+      return () => {
+        window.removeEventListener("resize", handleWindowSizeChange);
+      };
+    }, []);
+
+
+
+
   const sliderStyles = {
-    height: "80%",
+    height: "100%",
     position: "relative",
   };
 
@@ -174,10 +190,13 @@ export default function ImageCarousel({ slides, fit }) {
           style={{ ...slideStyles, ...slideStylesCurr }}
           onClick={() => clickeImage()}
         ></div>
-        <div
-          style={{ ...slideStyles, ...slideStylesNext }}
-          onClick={() => clickeImage(true)}
-        ></div>
+        { 
+          width > 1025 && 
+          <div
+            style={{ ...slideStyles, ...slideStylesNext }}
+            onClick={() => clickeImage(true)}
+          ></div>
+        }
       </div>
       <div style={dotContainerStyles}>
         {slides.map((slide, index) => {
