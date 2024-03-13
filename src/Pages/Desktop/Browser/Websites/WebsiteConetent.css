@@ -1,71 +1,68 @@
-
-
-
-.websiteContent{
+.websiteContent {
     position: relative;
     width: 100%;
-    
+
     min-height: 100%;
     height: 100%;
     overflow: scroll;
     overflow-x: hidden;
 }
 
-   /* width */
-   ::-webkit-scrollbar {
-       width: 10px;
-   }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-   /* Track */
-   ::-webkit-scrollbar-track {
-       background: #2a2a2a;
-   }
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2a2a2a;
+}
 
-   /* Handle */
-   ::-webkit-scrollbar-thumb {
-       background: #d4d4d4;
-       border-radius: 2.5rem;
-   }
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d4d4d4;
+    border-radius: 2.5rem;
+}
 
-   /* Handle on hover */
-   ::-webkit-scrollbar-thumb:hover {
-       background: #555;
-   }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 
 
-.websiteContentSection{
+.websiteContentSection {
     position: relative;
     height: 300px;
     width: 95%;
     display: flex;
-    
+
 }
 
-.websiteContentCarousel{
+.websiteContentCarousel {
     width: 60%;
-    padding: 0 10rem  7rem ;
+    padding: 0 10rem 7rem;
     margin-bottom: 2rem;
-    
+
 }
 
-.websiteContentUsedTech{
+.websiteContentUsedTech {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.websiteContentUsedTech ul{
+.websiteContentUsedTech ul {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.repoLinkHolder{
+.repoLinkHolder {
     display: flex;
 }
 
-.websiteContentUsedTech a{
+.websiteContentUsedTech a {
     padding: 1rem;
     margin-right: 1rem;
     background-color: #277CEB;
@@ -76,7 +73,7 @@
     align-self: flex-end;
 }
 
-.websiteContentAbout{
+.websiteContentAbout {
     font-size: 1.3rem;
     padding-right: 10rem;
     padding-left: 8rem;
@@ -88,7 +85,7 @@
     flex-direction: column;
 }
 
-.websiteContentAbout h4{
+.websiteContentAbout h4 {
     text-decoration: underline;
     padding: 0;
     margin: 3rem 0 0 0;
@@ -98,46 +95,47 @@
     margin-bottom: 2rem;
 }
 
-.websiteContent h1{
+.websiteContent h1 {
     font-size: 4.5rem;
     margin: 1.5rem 0 1.5rem 2.5rem;
 }
 
-.websiteContent h3{
+.websiteContent h3 {
     font-size: 2.5rem;
 }
 
 @media screen and (max-width: 950px) {
-    .websiteContentSection{
+    .websiteContentSection {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .websiteContentCarousel{
+    .websiteContentCarousel {
         width: 80%;
         height: 20rem;
         padding: 0 10rem 0 10rem;
         margin-bottom: 8rem;
-        
+
     }
-    .websiteContentSection{
+
+    .websiteContentSection {
         height: auto;
     }
 
-    .websiteContentUsedTech{
+    .websiteContentUsedTech {
         justify-self: start;
         align-self: flex-start;
         padding-left: 5rem;
         width: 80%;
     }
 
-    .repoLinkHolder{
+    .repoLinkHolder {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
 
-    .websiteContentAbout{
+    .websiteContentAbout {
         width: 80%;
         margin-left: 0;
         margin-right: 0;
