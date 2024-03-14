@@ -1,12 +1,10 @@
 import ImageCarousel from "../../../../Components/ImageCarousel/ImageCarousel";
 import "./WebsiteConetent.css";
 
-
-
 export default function ShapeCSS() {
   const images = [
     {
-      url: './images/shapecss/shapecss1.png',
+      url: "./images/shapecss/shapecss1.png",
       title: "SunFlower",
     },
     {
@@ -19,13 +17,12 @@ export default function ShapeCSS() {
     },
   ];
 
-
   return (
     <div className="websiteContent">
       <h1>Shape CSS</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
-          <ImageCarousel slides={images} fullHeightImage={false}/>
+          <ImageCarousel slides={images} fullHeightImage={false} />
         </div>
         <div className="websiteContentUsedTech">
           <h3>Used Tech</h3>
