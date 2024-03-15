@@ -42,34 +42,32 @@ export default function ShapeCSS() {
           entstanden. Mein Ziel war, es ein SPA zu entwickeln welches dem Nutzer
           unterstützt einige CSS Effekte visuell über die UI zu erzeugen.
           Zusätzlich reflektiert die UI einen Code Block den der Nutzer per
-          Click kopieren und in sein eigenes Projekt einfügen kann. 
-          </p>
-          <h3>
-            Benutze Technologien: 
-          </h3>
-          <p>
-            Für dieses Projekt habe ich mich für eine VueJS Frontend
-            entscheiden, welches gebrauch vom Vue Router macht, um einen
-            fließenden Übergang zwischen den Seiten zu schaffen, ohne ein neu
-            Laden der Seite zu erzwingen. Für eine visuell spannenderen Projekt
-            Einführung habe ich außerdem auf eine 2D Physik Engine gesetzt, welche
-            die Interaktiven formen auf der Startseite generiert und verwaltet.
-          </p>
-          <h3>Gelerntes</h3>
-          <p>
-            Im Zuge dieses Projekt habe ich mein wissen, über Frontend Technologien,
-            wie VueJS vertieft und habe, mich mit der Integration von Framework
-            fremden NPM packten in ein bestehendes Vue Projekt beschäftigt.
-          </p>
-          <h3>Responsive Design</h3>
-          <p>
-           Da die Tools einen eher geringen Nutzen auf Mobilen entgräten besitzen, habe
-          ich mich gegen eine mobile Optimierung entscheiden, stattdessen zeigt
-          die App auf einem Smartphone einen Infotext, mit der Möglichkeit den
-          Link zur Seite zu Kopieren und für später zu speichern.
-          </p>
-          
-      
+          Click kopieren und in sein eigenes Projekt einfügen kann.
+        </p>
+        <h3>Benutze Technologien:</h3>
+        <p>
+          Für dieses Projekt habe ich mich für eine VueJS Frontend entscheiden,
+          welches gebrauch vom Vue Router macht, um einen fließenden Übergang
+          zwischen den Seiten zu schaffen, ohne ein neu Laden der Seite zu
+          erzwingen. Für eine visuell spannenderen Projekt Einführung habe ich
+          außerdem auf eine 2D Physik Engine gesetzt, welche die Interaktiven
+          formen auf der Startseite generiert und verwaltet.
+        </p>
+        <h3>Gelerntes</h3>
+        <p>
+          Im Zuge dieses Projekt habe ich mein wissen, über Frontend
+          Technologien, wie VueJS vertieft und habe, mich mit der Integration
+          von Framework fremden NPM packten in ein bestehendes Vue Projekt
+          beschäftigt.
+        </p>
+        <h3>Responsive Design</h3>
+        <p>
+          Da die Tools einen eher geringen Nutzen auf Mobilen entgräten
+          besitzen, habe ich mich gegen eine mobile Optimierung entscheiden,
+          stattdessen zeigt die App auf einem Smartphone einen Infotext, mit der
+          Möglichkeit den Link zur Seite zu Kopieren und für später zu
+          speichern.
+        </p>
       </div>
     </div>
   );
