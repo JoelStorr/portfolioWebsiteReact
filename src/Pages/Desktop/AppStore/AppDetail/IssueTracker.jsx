@@ -41,7 +41,10 @@ export default function IssueTracker() {
         <div className="appDetailAppIcon"></div>
         <div>
           <h1>Issue Tracker</h1>
-          <h3>Cross Plattform Project to track reported Issues(Hacking With Swift Tutorial)</h3>
+          <h3>
+            Cross Plattform Project to track reported Issues(Hacking With Swift
+            Tutorial)
+          </h3>
           {/* TODO: Make sure linke goes to repo */}
           <a
             className="downloadBtn"
@@ -69,7 +72,7 @@ export default function IssueTracker() {
       </div>
 
       <div className="sliderContainer">
-        <ImageCarousel slides={slides} file={false} />
+        <ImageCarousel slides={slides} file={false} fullHeightImage={false} />
       </div>
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">

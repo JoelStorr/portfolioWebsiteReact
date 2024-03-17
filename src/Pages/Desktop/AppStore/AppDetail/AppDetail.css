@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    padding: 2rem 4rem;
+    padding: 8rem 4rem 2rem 4rem;
 }
 
 .appDetailAppIcon {
@@ -49,16 +49,15 @@
 
 .sliderContainer{
     width: 90%;
-    height: 500px;
+    height: 40%;
     margin: 0 auto;
+    margin-bottom: 8rem;
 }
 
 .appDetailDevider {
-    
     margin: 0 2rem;
     background-color: rgba(255, 255, 255, 0.5);
     height: 1px;
-    
 }
 
 .appDetailProjectDetail{
@@ -74,4 +73,16 @@
     font-weight: normal;
     line-height: 2rem;
     
+}
+.sliderContainer{
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    .sliderContainer {
+            width: 80%;
+            height: 30%;
+            margin: 0 auto;
+            margin-bottom: 8rem;
+        }
 }

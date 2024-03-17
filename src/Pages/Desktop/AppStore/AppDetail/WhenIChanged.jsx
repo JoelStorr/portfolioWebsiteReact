@@ -69,7 +69,7 @@ export default function WhenIChanged() {
       </div>
 
       <div className="sliderContainer">
-        <ImageCarousel slides={slides} file={false}/>
+        <ImageCarousel slides={slides} file={false} fullHeightImage={false}/>
       </div>
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">

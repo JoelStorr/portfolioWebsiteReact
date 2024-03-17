@@ -42,7 +42,9 @@ export default function DubDubGrub() {
         <div className="appDetailAppIcon"></div>
         <div>
           <h1>Dub Dub Grub</h1>
-          <h3>iPhone app to connect with people during events(Sean Allen Tutorial)</h3>
+          <h3>
+            iPhone app to connect with people during events(Sean Allen Tutorial)
+          </h3>
           {/* TODO: Make sure linke goes to repo */}
           <a
             className="downloadBtn"
@@ -70,7 +72,7 @@ export default function DubDubGrub() {
       </div>
 
       <div className="sliderContainer">
-        <ImageCarousel slides={slides} file={false} />
+        <ImageCarousel slides={slides} file={false} fullHeightImage={false} />
       </div>
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">
