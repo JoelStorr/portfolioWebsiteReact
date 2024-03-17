@@ -126,27 +126,6 @@ function AppStoreSideBar({shownProject, changeShownApps, Projects}){
           Github Follower Tracker
         </li>
       </ul>
-
-      <h2>Expiriments</h2>
-      <ul>
-        <li
-          onClick={() => changeShownApps(Projects.ARDemos)}
-          className={
-            shownProject == Projects.ARDemos ? "activeListElement" : ""
-          }
-        >
-          AR Demos
-        </li>
-        <li
-          onClick={() => changeShownApps(Projects.WidgetKit)}
-          className={
-            shownProject == Projects.WidgetKit ? "activeListElement" : ""
-          }
-        >
-          Widget Kit
-        </li>
-      </ul>
     </div>
   );
-
 }
