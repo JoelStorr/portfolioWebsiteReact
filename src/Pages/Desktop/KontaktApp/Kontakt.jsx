@@ -17,15 +17,14 @@ export default function Kontakt({width, setProgramm, Programm}) {
       )}
 
       <div className="kontaktAppMainView">
-
         {width <= 825 ? (
-          <button onClick={()=> setProgramm(Programm.None)}>
-          <img src="/images/icons/chevron-left-solid.svg" />
-          <p>Home</p>
+          <button onClick={() => setProgramm(Programm.None)}>
+            <img src="/images/icons/chevron-left-solid.svg" />
+            <p>Home</p>
           </button>
-        ) : (<></>)}
-
-
+        ) : (
+          <></>
+        )}
 
         <div className="kontaktAppHader">
           <img src="images/ProfilePic.PNG" />
@@ -70,6 +69,18 @@ export default function Kontakt({width, setProgramm, Programm}) {
             <br />
             <a href="#">Lebenslauf</a>
           </p>
+          <hr />
+
+          <h2>3D</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MpEaKqDmp1E?si=nwbBNYpo8mPh1_el"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
           <hr />
           <h2>Skills</h2>
           <div>
