@@ -30,6 +30,7 @@
     background-color: #2D1E1E;
     border-radius: 0 0.5rem 0.5rem 0;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .kontaktAppHader{
@@ -116,8 +117,8 @@
 }
 
 .programmingLanguage img{
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     padding-right: 2rem;
 }
 
