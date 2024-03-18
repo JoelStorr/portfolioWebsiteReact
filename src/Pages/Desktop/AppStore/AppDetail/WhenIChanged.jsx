@@ -58,113 +58,45 @@ export default function WhenIChanged() {
       <div className="appDetailUsedTech">
         <h3>Used Tech</h3>
         <div className="appDetailUsedTechList">
+          <p>Swift UI</p>
+          <hr />
           <p>Cloud Kit</p>
           <hr />
-          <p>Map Kit</p>
-          <hr />
           <p>Widget Kit</p>
-          <hr />
-          <p>Swift UI</p>
+          
         </div>
       </div>
 
       <div className="sliderContainer">
-        <ImageCarousel slides={slides} file={false} fullHeightImage={false}/>
+        <ImageCarousel slides={slides} file={false} fullHeightImage={false} />
       </div>
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">
         {/* TODO: Dispaly Descriptions */}
         <h3>About the Project</h3>
         <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-          esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
-          at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-          vero eros et accumsan et iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-          Nam liber tempor cum soluta nobis eleifend option congue nihil
-          imperdiet doming id quod mazim placerat facer possim assum. Lorem
-          ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-          nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-          vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-          consequat, vel illum dolore eu feugiat nulla facilisis. At vero eos et
-          accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-          dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-          voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-          dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-          elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos
-          erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea
-          et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero
-          voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-          labore et dolore magna aliquyam erat. Consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus. Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-          labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-          et accusam et justo duo dolores et ea rebum. Stet clita kasd
-          gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum
-          iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-          vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-          et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-          augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-          tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
-          ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-          lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-          iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-          vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-          et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-          augue duis dolore te feugait nulla facilisi. Nam liber tempor cum
-          soluta nobis eleifend option congue nihil imperdiet doming id quod
-          mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
-          consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-          ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-          veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-          ut aliquip ex ea commodo
+          Work in Progress When I Changed ist meine erste eigene vollwertige IOS
+          App. Das Ziel dieser App ist verschiedene Aktivitäten zu Tracken.
+          Hierbei sollen in der App eine Reihe wichtiger Habits entweder Aktiv
+          oder Passiv verfolget werden. Die Idee hierbei ist das negative
+          Angewohnheiten automatisch von der App aufgenommen werden und nur dann
+          eine Nutzer Eingabe erfordern, wenn diese gebrochen wird. <br/> <br/> Wenn sie
+          z.B. mit dem Rauchen aufhören wollen zählt die App automatisch die
+          Tage an denen sie nicht geraucht haben, sollten sie dann doch an einem
+          Tag rückfällig werden, können sie den Counter in der App einfach wider
+          zurück setzen und die App fängt von neuem an zu zählen. Bei aktiven
+          Habits ist eine regelmäßige Nutzereingabe erforderlich. So soll der
+          tägliche Check in nach dem Sport eher, als eine Belohnung diene für
+          Angewohnheiten die positiver Natur sind. Als letztes feature gibt es
+          besondere Tage. Hiebei zählt die App wie viele Tage es noch bis zum
+          Geburtstag oder bis zum nächsten Urlaub sind. Dies Tage können auf
+          bequem via Home Screen Widget angezeigt werden. Der besondere Tag
+          kommt mit einem eingebauten Editor, welcher es ermöglicht das Widget
+          für den Tag zu bearbeiten und mit eigener Schrift und Hintergrundbild
+          zu versehen. Auch hier werden alle Daten via der iCloud auf den
+          verscheiden Geräten des Nutzers geteilt. <br/> <br/>Beim Programmieren der App
+          habe ich mich weiter mit Cloud Kit, der Bilder Galerie, Widget Kit und
+          Benachrichtigungen vertraut gemacht.
         </p>
       </div>
     </>

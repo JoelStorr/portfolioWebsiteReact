@@ -61,13 +61,11 @@ export default function IssueTracker() {
       <div className="appDetailUsedTech">
         <h3>Used Tech</h3>
         <div className="appDetailUsedTechList">
-          <p>Cloud Kit</p>
-          <hr />
-          <p>Map Kit</p>
-          <hr />
-          <p>Widget Kit</p>
-          <hr />
           <p>Swift UI</p>
+          <hr />
+          <p>Universal App</p>
+          <hr />
+          <p>Cloud Kit</p>
         </div>
       </div>
 
@@ -79,95 +77,12 @@ export default function IssueTracker() {
         {/* TODO: Dispaly Descriptions */}
         <h3>About the Project</h3>
         <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-          esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
-          at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-          vero eros et accumsan et iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-          Nam liber tempor cum soluta nobis eleifend option congue nihil
-          imperdiet doming id quod mazim placerat facer possim assum. Lorem
-          ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-          nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-          vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-          consequat, vel illum dolore eu feugiat nulla facilisis. At vero eos et
-          accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-          dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-          voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-          dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-          elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos
-          erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea
-          et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero
-          voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-          labore et dolore magna aliquyam erat. Consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus. Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-          labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-          et accusam et justo duo dolores et ea rebum. Stet clita kasd
-          gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum
-          iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-          vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-          et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-          augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-          tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
-          ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-          lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-          iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-          vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-          et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-          augue duis dolore te feugait nulla facilisi. Nam liber tempor cum
-          soluta nobis eleifend option congue nihil imperdiet doming id quod
-          mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
-          consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-          ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-          veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-          ut aliquip ex ea commodo
+          Issue Tracker ist eine kleine solide App für IOS, iPad OS und Mac OS
+          aus dem Portfolio Kurs von Hacking with Swift. Das Ziel ist es eine
+          iCloud App zu bauen, welche es Nutzern möglich macht Probleme in
+          Software mit dem Entwicklern zu teilen und dem Entwickler ermöglicht
+          den Status dies Probleme zu tracken. Da wo es möglich ist die App so
+          strukturiert, dass sie ihren UI Code aus einer SwiftUI-Basis zieht.
         </p>
       </div>
     </>
