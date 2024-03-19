@@ -49,23 +49,18 @@ export default function Kontakt({width, setProgramm, Programm}) {
         </div>
         <div className="kontaktAppAboutMe">
           <hr />
-          <h2>About Me</h2>
+          <h2>Über mich</h2>
           <p>
-            I'm Joel. A IOS & FrontEnd Developer from Germany. <br />
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-            dolor sit amet.
+            Moin und danke, fürs Anschauen meiner Seite. Ich bin Joel, Frontend
+            Entwickler als auch 3D Künstler für Videospiele und interaktive
+            Medien mit einem Interesse für alles Visuelle in Code. Wenn ich
+            nicht gerade am PC sitze bin ich entweder mit unserem Familienhund
+            unterwegs oder ich steck in irgendeinem Buch fest. Seitdem ich vor
+            über 10 Jahren meine ersten Schritte mit WordPress gemacht habe, hat
+            mich die Faszination fürs Web nicht wieder losgelassen. Und nach dem
+            ich mir nun das Programmieren über die letzten 2.5 Jahre beigebracht
+            habe, freue ich mich drauf, mein Wissen nun endlich professionell
+            unter beweis zu stellen.
             <br />
             <a href="#">Lebenslauf</a>
           </p>
@@ -97,29 +92,6 @@ export default function Kontakt({width, setProgramm, Programm}) {
             </div>
           </div>
           <div>
-            <h3>IOS Dev</h3>
-            <div className="kontakSkillSection">
-              <div className="programmingLanguage">
-                <img src="/images/icons/swift.svg"></img>
-                <p>Swift</p>
-              </div>
-              <div className="programmingLanguage">
-                <img src="/images/icons/compass-drafting-solid.svg"></img>
-                <p>Swift UI</p>
-              </div>
-              <div className="programmingLanguage">
-                <img src="/images/icons/cloud-solid.svg"></img>
-                <p>Cloud Kit</p>
-              </div>
-              <div className="programmingLanguage">
-                <img src="/images/icons/map-location-dot-solid.svg"></img>
-                <p>Map Kit</p>
-              </div>
-              <div className="programmingLanguage">
-                <img src="/images/icons/vr-cardboard-solid.svg"></img>
-                <p>Scene Kit</p>
-              </div>
-            </div>
             <h3>Web Dev</h3>
             <div className="kontakSkillSection">
               <div className="programmingLanguage">
@@ -151,6 +123,30 @@ export default function Kontakt({width, setProgramm, Programm}) {
                 <p>Babylon JS</p>
               </div>
             </div>
+            <h3>IOS Dev</h3>
+            <div className="kontakSkillSection">
+              <div className="programmingLanguage">
+                <img src="/images/icons/swift.svg"></img>
+                <p>Swift</p>
+              </div>
+              <div className="programmingLanguage">
+                <img src="/images/icons/compass-drafting-solid.svg"></img>
+                <p>Swift UI</p>
+              </div>
+              <div className="programmingLanguage">
+                <img src="/images/icons/cloud-solid.svg"></img>
+                <p>Cloud Kit</p>
+              </div>
+              <div className="programmingLanguage">
+                <img src="/images/icons/map-location-dot-solid.svg"></img>
+                <p>Map Kit</p>
+              </div>
+              <div className="programmingLanguage">
+                <img src="/images/icons/vr-cardboard-solid.svg"></img>
+                <p>Scene Kit</p>
+              </div>
+            </div>
+
             <h3>Cross Plattform</h3>
             <div className="kontakSkillSection">
               <div className="programmingLanguage">
@@ -162,7 +158,7 @@ export default function Kontakt({width, setProgramm, Programm}) {
                 <p>Flutter / Dart</p>
               </div>
             </div>
-            <h3>Expiremented with</h3>
+            <h3>Ausprobiert</h3>
             <div className="kontakSkillSection">
               <div className="programmingLanguage">
                 <img src="/images/icons/php.svg"></img>
@@ -174,7 +170,11 @@ export default function Kontakt({width, setProgramm, Programm}) {
               </div>
               <div className="programmingLanguage">
                 <img src="/images/icons/python.svg"></img>
+                <div>
                 <p>Python</p>
+                <p>FastAPI</p>
+                <p>Flask</p>
+                </div>
               </div>
             </div>
             {/*

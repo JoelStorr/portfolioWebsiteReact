@@ -33,6 +33,15 @@
     overflow-x: hidden;
 }
 
+.kontaktAppMainView h2{
+    font-size: 2rem;
+}
+
+.kontaktAppMainView h3 {
+    font-size: 1.5rem;
+}
+
+
 .kontaktAppHader{
     padding-top: 2.5rem;
     padding-left: 5rem;
@@ -83,6 +92,14 @@
 
 .kontaktAppAboutMe p{
     font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    letter-spacing: .05rem;
+}
+
+.kontaktAppAboutMe a{
+    color: white;
+    padding-top: 1rem;
 }
 
 .kontakSkillSection{
