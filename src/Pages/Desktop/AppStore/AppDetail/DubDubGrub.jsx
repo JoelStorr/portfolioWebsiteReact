@@ -31,7 +31,7 @@ export default function DubDubGrub() {
   return (
     <>
       <div className="appDetailHeader">
-        <div className="appDetailAppIcon"></div>
+        <div className="appDetailAppIcon">DG</div>
         <div>
           <h1>Dub Dub Grub</h1>
           <h3>

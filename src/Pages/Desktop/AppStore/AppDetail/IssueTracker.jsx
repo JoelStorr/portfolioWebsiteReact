@@ -31,7 +31,7 @@ export default function IssueTracker() {
   return (
     <>
       <div className="appDetailHeader">
-        <div className="appDetailAppIcon"></div>
+        <div className="appDetailAppIcon">IT</div>
         <div>
           <h1>Issue Tracker</h1>
           <h3>

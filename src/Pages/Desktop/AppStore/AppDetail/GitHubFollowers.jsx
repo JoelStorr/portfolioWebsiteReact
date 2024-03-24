@@ -16,7 +16,7 @@ export default function GitHubFollowers() {
   return (
     <>
       <div className="appDetailHeader">
-        <div className="appDetailAppIcon"></div>
+        <div className="appDetailAppIcon">GH</div>
         <div>
           <h1>GitHubFollowers</h1>
           <h3>GitHub Api Project(Sean Allen Tutorial)</h3>

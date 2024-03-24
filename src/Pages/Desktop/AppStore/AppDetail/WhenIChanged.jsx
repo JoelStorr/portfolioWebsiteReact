@@ -34,7 +34,7 @@ export default function WhenIChanged() {
   return (
     <>
       <div className="appDetailHeader">
-        <div className="appDetailAppIcon"></div>
+        <div className="appDetailAppIcon">IC</div>
         <div>
           <h1>When I Changed</h1>
           <h3>Stay on Track to reach your golas</h3>
