@@ -12,7 +12,7 @@ let CodeView = {
 };
 
 export default function XCode({width, setProgramm, Programm}) {
-  let [codeView, setCodeView] = useState(CodeView.arProject);
+  let [codeView, setCodeView] = useState(CodeView.fastApi);
   let [sidebar, setSideBar] = useState(true)
   function chooseCodeView() {
     switch (codeView) {
@@ -54,7 +54,7 @@ export default function XCode({width, setProgramm, Programm}) {
 
             {chooseCodeView()}
           </div>
-          <div className="xcodeSideView xcodeSideViewRight"> </div>
+          {/* <div className="xcodeSideView xcodeSideViewRight"> </div> */}
         </div>
       )}
     </>
@@ -131,20 +131,97 @@ function ReactNative() {
   );
 }
 
-function Flutter() {
+function Flutter({width}) {
+
+  const codeString = `
+  
+    import 'package:flutter/material.dart';
+    import 'package:flutter_shopware_6_api/helpers/api_helpers.dart';
+  
+    @override
+    Widget build(Buildcontext context){
+
+      return Navigator(
+        body: Stack(
+          children:[
+            Text("DevCoffe war mein erster Schritt in die Welt der Cross Plattform App Entwicklung. Die App nutzt Flutter und Dart, um eine möglichst natürliche App für Android und IOS zu generieren. Für dieses Projekt habe ich mich für ein App Frontend entschieden, das seine Daten von einem Headless Shopware 6 Backend bezieht. Die App besitzt einzelne Seiten für die Startseite des Shops, eine Kategorienseite sowie eine Produktseite. Ebenfalls sind Seiten für die Produktsuche als auch den Kaufprozess vorhanden."),
+            
+            Text("Das Ziel dieses Projektes war es, mich mit der Flutter Entwicklungsumgebung bekannt zu machen und mich tiefer mit APIs für die Entwicklung von Cross Plattform Apps zu befassen. Ebenfalls habe ich mich mit der Einarbeitung in bestehende APIs (Shopware 6 API) beschäftigt und mich, damit auseinandergesetzt wie ich diese Daten in mein Projekt einpflegen kann."),
+
+            Text("In diesem Fall habe ich mich dazu entschlossen ein eigenes Design zu wählen, welches der App ihr eigenes Gefühl geben soll, anstelle der vom System bereitgestellten UI Elemente.")
+          ];
+        );
+      );
+    }
+  `;
+
+
+
+
   return (
     <div className="xcodeMainEditView">
-      <div className="xcodeCodeView">Flutter View</div>
-      <div className="xcodePreviewView ">Code Preview</div>
+      {width <= 825 ? (
+        <>
+        <div className="xcodeCodeView">
+          <XCodeCodeElement codeString={codeString} language="dart" />
+        </div>
+        <div className="xcodePreviewView">
+            <img src="images/devCoffeeDesign/screen-shots.png"></img>
+        </div>
+
+        </>
+      ) : (
+        <>
+          <div className="xcodeCodeView">
+            <XCodeCodeElement codeString={codeString} language="dart" />
+          </div>
+
+          <div className="xcodePreviewView ">
+            <img src="images/devCoffeeDesign/screen-shots.png"></img>
+          </div>
+        </>
+      )}
     </div>
   );
 }
 
-function FastAPI() {
+function FastAPI({width}) {
+
+  const codeString = `from FastAPI import Router
+
+def get_project_info ():
+      t1 = "Fast API ist ein serverseitiges Framework um Python basierte Backendes zu entwickeln."
+      t2 = "Bei diesem Beispiel handelt es sich um die Codebasis für das Frontend Mentor Projekt Linkshare."
+      t3 = "Hierbei werden die Datenbankinformationen via SQLAlchemy generiert."
+      t4 = "Das Projekt selbst nutzt eine SQLite Database und einen eigenen Ordner zum Sichern der Nutzerbilder."
+      return t1 + t2 + t3 + t4
+
+def more_detail():
+    t1 = "Das Projekt ist in die verschiedenen Ruten eingeteilt, die dem Nutzer als API Endpoints zur Verfügung stehen. "
+    t2 =  "Hierbei werden die privaten Ruten durch die Auswertung eines JSON Web Tokens gesichert. Die meisten Endpoints schreiben oder lesen die einzelnen Nutzerinformationen aus der Datenbank und geben diese als JSON wieder zurück an den Nutzer."
+    t3 = "Lediglich der Upload Endpoint konvertiert das Bild in eine Base64 Datei, die im Bilderverzeichnis auf dem Server gespeichert wird. Diese Datei kann dann direkt als Base64 String via JSON zurück an den Nutzer übermittelt werden."
+    return t1 + t2 + t3
+
+
+get_project_info()
+more_detail()
+  `;
+
   return (
     <div className="xcodeMainEditView">
-      <div className="xcodeCodeView">Fast API View</div>
-      <div className="xcodePreviewView ">Code Preview</div>
+      {width <= 825 ? (
+        <div className="xcodeCodeView">
+          <XCodeCodeElement codeString={codeString} language="python" />
+        </div>
+      ) : (
+        <>
+          <div className="xcodeCodeView">
+            <XCodeCodeElement codeString={codeString} language="python" />
+          </div>
+
+          <div className="xcodePreviewView"></div>
+        </>
+      )}
     </div>
   );
 }
@@ -253,7 +330,7 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
         <ul className="xcodeFolderStructure">
           <li className="xcodeSubFiels">
             {/* NOTE: Ar View Folder */}
-            <div
+            {/* <div
               className="codefolder"
               onClick={() => setSubFolderOne(!subFolderOne)}
             >
@@ -266,10 +343,10 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
                 className="codefileIcon"
               />
               AR View
-            </div>
+            </div> */}
             {/* NOTE: Sub Fiels */}
             <ul className={subFolderOne ? " " : "xcodeSubFielsHider"}>
-              <li
+              {/* <li
                 onClick={() => changeCodeView(CodeView.arProject)}
                 className={
                   codeView == CodeView.arProject
@@ -300,12 +377,12 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
                   className="codefileIcon"
                 />
                 view.swift
-              </li>
+              </li> */}
             </ul>
           </li>
           {/* NOTE: Widget Kit Folder */}
           <li className="xcodeSubFiels">
-            <div
+            {/* <div
               onClick={() => setSubFolderTwo(!subFolderTwo)}
               className="codefolder"
             >
@@ -318,9 +395,9 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
                 className="codefileIcon"
               />
               Widget Kit
-            </div>
+            </div> */}
             {/* NOTE: Sub Files */}
-            <ul className={subFolderTwo ? " " : "xcodeSubFielsHider"}>
+            {/* <ul className={subFolderTwo ? " " : "xcodeSubFielsHider"}>
               <li
                 onClick={() => changeCodeView(CodeView.arProject)}
                 className="codefile"
@@ -349,7 +426,7 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
                 />
                 view.swift
               </li>
-            </ul>
+            </ul> */}
           </li>
           {/* NOTE: Cross Plattform */}
           <li className="xcodeSubFiels">
@@ -369,7 +446,7 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
             </div>
             {/* NOTE: Sub Files */}
             <ul className={subFolderThree ? " " : "xcodeSubFielsHider"}>
-              <li
+              {/* <li
                 onClick={() => changeCodeView(CodeView.reactNative)}
                 className="codefile"
               >
@@ -382,7 +459,7 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
                   className="codefileIcon"
                 />
                 react-native.jsx
-              </li>
+              </li> */}
               <li
                 onClick={() => changeCodeView(CodeView.flutter)}
                 className="codefile"
