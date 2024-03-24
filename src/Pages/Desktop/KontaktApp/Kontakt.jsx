@@ -51,17 +51,28 @@ export default function Kontakt({width, setProgramm, Programm}) {
           <hr />
           <h2>Über mich</h2>
           <p>
-            Moin und danke, fürs Anschauen meiner Seite. Ich bin Joel, Frontend
-            Entwickler als auch 3D Künstler für Videospiele und interaktive
-            Medien mit einem Interesse für alles Visuelle in Code. Wenn ich
-            nicht gerade am PC sitze bin ich entweder mit unserem Familienhund
-            unterwegs oder ich steck in irgendeinem Buch fest. Seitdem ich vor
-            über 10 Jahren meine ersten Schritte mit WordPress gemacht habe, hat
-            mich die Faszination fürs Web nicht wieder losgelassen. Und nach dem
-            ich mir nun das Programmieren über die letzten 2.5 Jahre beigebracht
-            habe, freue ich mich drauf, mein Wissen nun endlich professionell
-            unter beweis zu stellen.
+            Als Frontend Entwickler und 3D Environment Artist für Videospiele
+            und interaktive Medien liegt mein Interesse an spannenden UIs mit
+            aktuellen Technologien.
             <br />
+            <br />
+            Als Ausgleich zu der PC Arbeit bin ich gerne mit unserem
+            Familienhund in der Natur unterwegs. Tägliche Workouts und ein
+            gesunder Ernährungsstil gehören zu meinem Tagesprogramm.
+            <br />
+            <br />
+            Mein breites Interesse an verschiedensten Themen verfolge ich über
+            Talks, Podcasts und Sachbücher. Dabei interessieren mich gerade die
+            Bereiche des eigenständigen Lernens, der persönlichen
+            Weiterentwicklung sowie der Einfluss digitaler Technologien auf
+            unsere Gesellschaft.
+            <br />
+            <br />
+            Musik und Bücher gehören seit meiner Kindheit zu meiner großen
+            Leidenschaft. Gerade technischer Scifi und große Fantasy Welten
+            faszinieren und inspirieren mich heute, kreative Lösungen zu finden.
+            <br/>
+            <br/>
             <a href="#">Lebenslauf</a>
           </p>
           <hr />
@@ -171,9 +182,9 @@ export default function Kontakt({width, setProgramm, Programm}) {
               <div className="programmingLanguage">
                 <img src="/images/icons/python.svg"></img>
                 <div>
-                <p>Python</p>
-                <p>FastAPI</p>
-                <p>Flask</p>
+                  <p>Python</p>
+                  <p>FastAPI</p>
+                  <p>Flask</p>
                 </div>
               </div>
             </div>
