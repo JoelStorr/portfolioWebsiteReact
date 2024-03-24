@@ -81,9 +81,9 @@
 }
 
 .appDetailProjectDetail p {
-    font-size: 1.3rem;
-    font-weight: normal;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 160%;
+    letter-spacing: .15rem;
 }
 
 .sliderContainer {
