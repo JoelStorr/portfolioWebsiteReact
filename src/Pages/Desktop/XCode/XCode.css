@@ -77,9 +77,9 @@
     width: 50%;
     height: 100%;
     background-color: #272C34;
-    
+
     overflow: scroll;
-    overflow-y: hidden ;
+    overflow-y: hidden;
 }
 
 .xcodePreviewView {
@@ -93,10 +93,10 @@
     border-radius: 0 0 10px 0;
 }
 
-.xcodePreviewView img{
+.xcodePreviewView img {
     width: 100%;
     height: auto;
-    
+
 }
 
 .xcodeFolderStructure {
@@ -239,28 +239,28 @@
 
 @media screen and (max-width: 950px) {
 
-    .xcodeSideView{
+    .xcodeSideView {
         width: 100%;
         border-radius: 0;
-        
+
     }
 
-    .xcodeSideBarHeader{
+    .xcodeSideBarHeader {
         margin-left: 2rem;
         justify-content: space-between;
-        
+
     }
 
-    .xcodeSideBarHeader button{
+    .xcodeSideBarHeader button {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: large;
         font-weight: bolder;
         color: rgb(40, 135, 250);
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(0, 0, 0, 0);
         border: none;
-        
+
     }
 
     .xcodeSideBarHeader button img {
@@ -276,68 +276,92 @@
         font-size: 1.5rem;
     }
 
-   .codefileIcon {
-       margin-right: .5rem;
-       width: 2rem;
-       height: 2rem;
-   }
+    .codefileIcon {
+        margin-right: .5rem;
+        width: 2rem;
+        height: 2rem;
+    }
 
-   .xcodeCodeView{
-    width: 100%;
-   }
+    .xcodeCodeView {
+        width: 100%;
+    }
 
-   .xcodeMainView{
-    background-color: #382A27;
-   }
+    .xcodeMainView {
+        background-color: #382A27;
+    }
 
-   .xcodeMainViewHeader{
+    .xcodeMainViewHeader {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
-   }
+
+    }
 
 
-   .xcodeMainViewBackButton {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
-    background-color: rgba(0,0,0,0);
-    border: none;
-    
-   }
+    .xcodeMainViewBackButton {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+
+    }
 
 
-   .xcodeMainViewBackButton img{
-    width: 2rem;
-    height: 2rem;
-    margin: 0;
-    padding: 0;
-   }
+    .xcodeMainViewBackButton img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        padding: 0;
+    }
 
 
-   .xcodeMainViewBackButton p{
+    .xcodeMainViewBackButton p {
         color: #2887FA;
         font-size: 2rem;
         font-weight: bolder;
-   }
+    }
 
 
-   .xcodeHeaderFileName{
-    
-   }
+    .xcodeHeaderFileName {}
 
-   .xcodeMainViewHeader img:first-of-type{
-    margin-right: 0;
-    margin-left: 0;
-   }
+    .xcodeMainViewHeader img:first-of-type {
+        margin-right: 0;
+        margin-left: 0;
+    }
 
 
-   .xcodeMainEditView{
-    flex-direction: column;
-    overflow: scroll;
-   }
+    .xcodeMainEditView {
+        display: block;
+        flex-direction: column;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .xcodePreviewView {
+        width: 100%;
+        padding: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .xcodePreviewView img {
+        max-width: 90%;
+        height: auto;
+
+    }
+
+    .xcodeCodeView{
+        overflow-x: hidden;
+    }
+
+    .code{
+        overflow-x: hidden;
+    }
 }

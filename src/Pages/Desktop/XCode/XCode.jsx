@@ -521,6 +521,7 @@ function XCodeCodeElement({ codeString, language }) {
     padding: "25px",
     fontSize: "1.5rem",
     fontFamily: "Cutive-Mono",
+    overflowX: "hidden"
   };
 
   return (
