@@ -54,7 +54,7 @@ export default function DubDubGrub() {
         <h3>Used Tech</h3>
         <div className="appDetailUsedTechList">
           <p>Swift UI</p>
-          <hr/>
+          <hr />
           <p>Cloud Kit</p>
           <hr />
           <p>Map Kit</p>
@@ -70,19 +70,17 @@ export default function DubDubGrub() {
         <h3>About the Project</h3>
         <p>
           Dub Dub Grub ist eine Cloudkit basierte App aus dem App Kurs von Sean
-          Allen. Die App vereint technicken aus Map Kit und Cloud Kit, um eine
-          Event Freunde Finder App zu sein. Während großer Events muss jeder
-          zwischendurch was Essen und so erlaubt es einem die App, während eines
-          Events seine Freunde in umlegenden Restaurants zu finden und selber in
-          nahe gelegene Locations ein zu checken. Dabei setzt die App auf eine
-          Cloudkit Synchronisation, um die Daten für alle Nutzer synchron zu
-          halten und zu teilen.
-          <br/><br/>
-           Mit diesem Projekt habe ich mich in die
-          Integration von Map Kit eingearbeitet und habe erste Erfahrungen mit
-          dem Einbinden von iCloud Daten gesammelt. Hierbei setzt das Projekt
-          auf den öffentlichen iCloud Bereich, der es Entwicklern möglich macht
-          mit allen Nutzern Daten zu teilen.
+          Allen. Die App vereint Techniken aus Map Kit und Cloud Kit, um
+          Eventteilnehmer, die sich eingecheckt haben, in umlegenden Lokalitäten
+          zu finden. Dabei setzt die App auf eine Cloud Kit Synchronisation,
+          durch die die Daten aller Nutzer synchron gehalten und geteilt werden.
+          <br />
+          <br />
+          Mit diesem Projekt habe ich mich in die Integration von Map Kit
+          eingearbeitet und erste Erfahrungen mit dem Einbinden von iCloud Daten
+          gesammelt. Hierbei setzt das Projekt auf den öffentlichen iCloud
+          Bereich, der es Entwicklern möglich macht mit allen Nutzern Daten zu
+          teilen.
         </p>
       </div>
     </>
