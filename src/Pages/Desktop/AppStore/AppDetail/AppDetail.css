@@ -97,4 +97,11 @@
         margin: 0 auto;
         margin-bottom: 8rem;
     }
+
+    .appDetailProjectDetail{
+        width: 80%;
+        height: auto;
+        margin-bottom: 2rem;
+        padding-bottom: 10rem;
+    }
 }
