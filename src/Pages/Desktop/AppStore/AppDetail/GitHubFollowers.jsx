@@ -1,40 +1,18 @@
 import ImageCarousel from "../../../../Components/ImageCarousel/ImageCarousel";
-import "./AppDetail.css"
-
+import "./AppDetail.css";
 
 export default function GitHubFollowers() {
-
-
-
-
-
   const slides = [
     {
-      url: "https://images.unsplash.com/photo-1706007171907-49841a64792a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      url: "images/GHFollowers/GHSearch.jpg",
       title: "SunFlower",
     },
     {
-      url: "https://images.unsplash.com/photo-1706088604350-f3c46951ee02?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      url: "images/GHFollowers/GHProfile.jpg",
       title: "Mountanse",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1706273427992-8a1b37142cb8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Lamps",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1706263085333-653485333e47?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Chip",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1706211306770-89f0a903eda7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Space",
     },
   ];
 
-
-
-
-    
   return (
     <>
       <div className="appDetailHeader">
@@ -58,7 +36,6 @@ export default function GitHubFollowers() {
       <div className="appDetailUsedTech">
         <h3>Used Tech</h3>
         <div className="appDetailUsedTechList">
-          
           <p>Swift UI</p>
           <hr />
           <p>GitHub API</p>
