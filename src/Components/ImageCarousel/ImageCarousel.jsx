@@ -237,7 +237,7 @@ export default function ImageCarousel({ slides, fit, fullHeightImage }) {
               paddingTop: "0.5rem",
             }}
           >
-            Click image to see full page view
+            Bild für volle Größe anklicken
           </p>
         </div>
       )}

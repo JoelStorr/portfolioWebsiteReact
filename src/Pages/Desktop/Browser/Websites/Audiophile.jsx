@@ -49,7 +49,7 @@ export default function Audiophile() {
           <ImageCarousel slides={images} fullHeightImage={true} />
         </div>
         <div className="websiteContentUsedTech">
-          <h3>Used Tech</h3>
+          <h3>Benutzte Technologien</h3>
           <ul>
             <li>Vue JS</li>
             <li>Nuxt JS</li>
@@ -62,6 +62,7 @@ export default function Audiophile() {
         </div>
       </div>
       <div className="websiteContentAbout">
+      <h3>Über das Projeckt</h3>
         <p>
           Audiophile ist ein mehrseitiges Frontend Projekt, welches als Teil der
           Frontend Mentor Challenge entstanden ist. Hierbei stellt die Frontend

@@ -25,7 +25,7 @@ export default function Portfolio() {
           <ImageCarousel slides={images} fullHeightImage={false} />
         </div>
         <div className="websiteContentUsedTech">
-          <h3>Used Tech</h3>
+          <h3>Benutzte Technologien</h3>
           <ul>
             <li>Vue JS Frontend Library</li>
             <li>Matter JS (physics library)</li>
@@ -34,7 +34,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="websiteContentAbout">
-        <h3>Core Project Idea:</h3>
+        <h3>Über das Projeckt</h3>
         <p>
           Für mein Portfolio habe ich React als Frontend Technologie gewählt,
           das sich vom Design an die Mac OS Oberfläche anlehnt. Anstelle eines

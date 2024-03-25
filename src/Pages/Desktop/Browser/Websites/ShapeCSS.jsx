@@ -25,7 +25,7 @@ export default function ShapeCSS() {
           <ImageCarousel slides={images} fullHeightImage={false} />
         </div>
         <div className="websiteContentUsedTech">
-          <h3>Used Tech</h3>
+          <h3>Benutzte Technologien</h3>
           <ul>
             <li>Vue JS Frontend Library</li>
             <li>Matter JS (physics library)</li>
@@ -37,6 +37,7 @@ export default function ShapeCSS() {
         </div>
       </div>
       <div className="websiteContentAbout">
+        <h3>Über das Projeckt</h3>
         <p>
           Shape CSS ist als mein Abschlussprojekt für das Harvard CS50
           Zertifikat auf edX entstanden. Das Ziel war es, eine SPA zu

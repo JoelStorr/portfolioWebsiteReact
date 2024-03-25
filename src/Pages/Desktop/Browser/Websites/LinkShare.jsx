@@ -42,10 +42,10 @@ export default function LinkShare() {
       <h1>LinkShare</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
-          <ImageCarousel slides={images} fit={true} fullHeightImage={false} />
+          <ImageCarousel slides={images} fit={true} fullHeightImage={true} />
         </div>
         <div className="websiteContentUsedTech">
-          <h3>Used Tech</h3>
+          <h3>Benutzte Technologien</h3>
           <ul>
             <li>Vue JS Frontend Library</li>
             <li>Nuxt JS Vue Full Stack Library</li>
@@ -63,6 +63,7 @@ export default function LinkShare() {
         </div>
       </div>
       <div className="websiteContentAbout">
+        <h3>Über das Projeckt</h3>
         <p>
           Fullstack Projekt Linkshare ist eines der Frontend Mentor Guru
           Projekte in meinem Portfolio. Hierbei stellt Frontend Mentor die
