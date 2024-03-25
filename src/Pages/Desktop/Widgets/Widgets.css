@@ -133,8 +133,8 @@
 .contactWidget {
     height: 15rem;
     box-sizing: border-box;
-    max-width: 70%;
-    min-width: 50%;
+    max-width: 80%;
+    min-width: 60%;
     background-color: #282C33;
     color: white;
     border-radius: 1rem;
@@ -160,7 +160,7 @@
 
 .contactWidget a {
     color: white;
-    text-decoration: none;
+    
 }
 
 .contactLinkHolder {
@@ -197,4 +197,16 @@
     .todoListWidget {
         width: 100%;
     }
+}
+
+@media screen and (min-width: 2000px) {
+
+    .widgets{
+        width: 70%;
+    }
+
+    /* .contactWidget {
+        max-width: 60%;
+        min-width: 50%;
+    } */
 }
