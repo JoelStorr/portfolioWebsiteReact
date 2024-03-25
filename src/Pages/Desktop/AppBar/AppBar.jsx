@@ -29,7 +29,7 @@ export default function AppBar({ changeProgramm, programmEnum }) {
             </a>
           </li>
           <li>
-            <a href="mailto:joel.storr@ewe.net">
+            <a href="mailto:info@joelstorr.de">
               <div className="appIconMoc xcodeIcon">
                 <img src="/images/icons/envelope-solid-color.svg" />
               </div>
