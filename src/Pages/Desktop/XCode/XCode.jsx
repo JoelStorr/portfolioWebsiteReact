@@ -290,7 +290,7 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
   );
 }
 
-function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,setSideBar, sidebar }) {
+function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm, setSideBar = ()=>{}, sidebar }) {
   let [subFolderOne, setSubFolderOne] = useState(true);
   let [subFolderTwo, setSubFolderTwo] = useState(false);
   let [subFolderThree, setSubFolderThree] = useState(false);
@@ -300,7 +300,7 @@ function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm,
 
     setCodeView(codeView);
 
-    setSideBar(!sidebar)
+    setSideBar(!sidebar);
   }
 
 
