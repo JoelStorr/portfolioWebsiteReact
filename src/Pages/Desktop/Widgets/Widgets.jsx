@@ -214,11 +214,11 @@ function ContactWidget(){
           </div>
           <div className="contactLinkHolder">
             <h3>Links:</h3>
-            <a href="https://de.linkedin.com/in/joel-storr-190316137">
+            <a href="https://de.linkedin.com/in/joel-storr-190316137" target="blank">
               LinkedIn
             </a>
             <br />
-            <a href="https://github.com/JoelStorr">GitHub</a>
+            <a href="https://github.com/JoelStorr" target="blank">GitHub</a>
           </div>
         </div>
       </div>
