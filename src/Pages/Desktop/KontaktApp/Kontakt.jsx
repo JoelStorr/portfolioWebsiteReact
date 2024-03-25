@@ -71,22 +71,19 @@ export default function Kontakt({width, setProgramm, Programm}) {
             Musik und Bücher gehören seit meiner Kindheit zu meiner großen
             Leidenschaft. Gerade technischer Scifi und große Fantasy Welten
             faszinieren und inspirieren mich heute, kreative Lösungen zu finden.
-            <br/>
-            <br/>
+            <br />
+            <br />
             <a href="#">Lebenslauf</a>
           </p>
           <hr />
 
           <h2>3D</h2>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/MpEaKqDmp1E?si=nwbBNYpo8mPh1_el"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+            <div className="YTLinkImage">
+          <a href="https://www.youtube.com/watch?v=MpEaKqDmp1E" target="blank">
+              <img src="/images/3d/3dScene.png" className="threeDImage" />
+              <img src="/images/icons/youtube.svg" className="YTIcon"/>
+          </a>
+            </div>
           <hr />
           <h2>Skills</h2>
           <div>

@@ -130,10 +130,11 @@
 }
 
 
-.contactWidget{
+.contactWidget {
     height: 15rem;
     box-sizing: border-box;
-    width: 50%;
+    max-width: 70%;
+    min-width: 50%;
     background-color: #282C33;
     color: white;
     border-radius: 1rem;
@@ -143,8 +144,8 @@
     padding: 1rem;
 }
 
-.contactWidget img{
-    width: 25%;
+.contactWidget img {
+    width: 35%;
     height: auto;
     object-fit: cover;
     border-radius: 1rem;
@@ -152,24 +153,28 @@
     margin-right: 2rem;
 }
 
-.contactWidget h1{
+.contactWidget h1 {
     font-size: 2.5rem;
 }
 
 
-
-.contactWidget a{
+.contactWidget a {
     color: white;
     text-decoration: none;
 }
 
-.contactLinkHolder{
+.contactLinkHolder {
     padding-left: 2rem;
 }
 
-.contactInfoHolder{
+.contactInfoHolder {
     display: flex;
     flex-direction: row;
+}
+
+.contactLinkHolder a {
+    display: inline-block;
+    padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 950px) {

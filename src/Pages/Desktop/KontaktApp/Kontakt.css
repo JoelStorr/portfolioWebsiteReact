@@ -140,6 +140,40 @@
     padding-right: 2rem;
 }
 
+.YTLinkImage{
+    position: relative;
+    max-width: 60%;
+    margin-bottom: 2rem;
+    
+}
+
+
+
+
+.YTIcon{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+.threeDImage{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    border-radius: 1rem;
+}
+
+
+
+.YTLinkImage:hover  .threeDImage{
+    opacity: .6;
+}
+
+
 @media screen and (max-width: 950px) {
     .kontaktApp {
         width: 100%;
