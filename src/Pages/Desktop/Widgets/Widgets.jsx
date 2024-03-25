@@ -202,15 +202,25 @@ function SpecialeDayWidget(){
 
 function ContactWidget(){
 
-  return(
+  return (
     <div className="contactWidget">
       <img src="/images/ProfilePic.PNG" />
       <div>
-      <h1>Joel Storr</h1>
-      <h3>Frontend Developer</h3>
-      <a href="mailto:info@joelstorr.de">info@joelstorr.de</a>
+        <h1>Joel Storr</h1>
+        <div className="contactInfoHolder">
+          <div>
+            <h3>Frontend Developer</h3>
+            <a href="mailto:info@joelstorr.de">info@joelstorr.de</a>
+          </div>
+          <div className="contactLinkHolder">
+            <h3>Links</h3>
+            <a href="www.linkedin.de">LinkedIn</a>
+            <br />
+            <a href="www.github.com">GitHub</a>
+          </div>
 
+        </div>
       </div>
     </div>
-  )
+  );
 }

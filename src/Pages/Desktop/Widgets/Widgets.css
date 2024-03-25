@@ -133,11 +133,12 @@
 .contactWidget{
     height: 15rem;
     box-sizing: border-box;
-    width: 65%;
+    width: 50%;
     background-color: #282C33;
     color: white;
     border-radius: 1rem;
     display: flex;
+    font-size: 1.2rem;
     overflow: hidden;
     padding: 1rem;
 }
@@ -145,17 +146,31 @@
 .contactWidget img{
     width: 25%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 2rem;
 }
+
+.contactWidget h1{
+    font-size: 2.5rem;
+}
+
+
 
 .contactWidget a{
     color: white;
     text-decoration: none;
 }
 
+.contactLinkHolder{
+    padding-left: 2rem;
+}
 
-
+.contactInfoHolder{
+    display: flex;
+    flex-direction: row;
+}
 
 @media screen and (max-width: 950px) {
     .widgets {}
