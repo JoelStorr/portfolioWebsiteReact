@@ -17,7 +17,6 @@ export default function Portfolio() {
     },
   ];
 
-  console.log(images[0]);
   return (
     <div className="websiteContent">
       <h1>Portfolio</h1>

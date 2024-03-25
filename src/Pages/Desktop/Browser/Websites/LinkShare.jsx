@@ -37,7 +37,6 @@ export default function LinkShare() {
     },
   ];
 
-  console.log(images[0]);
   return (
     <div className="websiteContent">
       <h1>LinkShare</h1>

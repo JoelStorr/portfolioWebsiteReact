@@ -179,8 +179,6 @@ export default function ImageCarousel({ slides, fit, fullHeightImage }) {
     } else {
       setSelectedImage(slides[currentIndex].url);
     }
-
-    console.log(selectedImage);
   }
 
   return (
@@ -271,7 +269,6 @@ export default function ImageCarousel({ slides, fit, fullHeightImage }) {
             style={fullScaleImageHolder}
             onClick={() => {
               setBigImage(false);
-              console.log("Click handler");
             }}
           >
             <img

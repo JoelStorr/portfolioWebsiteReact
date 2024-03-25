@@ -41,7 +41,6 @@ export default function Audiophile() {
     },
   ];
 
-  console.log(images[0]);
   return (
     <div className="websiteContent">
       <h1>Audiophile</h1>
