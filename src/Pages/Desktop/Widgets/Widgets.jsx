@@ -43,6 +43,7 @@ export default function Widgets({width}) {
           </div>
           <div className="widgetRow2">
             <SpecialeDayWidget />
+            <ContactWidget />
           </div>
         </div>
       );
@@ -197,4 +198,19 @@ function SpecialeDayWidget(){
       </h1>
     </div>
   );
+}
+
+function ContactWidget(){
+
+  return(
+    <div className="contactWidget">
+      <img src="/images/ProfilePic.PNG" />
+      <div>
+      <h1>Joel Storr</h1>
+      <h3>Frontend Developer</h3>
+      <a href="mailto:info@joelstorr.de">info@joelstorr.de</a>
+
+      </div>
+    </div>
+  )
 }
