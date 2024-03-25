@@ -34,12 +34,11 @@ export default function GitHubFollowers() {
       <div className="appDetailDevider"></div>
 
       <div className="appDetailUsedTech">
-        <h3>Used Tech</h3>
+        <h3>Benutzte Technologien</h3>
         <div className="appDetailUsedTechList">
-          <p>Swift UI</p>
+          <p>UI Kit</p>
           <hr />
           <p>GitHub API</p>
-          <hr />
         </div>
       </div>
 
@@ -49,7 +48,7 @@ export default function GitHubFollowers() {
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">
         {/* TODO: Dispaly Descriptions */}
-        <h3>About the Project</h3>
+        <h3>Über das Projeckt</h3>
         <p>
           GitHub Follower Tracker war eines der ersten Tutorialprojekte in der
           IOS Entwicklung. Die App ist Teil des GitHub Followers Kurses von Sean

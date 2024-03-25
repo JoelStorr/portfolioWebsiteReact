@@ -51,7 +51,7 @@ export default function DubDubGrub() {
       <div className="appDetailDevider"></div>
 
       <div className="appDetailUsedTech">
-        <h3>Used Tech</h3>
+        <h3>Benutzte Technologien</h3>
         <div className="appDetailUsedTechList">
           <p>Swift UI</p>
           <hr />
@@ -67,7 +67,7 @@ export default function DubDubGrub() {
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">
         {/* TODO: Dispaly Descriptions */}
-        <h3>About the Project</h3>
+        <h3>Über das Projeckt</h3>
         <p>
           Dub Dub Grub ist eine Cloudkit basierte App aus dem App Kurs von Sean
           Allen. Die App vereint Techniken aus Map Kit und Cloud Kit, um

@@ -91,7 +91,7 @@ function AppStoreSideBar({shownProject, changeShownApps, Projects}){
 
   return (
     <div className="appStore-sideBar">
-      <h2>Main Projects</h2>
+      <h2>Projeckte</h2>
       <ul>
         <li
           onClick={() => changeShownApps(Projects.WhenIChanged)}

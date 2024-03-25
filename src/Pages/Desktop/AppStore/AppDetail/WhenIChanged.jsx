@@ -52,13 +52,17 @@ export default function WhenIChanged() {
       <div className="appDetailDevider"></div>
 
       <div className="appDetailUsedTech">
-        <h3>Used Tech</h3>
+        <h3>Benutzte Technologien</h3>
         <div className="appDetailUsedTechList">
           <p>Swift UI</p>
           <hr />
           <p>Cloud Kit</p>
           <hr />
           <p>Widget Kit</p>
+          <hr/>
+          <p>Notofications</p>
+          <hr/>
+          <p>Image Library</p>
         </div>
       </div>
 
@@ -67,10 +71,11 @@ export default function WhenIChanged() {
       </div>
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">
-        {/* TODO: Dispaly Descriptions */}
-        <h3>About the Project</h3>
+        <h3>Über das Projeckt</h3>
         <p>
-          Work in Progress When I Changed ist meine erste eigene vollwertige IOS
+          Work in Progress 
+          <br/>
+          When I Changed ist meine erste eigene vollwertige IOS
           App. Das Ziel dieser App ist es, verschiedene Aktivitäten zu tracken.
           Hierbei sollen in der App eine Reihe wichtiger Habits entweder aktiv
           oder passiv verfolgt werden. Die Idee hierbei ist, dass negative
