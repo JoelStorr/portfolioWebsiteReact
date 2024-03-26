@@ -32,7 +32,7 @@
     flex-direction: row;
 }
 
-.searchBar button{
+.searchBar button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     margin: 0;
@@ -41,17 +41,17 @@
     padding: 0;
     display: flex;
     align-items: center;
-    
+
     font-size: 2rem;
-    
+
 }
 
-.searchBar button img{
+.searchBar button img {
     height: 2rem;
     width: 2rem;
 }
 
-.searchBar button p{
+.searchBar button p {
     color: #2887FA;
     font-weight: bolder;
 }
@@ -89,7 +89,7 @@
 }
 
 
-.moreTab{
+.moreTab {
     width: 100%;
     height: 100vh;
     background-color: #20202087;
@@ -99,14 +99,13 @@
     border-radius: 1rem;
 }
 
-.moreTabContainer{
+.moreTabContainer {
     width: 100%;
-        height: 30rem;
-        background-color: #202020;
-        position: absolute;
-       
-        top: 5rem;
-        border-radius: 1rem;
+    height: 30rem;
+    background-color: #202020;
+    position: absolute;
+    top: 5rem;
+    border-radius: 1rem;
 }
 
 
@@ -116,19 +115,19 @@
     padding: 0;
 }
 
-.moreTab ul li{
+.moreTab ul li {
     padding: 2rem;
     background-color: #3D3D3D;
-    margin: 1rem 1rem ;
+    margin: 1rem 1rem;
     border-radius: 1rem;
 }
 
-.activeli{
+.activeli {
     border: 1px solid white;
 }
 
-@media screen and (max-width: 1030px) and (min-width: 500px){
-    .tabRow{
+@media screen and (max-width: 1030px) and (min-width: 500px) {
+    .tabRow {
         overflow-y: hidden;
         overflow-x: scroll;
     }
