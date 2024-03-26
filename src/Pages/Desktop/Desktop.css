@@ -85,3 +85,9 @@ p{
         border-radius: 0;
      }
 }
+
+@media screen and (max-width: 1025px){
+    .widgetHolder{
+        width: 50vw;
+    }
+}

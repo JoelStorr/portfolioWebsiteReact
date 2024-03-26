@@ -16,7 +16,7 @@ export default function Widgets({width}) {
        return (
          <div className="widgets">
            <div className="widgetRow1">
-             <TodoListWidget />
+             <ContactWidget />
            </div>
            <div className="widgetRow2">
              <SpecialeDayWidget />

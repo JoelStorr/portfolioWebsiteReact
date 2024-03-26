@@ -160,7 +160,6 @@
 
 .contactWidget a {
     color: white;
-    
 }
 
 .contactLinkHolder {
@@ -177,8 +176,15 @@
     padding-bottom: 1rem;
 }
 
+
+@media screen and (max-width: 500px) {
+    .contactWidget{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 950px) {
-    .widgets {}
 
     .widgetRow1 {
         margin: 2rem;
@@ -189,10 +195,7 @@
     .widgetRow2 {
         width: auto;
         margin: 2rem;
-
     }
-
-
 
     .todoListWidget {
         width: 100%;
