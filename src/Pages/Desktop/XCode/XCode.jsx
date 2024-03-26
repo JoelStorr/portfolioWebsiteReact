@@ -31,7 +31,7 @@ export default function XCode({width, setProgramm, Programm}) {
 
   return (
     <>
-      {width <= 825 ? (
+      {width <= 1025 ? (
         <div className="xcode">
           {sidebar ? (
             <XCodeSideBarLeft width={width} codeView={codeView} setCodeView={setCodeView} setProgramm={setProgramm} Programm={Programm} setSideBar={setSideBar} sidebar={sidebar}/>
@@ -98,7 +98,7 @@ function XCodeARView({width}) {
 
   return (
     <div className="xcodeMainEditView">
-      {width <= 825 ? (
+      {width <= 1025 ? (
         <div className="xcodeCodeView">
           <XCodeCodeElement codeString={codeString} language="swift" />
         </div>
@@ -162,7 +162,7 @@ function Flutter({width}) {
 
   return (
     <div className="xcodeMainEditView">
-      {width <= 825 ? (
+      {width <= 1025 ? (
         <>
           <div className="xcodeCodeView">
             <XCodeCodeElement codeString={codeString} language="dart" />
@@ -213,7 +213,7 @@ more_detail()
 
   return (
     <div className="xcodeMainEditView">
-      {width <= 825 ? (
+      {width <= 1025 ? (
         <div className="xcodeCodeView">
           <XCodeCodeElement codeString={codeString} language="python" />
         </div>
@@ -276,7 +276,7 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
 
   return (
     <div className="xcodeMainViewHeader">
-      {width <= 825 ? (
+      {width <= 1025 ? (
         <button
           className="xcodeMainViewBackButton"
           onClick={() => setSideBar(!sidebar)}
@@ -290,7 +290,7 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
 
       {fileExt()}
 
-      {width <= 825 ? (
+      {width <= 1025 ? (
         <></>
       ) : (
         <div className="fielNameField">
@@ -310,10 +310,10 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
 }
 
 function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm, setSideBar = ()=>{}, sidebar }) {
-  let [subFolderOne, setSubFolderOne] = useState(true);
+  let [subFolderOne, setSubFolderOne] = useState(false);
   let [subFolderTwo, setSubFolderTwo] = useState(false);
   let [subFolderThree, setSubFolderThree] = useState(false);
-  let [subFolderFour, setSubFolderFour] = useState(false);
+  let [subFolderFour, setSubFolderFour] = useState(true);
 
   function changeCodeView(codeView){
 

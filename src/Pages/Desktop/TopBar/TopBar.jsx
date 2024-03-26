@@ -445,8 +445,6 @@ function TopBar() {
         </div>
         <button onClick={changeDatenschutz}>Close</button>
       </div>
-
-      
     </>
   );
 }
