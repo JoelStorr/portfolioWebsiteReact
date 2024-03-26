@@ -1,26 +1,24 @@
-.desktop{
+.desktop {
     margin: 0;
     padding: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
 }
 
-.mainDesktopWrapper{
-   flex: 1;
-  
+.mainDesktopWrapper {
+    flex: 1;
 }
 
 
-.mainDesktop{
+.mainDesktop {
     display: flex;
 }
 
 
 
-p{
+p {
     color: white;
 }
 
@@ -32,7 +30,7 @@ p{
 
 .programmHolder {
     color: white;
-    cursor:default;
+    cursor: default;
     position: absolute;
     top: 4rem;
     left: 0;
@@ -41,12 +39,12 @@ p{
     height: 90%;
     margin-left: 20px;
     border-radius: 10px;
-   pointer-events: none;
-   
+    pointer-events: none;
+
 }
 
 
-.widgetHolder{
+.widgetHolder {
     position: absolute;
     top: 15rem;
     left: 10rem;
@@ -55,39 +53,39 @@ p{
     /* background-color: aqua; */
 }
 
-.programmHolderActive{
-    pointer-events:all;
+.programmHolderActive {
+    pointer-events: all;
     border-radius: 10px;
 }
 
-@media screen and (max-width: 950px){
-    
-    .widgetHolder{
-        position:initial;
+@media screen and (max-width: 950px) {
+
+    .widgetHolder {
+        position: initial;
         width: 100%;
         height: 40%;
         top: 5rem;
         left: 2rem;
     }
 
-    .desktop{
+    .desktop {
         flex-direction: column;
         flex-wrap: nowrap;
         overflow: hidden;
     }
-    
-     .programmHolder{
+
+    .programmHolder {
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         margin-left: 0;
         border-radius: 0;
-     }
+    }
 }
 
-@media screen and (max-width: 1025px){
-    .widgetHolder{
+@media screen and (max-width: 1025px) {
+    .widgetHolder {
         width: 50vw;
     }
 }
