@@ -126,3 +126,10 @@
 .activeli{
     border: 1px solid white;
 }
+
+@media screen and (max-width: 1030px) and (min-width: 500px){
+    .tabRow{
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+}
