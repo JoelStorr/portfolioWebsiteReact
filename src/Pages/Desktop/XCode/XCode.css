@@ -40,7 +40,7 @@
     border-radius: 0 10px 0 0;
 }
 
-.xcodeMainViewHeader div {
+.fielNameField {
     flex: 1;
     margin-left: 3rem;
     padding-left: 1rem;
@@ -57,6 +57,18 @@
     padding: .6rem;
 }
 
+.ghButon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.ghButon img{
+    margin: 0 .5rem 0 2rem;
+}
 
 .xcodeMainEditView {
     display: flex;
@@ -131,10 +143,7 @@
     user-select: none;
 }
 
-.xcodeMainViewHeader img:first-of-type {
-    margin-left: 2rem;
-    margin-right: 8rem;
-}
+
 
 
 

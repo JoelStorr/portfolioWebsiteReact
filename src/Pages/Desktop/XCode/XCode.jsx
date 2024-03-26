@@ -41,6 +41,7 @@ export default function XCode({width, setProgramm, Programm}) {
               <XCodeMainViewHeader filename={codeView} setSideBar={setSideBar} sidebar={sidebar} width={width}/>
 
               {chooseCodeView()}
+              
             </div>
           )}
 
@@ -53,6 +54,7 @@ export default function XCode({width, setProgramm, Programm}) {
             <XCodeMainViewHeader filename={codeView} />
 
             {chooseCodeView()}
+            
           </div>
           {/* <div className="xcodeSideView xcodeSideViewRight"> </div> */}
         </div>
@@ -162,13 +164,15 @@ function Flutter({width}) {
     <div className="xcodeMainEditView">
       {width <= 825 ? (
         <>
-        <div className="xcodeCodeView">
-          <XCodeCodeElement codeString={codeString} language="dart" />
-        </div>
-        <div className="xcodePreviewView">
+          <div className="xcodeCodeView">
+            <XCodeCodeElement codeString={codeString} language="dart" />
+            <div>
+              <button>Test</button>
+            </div>
+          </div>
+          <div className="xcodePreviewView">
             <img src="images/devCoffeeDesign/screen-shots.png"></img>
-        </div>
-
+          </div>
         </>
       ) : (
         <>
@@ -259,6 +263,17 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
     }
   }
 
+  function projecktLink(){
+    switch(filename){
+      case CodeView.fastApi:
+        console.log("FastAPI Link")
+        return "https://github.com/JoelStorr/FEM-LinkSharing-App-BackEnd";
+      case CodeView.flutter:
+        return "https://github.com/JoelStorr/flutter_shopware_6_api";
+    }
+  }
+
+
   return (
     <div className="xcodeMainViewHeader">
       {width <= 825 ? (
@@ -278,13 +293,17 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
       {width <= 825 ? (
         <></>
       ) : (
-        <div>
+        <div className="fielNameField">
           <p className="eIcon">E</p>
           <p>{capitalizeFirstLetter(filename) + " >"} iPhone Simulator 15</p>
         </div>
       )}
 
-      <img src="/images/icons/cloud-solid.svg" />
+      <a href={projecktLink()} className="ghButon" target="blank">
+        <img src="/images/icons/cloud-solid.svg" />
+        GitHub
+      </a>
+
       <img src="/images/icons/plus-solid.svg" />
     </div>
   );
