@@ -57,6 +57,16 @@
     .appBar:hover .appContainer{
         top: -15px
     }
+}
 
-   
+@media screen and (max-width: 1025px) {
+    .appContainer {
+        top: -15px;
+        transition: top 0s;
+        z-index: 0;
+    }
+
+    .appBar:hover .appContainer {
+        top: -15px
+    }
 }
