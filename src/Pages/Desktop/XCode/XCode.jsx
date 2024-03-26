@@ -166,9 +166,6 @@ function Flutter({width}) {
         <>
           <div className="xcodeCodeView">
             <XCodeCodeElement codeString={codeString} language="dart" />
-            <div>
-              <button>Test</button>
-            </div>
           </div>
           <div className="xcodePreviewView">
             <img src="images/devCoffeeDesign/screen-shots.png"></img>
