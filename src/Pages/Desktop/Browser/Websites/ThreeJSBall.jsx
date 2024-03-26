@@ -4,37 +4,18 @@ import "./WebsiteConetent.css";
 export default function ThreeJSBall() {
   const images = [
     {
-      url: `./images/linkshare/EditorView.png`,
+      url: `./images/threeJSBall/start.png`,
       title: "Editor View",
     },
     {
-      url: `./images/linkshare/ProfileView.png`,
+      url: `./images/threeJSBall/mid.png`,
       title: "Editor View",
     },
     {
-      url: `./images/linkshare/UserCardPreview.png`,
+      url: `./images/threeJSBall/end.png`,
       title: "User Card Preview",
     },
-    {
-      url: `./images/linkshare/login.png`,
-      title: "Login View",
-    },
-    {
-      url: `./images/linkshare/register.png`,
-      title: "Register View",
-    },
-    {
-      url: `./images/linkshare/EditorTablet.png`,
-      title: "Editor Tablet View",
-    },
-    {
-      url: `./images/linkshare/ProfileTablet.png`,
-      title: "Profile Tablet View",
-    },
-    {
-      url: `./images/linkshare/PreviewTablet.png`,
-      title: "Profile Tablet View",
-    },
+    
   ];
 
   return (
@@ -42,20 +23,27 @@ export default function ThreeJSBall() {
       <h1>Three JS Game</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
-          <ImageCarousel slides={images} fit={true} fullHeightImage={true} />
+          <ImageCarousel slides={images} fit={true} fullHeightImage={false} />
         </div>
         <div className="websiteContentUsedTech">
           <h3>Benutzte Technologien</h3>
           <ul>
             <li>React</li>
             <li>React Three Fiber</li>
+            <li>React Three Rapier</li>
             <li>Three JS</li>
           </ul>
           <div className="repoLinkHolder">
-            <a href="https://github.com/JoelStorr/R3F-Physics-Game" target="blank">
+            <a
+              href="https://github.com/JoelStorr/R3F-Physics-Game"
+              target="blank"
+            >
               GitHub Repo
             </a>
-            <a href="https://joelstorr.github.io/R3F-Marble-Game/" target="blank">
+            <a
+              href="https://joelstorr.github.io/R3F-Marble-Game/"
+              target="blank"
+            >
               Live Example
             </a>
           </div>
