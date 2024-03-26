@@ -56,12 +56,12 @@ export default function Audiophile() {
             <li>Scss</li>
             <li>Pinia (Nuxt Store)</li>
           </ul>
-          <a href="https://github.com/JoelStorr/FM-Audiophile-FrontEnd">
+          <a href="https://github.com/JoelStorr/FM-Audiophile-FrontEnd" target="blank">
             GitHub Repo
           </a>
         </div>
       </div>
-      <div className="websiteContentAbout">
+      <div className="websiteContentAbout" >
       <h3>Über das Projeckt</h3>
         <p>
           Audiophile ist ein mehrseitiges Frontend Projekt, welches als Teil der

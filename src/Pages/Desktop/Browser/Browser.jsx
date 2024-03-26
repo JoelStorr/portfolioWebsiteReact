@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Browser.css";
 import BrowserHeader from "./BrowserHeader/BrowserHeader";
 import ShapeCSS from "./Websites/ShapeCSS";
 import Portfolio from "./Websites/Portfolio";
 import Audiophile from "./Websites/Audiophile";
 import LinkShare from "./Websites/LinkShare";
+import ThreeJSBall from "./Websites/ThreeJSBall";
 
 export default function Browser({ width, setProgramm, Programm }) {
   const BrowserSite = {
@@ -12,6 +13,7 @@ export default function Browser({ width, setProgramm, Programm }) {
     Portfolio: "Portfolio",
     Audiophile: "Audiophile",
     LinkShare: "LinkShare",
+    ThreeJSBall: "ThreeJSBall"
   };
 
   const [activeTab, setActiveTab] = useState(BrowserSite.ShapeCSS);
@@ -26,6 +28,8 @@ export default function Browser({ width, setProgramm, Programm }) {
         return <Audiophile />;
       case BrowserSite.LinkShare:
         return <LinkShare />;
+      case BrowserSite.ThreeJSBall:
+        return <ThreeJSBall />;
     }
   }
 

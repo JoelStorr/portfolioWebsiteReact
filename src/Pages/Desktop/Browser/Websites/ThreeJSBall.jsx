@@ -1,7 +1,7 @@
 import ImageCarousel from "../../../../Components/ImageCarousel/ImageCarousel";
 import "./WebsiteConetent.css";
 
-export default function LinkShare() {
+export default function ThreeJSBall() {
   const images = [
     {
       url: `./images/linkshare/EditorView.png`,
@@ -39,7 +39,7 @@ export default function LinkShare() {
 
   return (
     <div className="websiteContent">
-      <h1>LinkShare</h1>
+      <h1>Three JS Game</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
           <ImageCarousel slides={images} fit={true} fullHeightImage={true} />
@@ -47,16 +47,15 @@ export default function LinkShare() {
         <div className="websiteContentUsedTech">
           <h3>Benutzte Technologien</h3>
           <ul>
-            <li>Vue JS Frontend Library</li>
-            <li>Nuxt JS Vue Full Stack Library</li>
-            <li>Axios (HTTP Request Library)</li>
-            <li>Fast API Backend (Pyhton based Backend)</li>
+            <li>React</li>
+            <li>React Three Fiber</li>
+            <li>Three JS</li>
           </ul>
           <div className="repoLinkHolder">
-            <a href="https://github.com/JoelStorr/FM-LinkSharing-App" target="blank">
+            <a href="https://github.com/JoelStorr/R3F-Physics-Game" target="blank">
               GitHub Repo
             </a>
-            <a href="https://joelstorr.github.io/JSFMLinkSharing/editor" target="blank">
+            <a href="https://joelstorr.github.io/R3F-Marble-Game/" target="blank">
               Live Example
             </a>
           </div>

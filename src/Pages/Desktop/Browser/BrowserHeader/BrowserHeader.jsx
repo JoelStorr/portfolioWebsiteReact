@@ -83,6 +83,19 @@ export default function BrowserHeader({
                     >
                       Audiophile
                     </li>
+                    <li
+                      className={
+                        activeBrowserTab == browserSite.ThreeJSBall
+                          ? "activeli"
+                          : ""
+                      }
+                      onClick={() => {
+                        changeActiveTab(browserSite.ThreeJSBall);
+                        switchTabs();
+                      }}
+                    >
+                      ThreeJS Game
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -151,6 +164,16 @@ export default function BrowserHeader({
               onClick={() => changeActiveTab(browserSite.Audiophile)}
             >
               <h3>Audiophile</h3>
+            </div>
+            <div
+              className={
+                activeBrowserTab == browserSite.ThreeJSBall
+                  ? "browserTab activeTab"
+                  : "browserTab"
+              }
+              onClick={() => changeActiveTab(browserSite.ThreeJSBall)}
+            >
+              <h3>ThreeJS Game</h3>
             </div>
           </div>
           <div className="searchBar">
