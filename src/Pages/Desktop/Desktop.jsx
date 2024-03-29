@@ -99,6 +99,7 @@ function Desktop() {
           width={width}
         />
         <AppBar changeProgramm={changeSowftware} programmEnum={Programm} />
+        <h1 className="tagline">Frontend Developer</h1>
       </div>
     </>
   );

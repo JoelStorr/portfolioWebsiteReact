@@ -11,7 +11,8 @@
 .kontaktAppSideBar {
     width: 20%;
     padding: 2rem;
-    background-color: #352727;
+    background-color: #191c209a;
+    backdrop-filter: blur(20px);
     border-radius: .5rem 0 0 .5rem;
 }
 
@@ -20,7 +21,7 @@
 }
 
 .kontaktAppSideBar li {
-    background-color: #514342;
+    background-color: #2f343c;
     width: 100%;
     border-radius: 5px;
     padding: .5rem;
@@ -28,7 +29,7 @@
 
 .kontaktAppMainView {
     width: 75%;
-    background-color: #2D1E1E;
+    background-color: #282C33;
     border-radius: 0 0.5rem 0.5rem 0;
     overflow: scroll;
     overflow-x: hidden;
@@ -127,7 +128,7 @@
 .programmingLanguage {
     display: flex;
     align-items: center;
-    background-color: #514342;
+    background-color: #191c20;
     width: 20rem;
     padding: 1rem;
     border-radius: 5px;

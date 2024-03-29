@@ -169,7 +169,7 @@ function ClockWidget(){
       getTime();
 
       const gradiantStyle = {
-        background: `conic-gradient(from ${seconds * 6}deg, #282C33, #2a45b0)`,
+        background: `conic-gradient(from ${seconds * 6}deg, #282C33, #01628f)`,
       };
 
 
@@ -188,13 +188,13 @@ function SpecialeDayWidget(){
   return (
     <div className="specialDayWidget">
       <h1>
-        <span>20</span> Days
+        <span>20</span>  Days
       </h1>
       <h1>
-        <span>15</span> Hours
+        <span>15</span>  Hours
       </h1>
       <h1>
-        <span>10</span> Minutes
+        <span>10</span>  Minutes
       </h1>
     </div>
   );

@@ -57,6 +57,15 @@ p {
     border-radius: 10px;
 }
 
+.tagline{
+    position: absolute;
+    bottom: 20rem;
+    left: 10rem;
+    font-size: 15rem;
+    color: #01628f;
+    font-weight: 500;
+}
+
 @media screen and (max-width: 950px) {
 
     .widgetHolder {

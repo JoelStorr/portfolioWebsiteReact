@@ -52,18 +52,18 @@ export default function ThreeJSBall() {
       <div className="websiteContentAbout">
         <h3>Über das Projeckt</h3>
         <p>
-          Das 3D Browser Spiel ist als Teil des ThreeJS Journy Kurses von Bruno
+          Das 3D Browser Spiel ist als Teil des ThreeJS Journey Kurses von Bruno
           Simon entstanden. Hierbei setzt das Projekt auf das React Three Fiber
           Paket (R3F), das die Integration von ThreeJS in React Projekte
-          vereinfacht. Das Spiel wird durch die Rapier Physik Engine betrieben,
-          um die Kollisionen mit den Hindernissen zu betreiben. 
-          <br/> <br/>
-          Das Ziel dieses
-          Projektes wer es, mein Wissen in R3F zu vertiefen und mich mit der
-          neuen Syntax vertraut zu machen. Gerendert wird das Projekt innerhalb
-          eines HTML Canvas elements, wobei ThreeJS auf dem Browser nativen
-          WebGL aufbaut, um das 3D Erlebnis in jedem modernen Browser zur
-          Verfügung zu stellen.
+          vereinfacht. Hierbei lassen sich die 3D Elemente direkt in der JSX
+          Syntax definieren. Das Spiel wird durch die Rapier Physics Engine
+          betrieben, um die Kollision mit den Hindernissen zu berechnen.
+          <br /> <br />
+          Das Ziel dieses Projektes war es, mein Wissen in R3F zu vertiefen und
+          mich mit der neuen Syntax vertraut zu machen. Gerendert wird das
+          Projekt innerhalb eines HTML Canvas Elements. Hierbei baut ThreeJS auf
+          dem Browser nativen WebGL auf, um 3D Erlebnisse in jedem modernen
+          Browser zur Verfügung zu stellen.
         </p>
       </div>
     </div>
