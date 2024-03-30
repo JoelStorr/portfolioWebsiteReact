@@ -1,4 +1,4 @@
-.topBar{
+.topBar {
     position: relative;
     top: 0;
     width: 100%;
@@ -12,14 +12,14 @@
     user-select: none;
 }
 
-h1{
+h1 {
     margin: 0;
     padding: 5px;
 }
 
 ul {
     display: flex;
-    
+
 }
 
 .topBar ul {
@@ -27,27 +27,27 @@ ul {
     margin: 0;
 }
 
-.topBar ul:first-of-type{
+.topBar ul:first-of-type {
     padding-left: 2rem;
 }
 
-li{
+li {
     list-style: none;
-    margin-right:  20px;
+    margin-right: 20px;
     font-size: small;
     color: white;
 }
 
-.clicker{
+.clicker {
     cursor: pointer;
 }
 
 
-.impressum{
+.impressum {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,  -50%);
+    transform: translate(-50%, -50%);
     background-color: black;
     max-height: 80%;
     width: 30%;
@@ -60,30 +60,30 @@ li{
     overflow-y: scroll;
 }
 
-.impressum ul{
+.impressum ul {
     flex-direction: column;
-    
+
 }
 
-.impressum ul li{
+.impressum ul li {
     font-size: 10px;
 }
 
-.imperessumHider{
+.imperessumHider {
     display: none;
 }
 
-.impressum button{
+.impressum button {
     height: 3rem;
 }
 
 
 @media screen and (max-width: 950px) {
-    .topBar{
+    .topBar {
         position: initial;
     }
 
-        .impressum{
-            width: 80%;
-        }
+    .impressum {
+        width: 80%;
+    }
 }
