@@ -117,6 +117,7 @@
     align-items: start;
     justify-content: end;
     user-select: none;
+    
 }
 
 
@@ -202,6 +203,13 @@
 
     .todoListWidget {
         width: 100%;
+    }
+    .clockWidget{
+        padding: 0;
+    }
+
+    #clockWidgetText{
+        font-size: 4rem;
     }
 }
 
