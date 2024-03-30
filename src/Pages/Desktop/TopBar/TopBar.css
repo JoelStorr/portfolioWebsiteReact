@@ -82,4 +82,8 @@ li{
     .topBar{
         position: initial;
     }
+
+        .impressum{
+            width: 80%;
+        }
 }
