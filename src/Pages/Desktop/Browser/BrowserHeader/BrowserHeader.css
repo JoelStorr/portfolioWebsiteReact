@@ -98,11 +98,11 @@
 
 .moreTabContainer {
     width: 100%;
-    height: 30rem;
+    height: auto;
     background-color: #202020;
     position: absolute;
     top: 5rem;
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
 }
 
 
