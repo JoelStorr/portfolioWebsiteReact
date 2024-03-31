@@ -1,19 +1,16 @@
-
-import React ,{useState} from "react";
+import React, { useState } from "react";
 import "./TopBar.css";
 
 function TopBar() {
-
-  let [showImpressum, setShowImpressum] = useState(false)
+  let [showImpressum, setShowImpressum] = useState(false);
   let [showDatenschutz, setShowDatenschutz] = useState(false);
 
-  function changeImpressum(){
-    setShowImpressum(()=> !showImpressum)
+  function changeImpressum() {
+    setShowImpressum(() => !showImpressum);
   }
 
-
-  function changeDatenschutz(){
-    setShowDatenschutz(()=>!showDatenschutz)
+  function changeDatenschutz() {
+    setShowDatenschutz(() => !showDatenschutz);
   }
 
   return (
