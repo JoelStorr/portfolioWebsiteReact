@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import "./MainDesktop.css";
 
-export default function MainDesktop({ width,changeProgramm, programmEnum }) {
-
- 
-
-
+export default function MainDesktop({ width, changeProgramm, programmEnum }) {
   return (
     <div className="mainDesktop">
       {width <= 825 ? null : (
