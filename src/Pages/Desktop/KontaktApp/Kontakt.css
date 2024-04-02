@@ -53,7 +53,6 @@
 }
 
 .profileImage{
-    
     width: 150px;
     height: 150px;
     border-radius: 2rem;
@@ -184,7 +183,6 @@
 @media screen and (max-width: 950px) {
     .kontaktApp {
         width: 100%;
-
     }
 
     .kontaktAppMainView {
@@ -214,6 +212,10 @@
         color: #1768E3;
         margin: 0;
         padding: 0;
+    }
+
+    .profileImage{
+        margin: 0 2rem 0 0;
     }
 }
 
