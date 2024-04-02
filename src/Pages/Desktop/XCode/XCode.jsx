@@ -263,7 +263,6 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
   function projecktLink(){
     switch(filename){
       case CodeView.fastApi:
-        console.log("FastAPI Link")
         return "https://github.com/JoelStorr/FEM-LinkSharing-App-BackEnd";
       case CodeView.flutter:
         return "https://github.com/JoelStorr/flutter_shopware_6_api";
