@@ -64,6 +64,7 @@ p {
     font-size: 15rem;
     color: #01628f;
     font-weight: 500;
+    user-select: none;
 }
 
 @media screen and (max-width: 950px) {
