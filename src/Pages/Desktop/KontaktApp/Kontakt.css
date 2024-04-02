@@ -52,27 +52,32 @@
     align-items: center;
 }
 
-
-.kontaktAppHader img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
+.profileImage{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
     margin: 0 2rem
 }
 
-.kontaktIcons {
-    width: 80%;
-    height: 80%;
+.contactinfoDetail{
+    flex-direction: column;
+    width: 50%;
+}
 
+.iconRow {
+    width: 100%;
+    display: flex;
 }
 
 .iconHolder {
-    width: 30px;
-    height: 30px;
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
     padding: .3rem;
     margin: 0 1rem 1rem 0;
     border-radius: 50px;
-    background-color: #1768E3;
+    background-color: #01628F;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,11 +87,12 @@
     cursor: pointer;
 }
 
-.iconRow {
-    width: 100%;
-    display: flex;
-    padding-left: 15rem;
+.kontaktIcons {
+    position: relative;
+    width: 80%;
+    height: 80%;
 }
+
 
 .kontaktAppAboutMe {
     padding: 2rem 4rem;

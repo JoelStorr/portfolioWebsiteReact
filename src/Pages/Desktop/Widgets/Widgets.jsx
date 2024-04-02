@@ -204,7 +204,7 @@ function ContactWidget(){
 
   return (
     <div className="contactWidget">
-      <img src="/images/ProfilePic.PNG" />
+      <img src="/images/ProfilePic.jpg" />
       <div>
         <h1>Joel Storr</h1>
         <div className="contactInfoHolder">

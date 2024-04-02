@@ -27,26 +27,28 @@ export default function Kontakt({width, setProgramm, Programm}) {
         )}
 
         <div className="kontaktAppHader">
-          <img src="images/ProfilePic.PNG" />
-          <h1>Joel Storr</h1>
+          <img src="images/ProfilePic.jpg" className="profileImage" />
+          <div className="contactinfoDetail">
+            <h1>Joel Storr</h1>
+            <div className="iconRow">
+              <div className="iconHolder">
+                <img src="images/icons/github.svg" className="kontaktIcons" />
+              </div>
+
+              <div className="iconHolder">
+                <img src="images/icons/linkedin.svg" className="kontaktIcons" />
+              </div>
+
+              <div className="iconHolder">
+                <img
+                  src="images/icons/envelope-solid.svg"
+                  className="kontaktIcons"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="iconRow">
-          <div className="iconHolder">
-            <img src="images/icons/github.svg" className="kontaktIcons" />
-          </div>
-
-          <div className="iconHolder">
-            <img src="images/icons/linkedin.svg" className="kontaktIcons" />
-          </div>
-
-          <div className="iconHolder">
-            <img
-              src="images/icons/envelope-solid.svg"
-              className="kontaktIcons"
-            />
-          </div>
-        </div>
         <div className="kontaktAppAboutMe">
           <hr />
           <h2>Über mich</h2>
@@ -78,12 +80,15 @@ export default function Kontakt({width, setProgramm, Programm}) {
           <hr />
 
           <h2>3D</h2>
-            <div className="YTLinkImage">
-          <a href="https://www.youtube.com/watch?v=MpEaKqDmp1E" target="blank">
+          <div className="YTLinkImage">
+            <a
+              href="https://www.youtube.com/watch?v=MpEaKqDmp1E"
+              target="blank"
+            >
               <img src="/images/3d/3dScene.png" className="threeDImage" />
-              <img src="/images/icons/youtube.svg" className="YTIcon"/>
-          </a>
-            </div>
+              <img src="/images/icons/youtube.svg" className="YTIcon" />
+            </a>
+          </div>
           <hr />
           <h2>Skills</h2>
           <div>
