@@ -99,4 +99,18 @@ p {
     .widgetHolder {
         width: 50vw;
     }
+
+    .tagline{
+        font-size: 10rem;
+    }
+}
+
+@media screen and (max-width: 1480px) and (min-width: 1025px) {
+    .widgetHolder {
+        width: 50vw;
+    }
+
+    .tagline {
+        font-size: 10rem;
+    }
 }
