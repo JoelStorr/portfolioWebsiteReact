@@ -1,30 +1,21 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
 
-import "./Widgets.css"
+import "./Widgets.css";
 
-export default function Widgets({width}) {
-
-
-
-
-    
-  function setDeviceLayout(){
-
-   
-    if (width <= 825  && width > 390){
-
-       return (
-         <div className="widgets">
-           <div className="widgetRow1">
-             <ContactWidget />
-           </div>
-           <div className="widgetRow2">
-             <SpecialeDayWidget />
-             <ClockWidget />
-           </div>
-         </div>
-       );
-
+export default function Widgets({ width }) {
+  function setDeviceLayout() {
+    if (width <= 825 && width > 390) {
+      return (
+        <div className="widgets">
+          <div className="widgetRow1">
+            <ContactWidget />
+          </div>
+          <div className="widgetRow2">
+            <SpecialeDayWidget />
+            <ClockWidget />
+          </div>
+        </div>
+      );
     } else if (width <= 435) {
       return (
         <div className="widgets">
@@ -50,36 +41,23 @@ export default function Widgets({width}) {
     }
   }
 
-    
-
-
-  return (
-    <>
-      {setDeviceLayout()}
-    </>
-  );
+  return <>{setDeviceLayout()}</>;
 }
 
+function TodoListWidget() {
+  const [checkedOne, setCheckedOne] = React.useState(true);
+  const [checkedTwo, setCheckedTwo] = React.useState(true);
+  const [checkedThree, setCheckedThree] = React.useState(false);
 
-function TodoListWidget(){
-
-
-    
-    const [checkedOne, setCheckedOne] = React.useState(true);
-    const [checkedTwo, setCheckedTwo] = React.useState(true);
-    const [checkedThree, setCheckedThree] = React.useState(false);
-
-
-      function handleChangeOne() {
-        setCheckedOne(!checkedOne);
-      }
-      function handleChangeTwo() {
-        setCheckedTwo(!checkedTwo);
-      }
-      function handleChangeThree() {
-        setCheckedThree(!checkedThree);
-      }
-
+  function handleChangeOne() {
+    setCheckedOne(!checkedOne);
+  }
+  function handleChangeTwo() {
+    setCheckedTwo(!checkedTwo);
+  }
+  function handleChangeThree() {
+    setCheckedThree(!checkedThree);
+  }
 
   return (
     <div className="todoListWidget">
@@ -138,40 +116,37 @@ function TodoListWidget(){
   );
 }
 
+function ClockWidget() {
+  const [hour, setHour] = React.useState(new Date().getHours());
 
-function ClockWidget(){
+  const [minute, setMinute] = React.useState(new Date().getMinutes());
 
-      const [hour, setHour] = React.useState(new Date().getHours());
+  const [seconds, setSeconds] = React.useState(new Date().getSeconds());
 
-      const [minute, setMinute] = React.useState(new Date().getMinutes());
+  function getTime() {
+    setInterval(() => {
+      let now = new Date();
+      let newHour = now.getHours();
+      let newMinute = now.getMinutes();
+      let newSecond = now.getSeconds();
 
-      const [seconds, setSeconds] = React.useState(new Date().getSeconds());
-
-      function getTime() {
-        setInterval(() => {
-          let now = new Date();
-          let newHour = now.getHours();
-          let newMinute = now.getMinutes();
-          let newSecond = now.getSeconds();
-
-          if (newHour != hour) {
-            setHour(newHour);
-          }
-
-          if (newMinute != minute) {
-            setMinute(newMinute);
-          }
-
-          setSeconds(newSecond);
-        }, 1000);
+      if (newHour != hour) {
+        setHour(newHour);
       }
 
-      getTime();
+      if (newMinute != minute) {
+        setMinute(newMinute);
+      }
 
-      const gradiantStyle = {
-        background: `conic-gradient(from ${seconds * 6}deg, #282C33, #01628f)`,
-      };
+      setSeconds(newSecond);
+    }, 1000);
+  }
 
+  getTime();
+
+  const gradiantStyle = {
+    background: `conic-gradient(from ${seconds * 6}deg, #282C33, #01628f)`,
+  };
 
   return (
     <div className="clockWidget" style={gradiantStyle}>
@@ -182,26 +157,23 @@ function ClockWidget(){
   );
 }
 
-
-function SpecialeDayWidget(){
-
+function SpecialeDayWidget() {
   return (
     <div className="specialDayWidget">
       <h1>
-        <span>20</span>  Days
+        <span>20</span> Days
       </h1>
       <h1>
-        <span>15</span>  Hours
+        <span>15</span> Hours
       </h1>
       <h1>
-        <span>10</span>  Minutes
+        <span>10</span> Minutes
       </h1>
     </div>
   );
 }
 
-function ContactWidget(){
-
+function ContactWidget() {
   return (
     <div className="contactWidget">
       <img src="/images/ProfilePic.jpg" />
@@ -214,11 +186,16 @@ function ContactWidget(){
           </div>
           <div className="contactLinkHolder">
             <h3>Links:</h3>
-            <a href="https://de.linkedin.com/in/joel-storr-190316137" target="blank">
+            <a
+              href="https://de.linkedin.com/in/joel-storr-190316137"
+              target="blank"
+            >
               LinkedIn
             </a>
             <br />
-            <a href="https://github.com/JoelStorr" target="blank">GitHub</a>
+            <a href="https://github.com/JoelStorr" target="blank">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
