@@ -4,7 +4,7 @@
   position: relative;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, .4) url("./wallpaper02.jpg") no-repeat center center fixed;
+  background: rgba(0, 0, 0, .4) url("/images/wallpaper02.jpg") no-repeat center center fixed;
   background-blend-mode: darken;
   background-size: cover;
   width: 100%;

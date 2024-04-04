@@ -73,7 +73,8 @@ export default function WhenIChanged() {
       <div className="appDetailProjectDetail">
         <h3>Über das Projeckt</h3>
         <p>
-          Work in Progress 
+          (Work in Progress) 
+          <br/>
           <br/>
           When I Changed ist meine erste eigene vollwertige IOS
           App. Das Ziel dieser App ist es, verschiedene Aktivitäten zu tracken.
