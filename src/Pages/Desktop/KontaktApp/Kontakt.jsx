@@ -1,7 +1,7 @@
 import React from "react";
 import "./Kontakt.css";
 
-export default function Kontakt({width, setProgramm, Programm}) {
+export default function Kontakt({ width, setProgramm, Programm }) {
   return (
     <div className="kontaktApp">
       {width <= 825 ? (
@@ -31,20 +31,32 @@ export default function Kontakt({width, setProgramm, Programm}) {
           <div className="contactinfoDetail">
             <h1>Joel Storr</h1>
             <div className="iconRow">
-              <div className="iconHolder">
-                <img src="images/icons/github.svg" className="kontaktIcons" />
-              </div>
+              <a href="https://github.com/JoelStorr" target="blank">
+                <div className="iconHolder">
+                  <img src="images/icons/github.svg" className="kontaktIcons" />
+                </div>
+              </a>
 
-              <div className="iconHolder">
-                <img src="images/icons/linkedin.svg" className="kontaktIcons" />
-              </div>
+              <a
+                href="https://de.linkedin.com/in/joel-storr-190316137"
+                target="blank"
+              >
+                <div className="iconHolder">
+                  <img
+                    src="images/icons/linkedin.svg"
+                    className="kontaktIcons"
+                  />
+                </div>
+              </a>
 
-              <div className="iconHolder">
-                <img
-                  src="images/icons/envelope-solid.svg"
-                  className="kontaktIcons"
-                />
-              </div>
+              <a href="mailto:info@joelstorr.de">
+                <div className="iconHolder">
+                  <img
+                    src="images/icons/envelope-solid.svg"
+                    className="kontaktIcons"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -92,7 +104,7 @@ export default function Kontakt({width, setProgramm, Programm}) {
           <hr />
           <h2>Skills</h2>
           <div>
-            <h3>Spoken Languages</h3>
+            <h3>Sprachen</h3>
             <div className="kontakSkillSection">
               <div className="programmingLanguage">
                 <img src="/images/icons/comment-regular.svg"></img>
