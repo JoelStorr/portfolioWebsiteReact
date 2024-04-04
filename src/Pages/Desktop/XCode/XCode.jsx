@@ -11,9 +11,9 @@ let CodeView = {
   fastApi: "fastApi",
 };
 
-export default function XCode({width, setProgramm, Programm}) {
+export default function XCode({ width, setProgramm, Programm }) {
   let [codeView, setCodeView] = useState(CodeView.fastApi);
-  let [sidebar, setSideBar] = useState(true)
+  let [sidebar, setSideBar] = useState(true);
   function chooseCodeView() {
     switch (codeView) {
       case CodeView.arProject:
@@ -34,18 +34,27 @@ export default function XCode({width, setProgramm, Programm}) {
       {width <= 1025 ? (
         <div className="xcode">
           {sidebar ? (
-            <XCodeSideBarLeft width={width} codeView={codeView} setCodeView={setCodeView} setProgramm={setProgramm} Programm={Programm} setSideBar={setSideBar} sidebar={sidebar}/>
+            <XCodeSideBarLeft
+              width={width}
+              codeView={codeView}
+              setCodeView={setCodeView}
+              setProgramm={setProgramm}
+              Programm={Programm}
+              setSideBar={setSideBar}
+              sidebar={sidebar}
+            />
           ) : (
             <div className="xcodeMainView">
-          
-              <XCodeMainViewHeader filename={codeView} setSideBar={setSideBar} sidebar={sidebar} width={width}/>
+              <XCodeMainViewHeader
+                filename={codeView}
+                setSideBar={setSideBar}
+                sidebar={sidebar}
+                width={width}
+              />
 
               {chooseCodeView()}
-              
             </div>
           )}
-
-          
         </div>
       ) : (
         <div className="xcode">
@@ -54,7 +63,6 @@ export default function XCode({width, setProgramm, Programm}) {
             <XCodeMainViewHeader filename={codeView} />
 
             {chooseCodeView()}
-            
           </div>
           {/* <div className="xcodeSideView xcodeSideViewRight"> </div> */}
         </div>
@@ -63,7 +71,7 @@ export default function XCode({width, setProgramm, Programm}) {
   );
 }
 
-function XCodeARView({width}) {
+function XCodeARView({ width }) {
   const codeString = `  import ArKit
   import SwiftUI
 
@@ -133,8 +141,7 @@ function ReactNative() {
   );
 }
 
-function Flutter({width}) {
-
+function Flutter({ width }) {
   const codeString = `
   
     import 'package:flutter/material.dart';
@@ -156,9 +163,6 @@ function Flutter({width}) {
       );
     }
   `;
-
-
-
 
   return (
     <div className="xcodeMainEditView">
@@ -186,8 +190,7 @@ function Flutter({width}) {
   );
 }
 
-function FastAPI({width}) {
-
+function FastAPI({ width }) {
   const codeString = `from FastAPI import Router
 
 def get_project_info ():
@@ -235,7 +238,11 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
   function fileExt() {
     switch (filename) {
       case CodeView.flutter:
-        return <h2 className="xcodeHeaderFileName">{capitalizeFirstLetter(filename)}.dart</h2>;
+        return (
+          <h2 className="xcodeHeaderFileName">
+            {capitalizeFirstLetter(filename)}.dart
+          </h2>
+        );
 
       case CodeView.reactNative:
         return (
@@ -260,15 +267,14 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
     }
   }
 
-  function projecktLink(){
-    switch(filename){
+  function projecktLink() {
+    switch (filename) {
       case CodeView.fastApi:
         return "https://github.com/JoelStorr/FEM-LinkSharing-App-BackEnd";
       case CodeView.flutter:
         return "https://github.com/JoelStorr/flutter_shopware_6_api";
     }
   }
-
 
   return (
     <div className="xcodeMainViewHeader">
@@ -305,19 +311,25 @@ function XCodeMainViewHeader({ filename, sidebar, setSideBar, width }) {
   );
 }
 
-function XCodeSideBarLeft({ width, codeView, setCodeView, setProgramm, Programm, setSideBar = ()=>{}, sidebar }) {
+function XCodeSideBarLeft({
+  width,
+  codeView,
+  setCodeView,
+  setProgramm,
+  Programm,
+  setSideBar = () => {},
+  sidebar,
+}) {
   let [subFolderOne, setSubFolderOne] = useState(false);
   let [subFolderTwo, setSubFolderTwo] = useState(false);
   let [subFolderThree, setSubFolderThree] = useState(false);
   let [subFolderFour, setSubFolderFour] = useState(true);
 
-  function changeCodeView(codeView){
-
+  function changeCodeView(codeView) {
     setCodeView(codeView);
 
     setSideBar(!sidebar);
   }
-
 
   return (
     <div className="xcodeSideView">
@@ -536,7 +548,7 @@ function XCodeCodeElement({ codeString, language }) {
     padding: "25px",
     fontSize: "1.5rem",
     fontFamily: "Cutive-Mono",
-    overflowX: "hidden"
+    overflowX: "hidden",
   };
 
   return (
