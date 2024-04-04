@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./Widgets.css";
 
-export default function Widgets({ width }) {
+export default function Widgets({ width, programmEnum, changeProgramm }) {
   function setDeviceLayout() {
     if (width <= 825 && width > 390) {
       return (
@@ -33,8 +33,14 @@ export default function Widgets({ width }) {
             <ClockWidget />
           </div>
           <div className="widgetRow2">
-            <SpecialeDayWidget />
-            <ContactWidget />
+            <SpecialeDayWidget
+              programmEnum={programmEnum}
+              changeProgramm={changeProgramm}
+            />
+            <ContactWidget
+              programmEnum={programmEnum}
+              changeProgramm={changeProgramm}
+            />
           </div>
         </div>
       );
@@ -157,9 +163,12 @@ function ClockWidget() {
   );
 }
 
-function SpecialeDayWidget() {
+function SpecialeDayWidget({changeProgramm, programmEnum}) {
   return (
-    <div className="specialDayWidget">
+    <div
+      className="specialDayWidget"
+      onClick={() => changeProgramm(programmEnum.AppStore)}
+    >
       <h1>
         <span>20</span> Days
       </h1>
@@ -173,9 +182,12 @@ function SpecialeDayWidget() {
   );
 }
 
-function ContactWidget() {
+function ContactWidget({changeProgramm, programmEnum}) {
   return (
-    <div className="contactWidget">
+    <div
+      className="contactWidget"
+      onClick={() => changeProgramm(programmEnum.Kontakt)}
+    >
       <img src="/images/ProfilePic.jpg" />
       <div>
         <h1>Joel Storr</h1>

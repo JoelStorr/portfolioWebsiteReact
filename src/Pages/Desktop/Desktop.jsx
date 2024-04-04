@@ -91,7 +91,7 @@ function Desktop() {
       <div className="desktop">
         <TopBar />
         <div className="widgetHolder">
-          <Widgets width={width} />
+          <Widgets width={width}  programmEnum={Programm} changeProgramm={changeSowftware}/>
         </div>
         <MainDesktop
           changeProgramm={changeSowftware}
