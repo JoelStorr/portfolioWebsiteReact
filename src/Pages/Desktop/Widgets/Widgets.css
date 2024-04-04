@@ -109,6 +109,7 @@
 .specialDayWidget {
     width: 15rem;
     height: 15rem;
+    padding: 1rem;
     background-color: #01628f;
     /* background-color: rgb(10, 126, 220); */
     border-radius: 1rem;
@@ -136,7 +137,8 @@
 
 .contactWidget {
     height: 15rem;
-    box-sizing: border-box;
+    padding: 1rem;
+    
     max-width: 80%;
     min-width: 60%;
     background-color: #282C33;
@@ -145,7 +147,7 @@
     display: flex;
     font-size: 1.2rem;
     overflow: hidden;
-    padding: 1rem;
+    
 }
 
 .contactWidget img {
