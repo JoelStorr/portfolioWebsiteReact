@@ -13,6 +13,7 @@
     padding: 2rem;
     background-color: #191c209a;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(2rem);
     border-radius: .5rem 0 0 .5rem;
 }
 

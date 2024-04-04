@@ -6,6 +6,7 @@
     padding-top: 1rem;
     background-color: #382a279c;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(2rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
