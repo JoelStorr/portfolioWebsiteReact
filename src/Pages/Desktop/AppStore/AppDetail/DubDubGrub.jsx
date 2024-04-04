@@ -69,7 +69,7 @@ export default function DubDubGrub() {
         {/* TODO: Dispaly Descriptions */}
         <h3>Über das Projeckt</h3>
         <p>
-          Dub Dub Grub ist eine Cloudkit basierte App aus dem App Kurs von Sean
+          <strong>Dub Dub Grub</strong> ist eine Cloudkit basierte App aus dem App Kurs von Sean
           Allen. Die App vereint Techniken aus Map Kit und Cloud Kit, um
           Eventteilnehmer, die sich eingecheckt haben, in umlegenden Lokalitäten
           zu finden. Dabei setzt die App auf eine Cloud Kit Synchronisation,

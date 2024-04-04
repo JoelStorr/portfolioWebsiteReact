@@ -50,16 +50,17 @@ export default function GitHubFollowers() {
         {/* TODO: Dispaly Descriptions */}
         <h3>Über das Projeckt</h3>
         <p>
-          GitHub Follower Tracker war eines der ersten Tutorialprojekte in der
-          IOS Entwicklung. Die App ist Teil des GitHub Followers Kurses von Sean
-          Allen. Dieser Kurs hat mir als Einführung in die Swift Programmierung
-          gedient und die Entwicklungsumgebung näher gebracht. Als Teil des
-          Kurses habe ich mich mit UI Kit auseinandergesetzt und mit dem Laden
-          von API Daten in einer IOS App vertraut gemacht. Ebenfalls habe ich
-          das Navigieren über mehrere Seiten erlernt als auch das dynamische
-          Laden von Bildern aus dem Web. Die App verwendet ein System zum
-          automatischen Nachladen von Nutzerprofilen, wenn man am Ende der
-          geladenen Follower angekommen ist.
+          <strong>GitHub Follower Tracker</strong> war eines der ersten
+          Tutorialprojekte in der IOS Entwicklung. Die App ist Teil des GitHub
+          Followers Kurses von Sean Allen. Dieser Kurs hat mir als Einführung in
+          die Swift Programmierung gedient und die Entwicklungsumgebung näher
+          gebracht. Als Teil des Kurses habe ich mich mit UI Kit
+          auseinandergesetzt und mit dem Laden von API Daten in einer IOS App
+          vertraut gemacht. Ebenfalls habe ich das Navigieren über mehrere
+          Seiten erlernt als auch das dynamische Laden von Bildern aus dem Web.
+          Die App verwendet ein System zum automatischen Nachladen von
+          Nutzerprofilen, wenn man am Ende der geladenen Follower angekommen
+          ist.
         </p>
       </div>
     </>

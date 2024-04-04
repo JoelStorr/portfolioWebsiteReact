@@ -98,16 +98,16 @@
         margin-bottom: 8rem;
     }
 
-    .appDetailProjectDetail{
+    .appDetailProjectDetail {
         width: 80%;
         height: auto;
         margin-bottom: 2rem;
         padding-bottom: 10rem;
     }
 
-        .appDetailAppIcon{
-            min-width: 70px;
-            width: 70px;
-            height: 70px;
-        }
+    .appDetailAppIcon {
+        min-width: 70px;
+        width: 70px;
+        height: 70px;
+    }
 }

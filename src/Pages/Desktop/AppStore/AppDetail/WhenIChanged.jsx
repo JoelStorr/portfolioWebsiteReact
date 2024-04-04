@@ -59,9 +59,9 @@ export default function WhenIChanged() {
           <p>Cloud Kit</p>
           <hr />
           <p>Widget Kit</p>
-          <hr/>
+          <hr />
           <p>Notofications</p>
-          <hr/>
+          <hr />
           <p>Image Library</p>
         </div>
       </div>
@@ -73,10 +73,10 @@ export default function WhenIChanged() {
       <div className="appDetailProjectDetail">
         <h3>Über das Projeckt</h3>
         <p>
-          (Work in Progress) 
-          <br/>
-          <br/>
-          When I Changed ist meine erste eigene vollwertige IOS
+          (Work in Progress)
+          <br />
+          <br />
+          <strong>When I Changed</strong> ist meine erste eigene vollwertige IOS
           App. Das Ziel dieser App ist es, verschiedene Aktivitäten zu tracken.
           Hierbei sollen in der App eine Reihe wichtiger Habits entweder aktiv
           oder passiv verfolgt werden. Die Idee hierbei ist, dass negative
@@ -94,9 +94,9 @@ export default function WhenIChanged() {
           Tab kommt mit einem eingebauten Editor, der es ermöglicht das Widget
           für den Tag zu bearbeiten und mit eigener Schrift und Hintergrundbild
           zu versehen. Auch hier werden alle Daten via der iCloud auf den
-          verschiedenen Geräten des Nutzers geteilt. <br/> <br/>Beim Programmieren dieser
-          App habe ich mich weiter mit Cloud Kit, der Bildergalerie, Widget Kit
-          und Benachrichtigungen vertraut gemacht.
+          verschiedenen Geräten des Nutzers geteilt. <br /> <br />
+          Beim Programmieren dieser App habe ich mich weiter mit Cloud Kit, der
+          Bildergalerie, Widget Kit und Benachrichtigungen vertraut gemacht.
         </p>
       </div>
     </>
