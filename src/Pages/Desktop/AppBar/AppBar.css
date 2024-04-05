@@ -52,6 +52,7 @@
         transition: top 0s;
         border-radius: 50px;    
         z-index: 0; 
+        display: none;
     }
 
     .appBar:hover .appContainer{
