@@ -218,6 +218,10 @@
     .profileImage{
         margin: 0 2rem 0 0;
     }
+
+    .kontaktAppAboutMe{
+        margin-bottom: 10rem;
+    }
 }
 
 @media screen and (max-width: 1025px) {
