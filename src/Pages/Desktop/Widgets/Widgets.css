@@ -118,7 +118,7 @@
     align-items: start;
     justify-content: end;
     user-select: none;
-    
+
 }
 
 
@@ -146,7 +146,7 @@
     display: flex;
     font-size: 1.2rem;
     overflow: hidden;
-    
+
 }
 
 .contactWidget img {
@@ -184,7 +184,7 @@
 
 
 @media screen and (max-width: 500px) {
-    .contactWidget{
+    .contactWidget {
         width: 100%;
         max-width: 100%;
     }
@@ -207,18 +207,19 @@
     .todoListWidget {
         width: 100%;
     }
-    .clockWidget{
+
+    .clockWidget {
         padding: 0;
     }
 
-    #clockWidgetText{
+    #clockWidgetText {
         font-size: 4rem;
     }
 }
 
 @media screen and (min-width: 2000px) {
 
-    .widgets{
+    .widgets {
         width: 70%;
     }
 

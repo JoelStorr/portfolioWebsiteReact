@@ -31,19 +31,20 @@
 
 
 
-.appStore-sideBar li{
+.appStore-sideBar li {
     list-style: none;
     padding: .8rem;
 }
 
 
-.appStore-sideBar li:hover{
+.appStore-sideBar li:hover {
     cursor: pointer;
 }
 
 .appStore-mainView {
     flex: 1;
-    background-color: #282C33; /*Change to this tone*/
+    background-color: #282C33;
+    /*Change to this tone*/
     width: 100%;
     min-height: 100%;
     border-radius: 0 5px 5px 0;
@@ -57,14 +58,15 @@
 }
 
 @media screen and (max-width: 950px) {
-    .appStore{
+    .appStore {
         display: flex;
     }
-    .appStore-sideBar{
+
+    .appStore-sideBar {
         width: 100%;
     }
 
-    .appStore-mainViewMobile-Holder{
+    .appStore-mainViewMobile-Holder {
         display: flex;
         flex-direction: column;
         background-color: #282C33;
@@ -72,43 +74,36 @@
         overflow: hidden;
     }
 
-        .appStore-sideViewMobile-Holder{
-            display: flex;
-                flex-direction: column;
-                background-color: #191c20;
-                width: 100%;
-                overflow: hidden;
-        }
+    .appStore-sideViewMobile-Holder {
+        display: flex;
+        flex-direction: column;
+        background-color: #191c20;
+        width: 100%;
+        overflow: hidden;
+    }
 
-
-    .appStore-mainView{
+    .appStore-mainView {
         border-radius: 0;
     }
 
-    .appStore-backButton{
+    .appStore-backButton {
         width: 100%;
-        
         padding: 2rem;
     }
 
-    .appStore-backButton button{
+    .appStore-backButton button {
         display: flex;
         align-items: center;
-        
-        
         width: 10rem;
-        background-color:rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
         border: none;
         font-weight: bolder;
         font-size: 2rem;
         color: rgb(40, 135, 250)
     }
 
-        .appStore-backButton button img{
-            height: 15%;
-            width: 15%;
-        }
-
-    
-
+    .appStore-backButton button img {
+        height: 15%;
+        width: 15%;
+    }
 }

@@ -1,7 +1,6 @@
-
 @font-face {
     font-family: 'Spline Sanse';
-    src: url('/fonts/SplineSans.ttf'),   
+    src: url('/fonts/SplineSans.ttf'),
 }
 
 @font-face {
@@ -22,22 +21,17 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-size: 10px;
 }
 
-
-body{
+body {
     font-family: "Spline Sanse";
 }
-
-
-
 
 #base-ui {
     display: none;
 }
-
 
 #root {
     position: absolute;
@@ -46,9 +40,7 @@ body{
     left: 0vw;
     width: 100vw;
     height: 100vh;
-   
     pointer-events: all;
-    
     /* display:none; */
 }
 
@@ -63,13 +55,11 @@ body{
     z-index: -1;
 }
 
-
 #app-ui {
     position: relative;
     z-index: 10;
     pointer-events: none;
     height: 0;
-
 }
 
 #elevator {

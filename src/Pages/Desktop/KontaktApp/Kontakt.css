@@ -53,14 +53,14 @@
     align-items: center;
 }
 
-.profileImage{
+.profileImage {
     width: 150px;
     height: 150px;
     border-radius: 2rem;
     margin: 0 2rem
 }
 
-.contactinfoDetail{
+.contactinfoDetail {
     flex-direction: column;
     width: 50%;
 }
@@ -147,17 +147,17 @@
     padding-right: 2rem;
 }
 
-.YTLinkImage{
+.YTLinkImage {
     position: relative;
     max-width: 60%;
     margin-bottom: 2rem;
-    
+
 }
 
 
 
 
-.YTIcon{
+.YTIcon {
     position: absolute;
     width: 15%;
     height: auto;
@@ -167,7 +167,7 @@
     user-select: none;
 }
 
-.threeDImage{
+.threeDImage {
     width: 100%;
     height: auto;
     opacity: 0.8;
@@ -176,7 +176,7 @@
 
 
 
-.YTLinkImage:hover  .threeDImage{
+.YTLinkImage:hover .threeDImage {
     opacity: .6;
 }
 
@@ -215,18 +215,17 @@
         padding: 0;
     }
 
-    .profileImage{
+    .profileImage {
         margin: 0 2rem 0 0;
     }
 
-    .kontaktAppAboutMe{
+    .kontaktAppAboutMe {
         margin-bottom: 10rem;
     }
 }
 
 @media screen and (max-width: 1025px) {
     .kontaktApp {
-            width: 100%;
-    
-        }
+        width: 100%;
+    }
 }
