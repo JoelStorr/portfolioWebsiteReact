@@ -107,8 +107,8 @@
 }
 
 .specialDayWidget {
-    width: 15rem;
-    height: 15rem;
+    min-width: 15rem;
+    min-height: 15rem;
     padding: 1rem;
     background-color: #01628f;
     /* background-color: rgb(10, 126, 220); */
@@ -138,7 +138,6 @@
 .contactWidget {
     height: 15rem;
     padding: 1rem;
-    
     max-width: 80%;
     min-width: 60%;
     background-color: #282C33;
@@ -202,6 +201,7 @@
     .widgetRow2 {
         width: auto;
         margin: 2rem;
+        display: none;
     }
 
     .todoListWidget {

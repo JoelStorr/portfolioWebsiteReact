@@ -83,10 +83,15 @@ li {
         justify-content: space-between;
         flex-wrap: wrap;
         align-items:flex-start;
+        height:min-content;
     }
 
     .appIconMoc{
         width: 8rem;
         height: 8rem;
+    }
+
+    .mainDesktop{
+        height: auto;
     }
 }
