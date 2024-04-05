@@ -1,7 +1,6 @@
 .websiteContent {
     position: relative;
     width: 100%;
-
     min-height: 100%;
     height: 100%;
     overflow: scroll;
@@ -29,21 +28,17 @@
     background: #555;
 }
 
-
-
 .websiteContentSection {
     position: relative;
     height: 300px;
     width: 95%;
     display: flex;
-
 }
 
 .websiteContentCarousel {
     width: 60%;
     padding: 0 10rem 7rem;
     margin-bottom: 2rem;
-
 }
 
 .websiteContentUsedTech {
@@ -55,7 +50,6 @@
 .websiteContentUsedTech ul {
     display: flex;
     flex-direction: column;
-
 }
 
 .repoLinkHolder {
@@ -86,7 +80,6 @@
 }
 
 .websiteContentAbout h4 {
-    
     padding: 0;
     margin: 3rem 0 0 0;
 }
@@ -104,12 +97,11 @@
     font-size: 2.5rem;
 }
 
-.websiteContent p{
+.websiteContent p {
     font-size: 1.4rem;
     line-height: 160%;
     letter-spacing: .15rem;
 }
-
 
 @media screen and (max-width: 950px) {
     .websiteContentSection {
@@ -123,7 +115,6 @@
         height: 20rem;
         padding: 0 10rem 0 10rem;
         margin-bottom: 8rem;
-
     }
 
     .websiteContentSection {
@@ -147,6 +138,5 @@
         margin-left: 0;
         margin-right: 0;
         padding: 0 10% 10rem 10%;
-
     }
 }
