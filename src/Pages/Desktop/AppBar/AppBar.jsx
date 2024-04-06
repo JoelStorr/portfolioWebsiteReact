@@ -35,15 +35,6 @@ export default function AppBar({ changeProgramm, programmEnum }) {
               </div>
             </a>
           </li>
-          {/* <li onClick={() => changeProgramm(programmEnum.Writing)}>
-            <div className="appIconMoc"></div>
-          </li> */}
-          {/* <li onClick={() => changeProgramm(programmEnum.Kontakt)}>
-            <div className="appIconMoc addressIcon">
-              <img src="/images/icons/address-book-regular.svg" />
-            </div>
-            <p></p>
-          </li> */}
         </ul>
       </div>
       <div
