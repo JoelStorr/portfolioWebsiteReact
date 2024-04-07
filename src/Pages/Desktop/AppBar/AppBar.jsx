@@ -41,7 +41,6 @@ export default function AppBar({ changeProgramm, programmEnum }) {
         className="appBarSpacer"
         onClick={() => changeProgramm(programmEnum.None)}
       >
-        <p> </p>
       </div>
     </div>
   );
