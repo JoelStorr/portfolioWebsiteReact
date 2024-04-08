@@ -35,13 +35,13 @@ export default function IssueTracker() {
         <div>
           <h1>Issue Tracker</h1>
           <h3>
-            Cross Plattform Project to track reported Issues(Hacking With Swift
-            Tutorial)
+            Cross Plattform Projekt, um Softwareprobleme zu verfolgen (Hacking
+            with Swift Tutorial)
           </h3>
           {/* TODO: Make sure linke goes to repo */}
           <a
             className="downloadBtn"
-            href="https://www.github.com"
+            href="https://github.com/JoelStorr/IssueTracker"
             target="_blank"
             rel="noreferrer"
           >

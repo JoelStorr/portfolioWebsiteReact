@@ -19,11 +19,11 @@ export default function GitHubFollowers() {
         <div className="appDetailAppIcon">GH</div>
         <div>
           <h1>GitHubFollowers</h1>
-          <h3>GitHub Api Project(Sean Allen Tutorial)</h3>
+          <h3>GitHub API Projekt (Sean Allen Tutorial)</h3>
           {/* TODO: Make sure linke goes to repo */}
           <a
             className="downloadBtn"
-            href="https://www.github.com"
+            href="https://github.com/JoelStorr/GHFollowers"
             target="_blank"
             rel="noreferrer"
           >

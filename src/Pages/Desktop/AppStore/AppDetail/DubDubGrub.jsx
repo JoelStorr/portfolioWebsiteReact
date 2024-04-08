@@ -35,12 +35,13 @@ export default function DubDubGrub() {
         <div>
           <h1>Dub Dub Grub</h1>
           <h3>
-            iPhone app to connect with people during events(Sean Allen Tutorial)
+            IPhone App, um sich mit Eventteilnehmern zu verbinden (Sean Allen
+            Tutorial)
           </h3>
           {/* TODO: Make sure linke goes to repo */}
           <a
             className="downloadBtn"
-            href="https://www.github.com"
+            href="https://github.com/JoelStorr/DubDubGrub-CloudKit-Appm"
             target="_blank"
             rel="noreferrer"
           >
@@ -69,11 +70,12 @@ export default function DubDubGrub() {
         {/* TODO: Dispaly Descriptions */}
         <h3>Über das Projeckt</h3>
         <p>
-          <strong>Dub Dub Grub</strong> ist eine Cloudkit basierte App aus dem App Kurs von Sean
-          Allen. Die App vereint Techniken aus Map Kit und Cloud Kit, um
-          Eventteilnehmer, die sich eingecheckt haben, in umlegenden Lokalitäten
-          zu finden. Dabei setzt die App auf eine Cloud Kit Synchronisation,
-          durch die die Daten aller Nutzer synchron gehalten und geteilt werden.
+          <strong>Dub Dub Grub</strong> ist eine Cloudkit basierte App aus dem
+          App Kurs von Sean Allen. Die App vereint Techniken aus Map Kit und
+          Cloud Kit, um Eventteilnehmer, die sich eingecheckt haben, in
+          umlegenden Lokalitäten zu finden. Dabei setzt die App auf eine Cloud
+          Kit Synchronisation, durch die die Daten aller Nutzer synchron
+          gehalten und geteilt werden.
           <br />
           <br />
           Mit diesem Projekt habe ich mich in die Integration von Map Kit

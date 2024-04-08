@@ -37,11 +37,11 @@ export default function WhenIChanged() {
         <div className="appDetailAppIcon">IC</div>
         <div>
           <h1>When I Changed</h1>
-          <h3>Stay on Track to reach your golas</h3>
+          <h3>Bleib am Ball, um deine Ziele zu erreichen</h3>
           {/* TODO: Make sure linke goes to repo */}
           <a
             className="downloadBtn"
-            href="https://www.github.com"
+            href="https://github.com/JoelStorr/When-I-Changed"
             target="_blank"
             rel="noreferrer"
           >
