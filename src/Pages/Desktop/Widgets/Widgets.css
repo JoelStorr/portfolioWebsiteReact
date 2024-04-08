@@ -118,6 +118,7 @@
     align-items: start;
     justify-content: end;
     user-select: none;
+    cursor: pointer;
 
 }
 
@@ -157,6 +158,7 @@
     overflow: hidden;
     margin-right: 2rem;
     user-select: none;
+    cursor: pointer;
 }
 
 .contactWidget h1 {
