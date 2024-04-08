@@ -30,7 +30,12 @@ export default function Portfolio() {
             <li>Vue JS Frontend Library</li>
             <li>Matter JS (physics library)</li>
           </ul>
-          <a href="https://github.com/JoelStorr/shape-css" target="blank">GitHub Repo</a>
+          <a
+            href="https://github.com/JoelStorr/portfolioWebsiteReact"
+            target="blank"
+          >
+            GitHub Repo
+          </a>
         </div>
       </div>
       <div className="websiteContentAbout">

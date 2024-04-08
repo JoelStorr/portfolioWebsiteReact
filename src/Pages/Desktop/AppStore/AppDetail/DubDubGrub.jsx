@@ -41,7 +41,7 @@ export default function DubDubGrub() {
           {/* TODO: Make sure linke goes to repo */}
           <a
             className="downloadBtn"
-            href="https://github.com/JoelStorr/DubDubGrub-CloudKit-Appm"
+            href="https://github.com/JoelStorr/DubDubGrub-CloudKit-App"
             target="_blank"
             rel="noreferrer"
           >
