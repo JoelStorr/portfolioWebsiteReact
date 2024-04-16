@@ -4,16 +4,36 @@ import "./WebsiteConetent.css";
 export default function Portfolio() {
   const images = [
     {
-      url: `./images/shapecss/shapecss1.png`,
-      title: "SunFlower",
+      url: `./images/portfolio/Home.png`,
+      title: "Home Seite",
     },
     {
-      url: "./images/shapecss/shapecss2.png",
-      title: "SunFlower",
+      url: `./images/portfolio/AppStore.png`,
+      title: "App Store Seite",
     },
     {
-      url: "./images/shapecss/shapecss3.png",
-      title: "SunFlower",
+      url: `./images/portfolio/Code.png`,
+      title: "Code Seite",
+    },
+    {
+      url: `./images/portfolio/AboutMe.png`,
+      title: "About Me Seite",
+    },
+    {
+      url: `./images/portfolio/HomeMobile.jpg`,
+      title: "Home Mobile Seite",
+    },
+    {
+      url: `./images/portfolio/AboutMeMobile.jpg`,
+      title: "About Me Mobile Seite",
+    },
+    {
+      url: `./images/portfolio/BrowserMobile.jpg`,
+      title: "Browser Mobile Seite",
+    },
+    {
+      url: `./images/portfolio/AppStoreMobile.jpg`,
+      title: "App Store Mibile Seite",
     },
   ];
 
@@ -22,7 +42,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <div className="websiteContentSection">
         <div className="websiteContentCarousel">
-          <ImageCarousel slides={images} fullHeightImage={false} />
+          <ImageCarousel slides={images} fullHeightImage={true} fit={true} />
         </div>
         <div className="websiteContentUsedTech">
           <h3>Benutzte Technologien</h3>
