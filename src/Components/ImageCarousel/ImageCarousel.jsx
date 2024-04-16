@@ -34,7 +34,7 @@ export default function ImageCarousel({ slides, fit, fullHeightImage }) {
     borderRadius: "10px",
     backgroundPosition: "center",
     backgroundSize: "cover",
-
+    cursor: "pointer",
     margin: "10px",
   };
 
