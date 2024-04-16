@@ -37,8 +37,9 @@
 
 .websiteContentCarousel {
     width: 60%;
+    min-height: 80%;
     padding: 0 10rem 7rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .websiteContentUsedTech {
@@ -72,6 +73,7 @@
     padding-right: 10rem;
     padding-left: 8rem;
     width: 50%;
+    margin-top: 8rem;
 }
 
 .websiteContentAbout ul {
