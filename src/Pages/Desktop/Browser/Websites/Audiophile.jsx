@@ -62,7 +62,7 @@ export default function Audiophile() {
         </div>
       </div>
       <div className="websiteContentAbout" >
-      <h3>Über das Projeckt</h3>
+      <h3>Über das Projekt</h3>
         <p>
           Audiophile ist ein mehrseitiges Frontend Projekt, welches als Teil der
           Frontend Mentor Challenge entstanden ist. Hierbei stellt die Frontend

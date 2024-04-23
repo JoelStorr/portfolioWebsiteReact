@@ -63,7 +63,7 @@ export default function LinkShare() {
         </div>
       </div>
       <div className="websiteContentAbout">
-        <h3>Über das Projeckt</h3>
+        <h3>Über das Projekt</h3>
         <p>
           Fullstack Projekt Linkshare ist eines der Frontend Mentor Guru
           Projekte in meinem Portfolio. Hierbei stellt Frontend Mentor die

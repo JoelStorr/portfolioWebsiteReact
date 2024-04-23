@@ -54,7 +54,7 @@ export default function ThreeDTShirtDesigner() {
         </div>
       </div>
       <div className="websiteContentAbout">
-        <h3>Über das Projeckt</h3>
+        <h3>Über das Projekt</h3>
         <p>
           Das Shirt Designer Projekt ist als Teil meines Interesses an 3D im Web
           entstanden und basiert auf einem JavaScript Mastery Tutorial. In

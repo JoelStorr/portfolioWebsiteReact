@@ -50,7 +50,7 @@ export default function ThreeJSBall() {
         </div>
       </div>
       <div className="websiteContentAbout">
-        <h3>Über das Projeckt</h3>
+        <h3>Über das Projekt</h3>
         <p>
           Das 3D Browser Spiel ist als Teil des ThreeJS Journey Kurses von Bruno
           Simon entstanden. Hierbei setzt das Projekt auf das React Three Fiber

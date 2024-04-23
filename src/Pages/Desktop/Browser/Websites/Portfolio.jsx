@@ -59,7 +59,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="websiteContentAbout">
-        <h3>Über das Projeckt</h3>
+        <h3>Über das Projekt</h3>
         <p>
           Für mein Portfolio habe ich React als Frontend Technologie gewählt,
           das sich vom Design an die Mac OS Oberfläche anlehnt. Anstelle eines
