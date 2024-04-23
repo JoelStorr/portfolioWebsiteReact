@@ -6,6 +6,7 @@ import Portfolio from "./Websites/Portfolio";
 import Audiophile from "./Websites/Audiophile";
 import LinkShare from "./Websites/LinkShare";
 import ThreeJSBall from "./Websites/ThreeJSBall";
+import ThreeDTShirtDesigner from "./Websites/3dTShirtDesigner";
 
 export default function Browser({ width, setProgramm, Programm }) {
   const BrowserSite = {
@@ -13,10 +14,12 @@ export default function Browser({ width, setProgramm, Programm }) {
     Portfolio: "Portfolio",
     Audiophile: "Audiophile",
     LinkShare: "LinkShare",
-    ThreeJSBall: "ThreeJSBall"
+    ThreeJSBall: "ThreeJSBall",
+    TShirtDesigner3D: "TShirtDesigner3D"
+
   };
 
-  const [activeTab, setActiveTab] = useState(BrowserSite.ShapeCSS);
+  const [activeTab, setActiveTab] = useState(BrowserSite.LinkShare);
 
   function displayWebPage() {
     switch (activeTab) {
@@ -30,6 +33,8 @@ export default function Browser({ width, setProgramm, Programm }) {
         return <LinkShare />;
       case BrowserSite.ThreeJSBall:
         return <ThreeJSBall />;
+      case BrowserSite.TShirtDesigner3D:
+        return <ThreeDTShirtDesigner />
     }
   }
 

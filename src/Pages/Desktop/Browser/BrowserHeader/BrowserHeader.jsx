@@ -22,17 +22,19 @@ export default function BrowserHeader({
           <div className="tabRow">
             <div
               className={
-                activeBrowserTab == browserSite.ShapeCSS
+                activeBrowserTab == browserSite.LinkShare
                   ? "browserTab activeTab"
                   : "browserTab"
               }
-              onClick={() => changeActiveTab(browserSite.ShapeCSS)}
+              onClick={() => {
+                changeActiveTab(browserSite.LinkShare);
+              }}
             >
-              <h3>Shape CSS</h3>
+              <h3>LinkShare</h3>
             </div>
             <div
               className={
-                activeBrowserTab != browserSite.ShapeCSS
+                activeBrowserTab != browserSite.LinkShare
                   ? "browserTab activeTab"
                   : "browserTab"
               }
@@ -44,6 +46,32 @@ export default function BrowserHeader({
               <div className="moreTab" onClick={switchTabs}>
                 <div className="moreTabContainer">
                   <ul>
+                    <li
+                      className={
+                        activeBrowserTab == browserSite.Audiophile
+                          ? "activeli"
+                          : ""
+                      }
+                      onClick={() => {
+                        changeActiveTab(browserSite.Audiophile);
+                        switchTabs();
+                      }}
+                    >
+                      Audiophile
+                    </li>
+                    <li
+                      className={
+                        activeBrowserTab == browserSite.TShirtDesigner3D
+                          ? "activeli"
+                          : ""
+                      }
+                      onClick={() => {
+                        changeActiveTab(browserSite.TShirtDesigner3D);
+                        switchTabs();
+                      }}
+                    >
+                      3D T-Shirt Dessigner
+                    </li>
                     <li
                       className={
                         activeBrowserTab == browserSite.Portfolio
@@ -59,30 +87,18 @@ export default function BrowserHeader({
                     </li>
                     <li
                       className={
-                        activeBrowserTab == browserSite.LinkShare
+                        activeBrowserTab == browserSite.ShapeCSS
                           ? "activeli"
                           : ""
                       }
                       onClick={() => {
-                        changeActiveTab(browserSite.LinkShare);
+                        changeActiveTab(browserSite.ShapeCSS);
                         switchTabs();
                       }}
                     >
-                      LinkShare
+                      Shape CSS
                     </li>
-                    <li
-                      className={
-                        activeBrowserTab == browserSite.Audiophile
-                          ? "activeli"
-                          : ""
-                      }
-                      onClick={() => {
-                        changeActiveTab(browserSite.Audiophile);
-                        switchTabs();
-                      }}
-                    >
-                      Audiophile
-                    </li>
+
                     <li
                       className={
                         activeBrowserTab == browserSite.ThreeJSBall
@@ -127,26 +143,6 @@ export default function BrowserHeader({
           <div className="tabRow">
             <div
               className={
-                activeBrowserTab == browserSite.ShapeCSS
-                  ? "browserTab activeTab"
-                  : "browserTab"
-              }
-              onClick={() => changeActiveTab(browserSite.ShapeCSS)}
-            >
-              <h3>Shape CSS</h3>
-            </div>
-            <div
-              className={
-                activeBrowserTab == browserSite.Portfolio
-                  ? "browserTab activeTab"
-                  : "browserTab"
-              }
-              onClick={() => changeActiveTab(browserSite.Portfolio)}
-            >
-              <h3>Portfolio</h3>
-            </div>
-            <div
-              className={
                 activeBrowserTab == browserSite.LinkShare
                   ? "browserTab activeTab"
                   : "browserTab"
@@ -165,6 +161,37 @@ export default function BrowserHeader({
             >
               <h3>Audiophile</h3>
             </div>
+            <div
+              className={
+                activeBrowserTab == browserSite.TShirtDesigner3D
+                  ? "browserTab activeTab"
+                  : "browserTab"
+              }
+              onClick={() => changeActiveTab(browserSite.TShirtDesigner3D)}
+            >
+              <h3>3D T-Shirt Designer</h3>
+            </div>
+            <div
+              className={
+                activeBrowserTab == browserSite.ShapeCSS
+                  ? "browserTab activeTab"
+                  : "browserTab"
+              }
+              onClick={() => changeActiveTab(browserSite.ShapeCSS)}
+            >
+              <h3>Shape CSS</h3>
+            </div>
+            <div
+              className={
+                activeBrowserTab == browserSite.Portfolio
+                  ? "browserTab activeTab"
+                  : "browserTab"
+              }
+              onClick={() => changeActiveTab(browserSite.Portfolio)}
+            >
+              <h3>Portfolio</h3>
+            </div>
+
             <div
               className={
                 activeBrowserTab == browserSite.ThreeJSBall
