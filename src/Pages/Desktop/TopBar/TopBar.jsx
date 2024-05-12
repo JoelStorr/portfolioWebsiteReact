@@ -54,7 +54,7 @@ function TopBar() {
             <br />
             Telefax: 04209914601
             <br />
-            E-Mail: joel.storr@ewe.net
+            E-Mail: info@joelstorr.de
           </p>
 
           <p>
