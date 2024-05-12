@@ -67,7 +67,7 @@ export default function IssueTracker() {
       </div>
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">
-        <h3>Über das Projeckt</h3>
+        <h3>Über das Projekt</h3>
         <p>
           <strong>Issue Tracker</strong> ist eine kleine solide App für IOS,
           iPad OS und Mac OS aus dem Portfolio Kurs von Hacking with Swift. Das

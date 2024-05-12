@@ -70,7 +70,7 @@ export default function LinkShare() {
           Designdateien und eine Projektübersicht zur Verfügung, so dass dem
           Challenge Teilnehmer selber frei gestellt wird, wie er zu dem
           gewollten Ergebnis kommt. Das Projekt selbst teilt sich in zwei Teile
-          auf. Das Frontend besteht aus einem Server seitig gerenderten Nuxt
+          auf. Das Frontend besteht aus einem serverseitig gerenderten Nuxt
           Projekt. Dieses bezieht seine Daten durch ein Python FastAPI basiertes
           Backend.
           <br />
@@ -92,7 +92,7 @@ export default function LinkShare() {
           die Daten an den Server übertragen werden.
         </p>
         <p>
-          Die App ist in der Lage das vom Nutzer hochgeladene Foto an die API zu
+          Die App ist in der Lage, das vom Nutzer hochgeladene Foto an die API zu
           übermitteln, und den vom Server kommenden Base64 String wieder in ein
           Bild zu konvertieren, das dem Nutzer im Frontend angezeigt werden
           kann.
@@ -104,7 +104,7 @@ export default function LinkShare() {
           Editor zu lassen.
         </p>
         <p>
-          Das FastAPI Backend ist darauf ausgelegt einen JSON Web Token nach der
+          Das FastAPI Backend ist darauf ausgelegt, einen JSON Web Token nach der
           Anmeldung zu generieren und auf den geschützten API Endpunkten zu
           verifizieren. In diesem Projekt habe ich auf eine einfache SQLite
           Datenbank gesetzt. Hierbei sind die Pfade zum Editieren der

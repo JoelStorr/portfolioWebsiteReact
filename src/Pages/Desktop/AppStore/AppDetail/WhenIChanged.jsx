@@ -71,7 +71,7 @@ export default function WhenIChanged() {
       </div>
       <div className="appDetailDevider"></div>
       <div className="appDetailProjectDetail">
-        <h3>Über das Projeckt</h3>
+        <h3>Über das Projekt</h3>
         <p>
           (Work in Progress)
           <br />
