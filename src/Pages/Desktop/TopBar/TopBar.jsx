@@ -206,7 +206,7 @@ function TopBar() {
           <p>
             Telefon: 04209914691
             <br />
-            E-Mail: joel.storr@ewe.net
+            E-Mail: info@joelstorr.de
           </p>
           <p>
             Verantwortliche Stelle ist die nat&uuml;rliche oder juristische
