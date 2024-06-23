@@ -26,6 +26,11 @@ h1 {
     cursor: pointer;
 }
 
+.routeLink{
+    text-decoration: none;
+    text-align: center;
+}
+
 .appIconMoc {
     width: 60px;
     height: 60px;

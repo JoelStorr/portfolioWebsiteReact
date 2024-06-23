@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Kontakt.css";
 
-export default function Kontakt({ width, setProgramm, Programm }) {
+export default function Kontakt({ width, Programm }) {
   return (
     <div className="kontaktApp">
       {width <= 825 ? (
@@ -18,10 +19,11 @@ export default function Kontakt({ width, setProgramm, Programm }) {
 
       <div className="kontaktAppMainView">
         {width <= 825 ? (
-          <button onClick={() => setProgramm(Programm.None)}>
+          <Link to="/">
             <img src="/images/icons/chevron-left-solid.svg" />
             <p>Home</p>
-          </button>
+          </Link>
+         
         ) : (
           <></>
         )}

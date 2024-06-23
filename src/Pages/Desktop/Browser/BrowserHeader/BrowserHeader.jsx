@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import {Link} from 'react-router-dom'
 import "./BrowserHeader.css";
 
 export default function BrowserHeader({
@@ -6,7 +7,7 @@ export default function BrowserHeader({
   changeActiveTab,
   browserSite,
   width,
-  setProgramm,
+  
   Programm,
 }) {
   let [showTabs, setShowTabs] = useState(false);
@@ -119,10 +120,11 @@ export default function BrowserHeader({
           </div>
           <div className="searchBar">
             {width <= 825 ? (
-              <button onClick={() => setProgramm(Programm.None)}>
+              <Link to="/">
                 <img src="/images/icons/chevron-left-solid.svg" />
                 <p>Home</p>
-              </button>
+              </Link>
+              
             ) : (
               <>
                 <p className="backArrowBrowser navigationButton">&#10132;</p>

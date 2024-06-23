@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "./XCode.css";
@@ -11,7 +12,7 @@ let CodeView = {
   fastApi: "fastApi",
 };
 
-export default function XCode({ width, setProgramm, Programm }) {
+export default function XCode({ width, Programm }) {
   let [codeView, setCodeView] = useState(CodeView.fastApi);
   let [sidebar, setSideBar] = useState(true);
   function chooseCodeView() {
@@ -38,7 +39,7 @@ export default function XCode({ width, setProgramm, Programm }) {
               width={width}
               codeView={codeView}
               setCodeView={setCodeView}
-              setProgramm={setProgramm}
+              
               Programm={Programm}
               setSideBar={setSideBar}
               sidebar={sidebar}
@@ -315,7 +316,7 @@ function XCodeSideBarLeft({
   width,
   codeView,
   setCodeView,
-  setProgramm,
+  
   Programm,
   setSideBar = () => {},
   sidebar,
@@ -335,10 +336,11 @@ function XCodeSideBarLeft({
     <div className="xcodeSideView">
       <div className="xcodeSideBarHeader">
         {width <= 825 ? (
-          <button onClick={() => setProgramm(Programm.None)}>
+
+          <Link to="/">
             <img src="/images/icons/chevron-left-solid.svg" />
             Home
-          </button>
+          </Link>
         ) : (
           <></>
         )}

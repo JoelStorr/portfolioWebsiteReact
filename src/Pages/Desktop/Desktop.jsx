@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import {Routes, Route, useLocation} from 'react-router-dom';
 import TopBar from "./TopBar/TopBar";
 import MainDesktop from "./MainDesktop/MainDesktop";
 import AppBar from "./AppBar/AppBar";
@@ -23,6 +24,8 @@ function Desktop() {
 
   const [width, setWidth] = useState(window.innerWidth);
 
+  const location = useLocation();
+
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
@@ -39,59 +42,63 @@ function Desktop() {
     }
   }
 
-  function renderProgramm() {
-    switch (programm) {
-      case Programm.None:
-        return <></>;
-      case Programm.AppStore:
-        return (
-          <AppStore
-            width={width}
-            setProgramm={setProgramm}
-            Programm={Programm}
-          />
-        );
-      case Programm.Browser:
-        return (
-          <Browser
-            width={width}
-            setProgramm={setProgramm}
-            Programm={Programm}
-          />
-        );
-      case Programm.XCode:
-        return (
-          <XCode width={width} setProgramm={setProgramm} Programm={Programm} />
-        );
-      // case Programm.Writing:
-      //     return <Writing />
-      case Programm.Kontakt:
-        return (
-          <Kontakt
-            width={width}
-            setProgramm={setProgramm}
-            Programm={Programm}
-          />
-        );
-    }
-  }
 
   return (
     <>
       <div
         className={
-          programm == Programm.None
+          location.pathname === "/"
             ? "programmHolder"
             : "programmHolder programmHolderActive"
         }
       >
-        {renderProgramm()}
+        <Routes>
+          <Route path="/" element={<></>} />
+
+          <Route
+            path="/appstore"
+            element={<AppStore width={width} Programm={Programm} />}
+          />
+          <Route
+            path="/browser"
+            element={
+              <Browser
+                width={width}
+                Programm={Programm}
+              />
+            }
+          />
+          <Route
+            path="/xcode"
+            element={
+              <XCode
+                width={width}
+                
+                Programm={Programm}
+              />
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <Kontakt
+                width={width}
+                
+                Programm={Programm}
+              />
+            }
+          />
+        </Routes>
       </div>
 
       <div className="desktop">
         <TopBar />
         <div className="widgetHolder">
-          <Widgets width={width}  programmEnum={Programm} changeProgramm={changeSowftware}/>
+          <Widgets
+            width={width}
+            programmEnum={Programm}
+            changeProgramm={changeSowftware}
+          />
         </div>
         <MainDesktop
           changeProgramm={changeSowftware}

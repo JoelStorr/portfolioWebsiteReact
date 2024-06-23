@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./AppStore.css";
 import WhenIChanged from "./AppDetail/WhenIChanged";
 import IssueTracker from "./AppDetail/IssueTracker";
 import DubDubGrub from "./AppDetail/DubDubGrub";
 import GitHubFollowers from "./AppDetail/GitHubFollowers";
 
-export default function AppStore({width, setProgramm, Programm}) {
+export default function AppStore({width, Programm}) {
   const Projects = {
     WhenIChanged: "WhenIChanged",
     IssueTracker: "IssueTracker",
@@ -49,10 +50,10 @@ export default function AppStore({width, setProgramm, Programm}) {
           {sidebarState ? (
             <div className="appStore-sideViewMobile-Holder">
               <div className="appStore-backButton">
-                <button onClick={() => setProgramm(Programm.None)}>
+                <Link to="/">
                   <img src="/images/icons/chevron-left-solid.svg" />
                   Home
-                </button>
+                </Link>
               </div>
               <AppStoreSideBar
                 shownProject={shownProject}
