@@ -19,9 +19,16 @@
     text-decoration: none;
 }
 
+.tabRowLink{
+    text-decoration: none;
+}
+.browserTab div{
+    text-decoration: none;
+}
 .browserTab h3 {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .activeTab {

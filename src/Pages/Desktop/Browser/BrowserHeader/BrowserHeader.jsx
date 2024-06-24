@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import {Link, useLocation} from 'react-router-dom'
+import { Link, useLocation } from "react-router-dom";
 import "./BrowserHeader.css";
 
 export default function BrowserHeader({
@@ -10,7 +10,7 @@ export default function BrowserHeader({
 }) {
   let [showTabs, setShowTabs] = useState(false);
 
-  const location = useLocation()
+  const location = useLocation();
 
   function switchTabs() {
     setShowTabs(!showTabs);
@@ -21,7 +21,7 @@ export default function BrowserHeader({
       return (
         <div className="browserHeader">
           <div className="tabRow">
-            <Link to="/browser" replace>
+            <Link to="/browser" replace className="tabRowLink">
               <div
                 className={
                   location.pathname === "/browser"
@@ -156,79 +156,79 @@ export default function BrowserHeader({
       return (
         <div className="browserHeader">
           <div className="tabRow">
-              <Link to="/browser">
-            <div
-              className={
-                activeBrowserTab == browserSite.LinkShare
-                  ? "browserTab activeTab"
-                  : "browserTab"
-              }
-              onClick={() => changeActiveTab(browserSite.LinkShare)}
-            >
+            <Link to="/browser" replace className="tabRowLink">
+              <div
+                className={
+                  activeBrowserTab == browserSite.LinkShare
+                    ? "browserTab activeTab"
+                    : "browserTab"
+                }
+                onClick={() => changeActiveTab(browserSite.LinkShare)}
+              >
                 <h3>LinkShare</h3>
-            </div>
-              </Link>
-              <Link to="/browser/audiophile" replace>
-            <div
-              className={
-                activeBrowserTab == browserSite.Audiophile
-                  ? "browserTab activeTab"
-                  : "browserTab"
-              }
-              onClick={() => changeActiveTab(browserSite.Audiophile)}
-            >
+              </div>
+            </Link>
+            <Link to="/browser/audiophile" replace className="tabRowLink">
+              <div
+                className={
+                  activeBrowserTab == browserSite.Audiophile
+                    ? "browserTab activeTab"
+                    : "browserTab"
+                }
+                onClick={() => changeActiveTab(browserSite.Audiophile)}
+              >
                 <h3>Audiophile</h3>
-            </div>
-              </Link>
-              <Link to="/browser/shirt-designer" replace>
-            <div
-              className={
-                activeBrowserTab == browserSite.TShirtDesigner3D
-                  ? "browserTab activeTab"
-                  : "browserTab"
-              }
-              onClick={() => changeActiveTab(browserSite.TShirtDesigner3D)}
-            >
+              </div>
+            </Link>
+            <Link to="/browser/shirt-designer" replace className="tabRowLink">
+              <div
+                className={
+                  activeBrowserTab == browserSite.TShirtDesigner3D
+                    ? "browserTab activeTab"
+                    : "browserTab"
+                }
+                onClick={() => changeActiveTab(browserSite.TShirtDesigner3D)}
+              >
                 <h3>3D T-Shirt Designer</h3>
-            </div>
-              </Link>
-              <Link to="/browser/shape-css" replace>
-            <div
-              className={
-                activeBrowserTab == browserSite.ShapeCSS
-                  ? "browserTab activeTab"
-                  : "browserTab"
-              }
-              onClick={() => changeActiveTab(browserSite.ShapeCSS)}
-            >
+              </div>
+            </Link>
+            <Link to="/browser/shape-css" replace className="tabRowLink">
+              <div
+                className={
+                  activeBrowserTab == browserSite.ShapeCSS
+                    ? "browserTab activeTab"
+                    : "browserTab"
+                }
+                onClick={() => changeActiveTab(browserSite.ShapeCSS)}
+              >
                 <h3>Shape CSS</h3>
-            </div>
-              </Link>
-              <Link to="/browser/portfolio" replace>
-            <div
-              className={
-                activeBrowserTab == browserSite.Portfolio
-                  ? "browserTab activeTab"
-                  : "browserTab"
-              }
-              onClick={() => changeActiveTab(browserSite.Portfolio)}
-            >
+              </div>
+            </Link>
+            <Link to="/browser/portfolio" replace className="tabRowLink">
+              <div
+                className={
+                  activeBrowserTab == browserSite.Portfolio
+                    ? "browserTab activeTab"
+                    : "browserTab"
+                }
+                onClick={() => changeActiveTab(browserSite.Portfolio)}
+              >
                 <h3>Portfolio</h3>
-            </div>
-              </Link>
+              </div>
+            </Link>
 
-              <Link to="/browser/threejs-game" replace>
-            <div
-              className={
-                activeBrowserTab == browserSite.ThreeJSBall
-                  ? "browserTab activeTab"
-                  : "browserTab"
-              }
-              onClick={() => changeActiveTab(browserSite.ThreeJSBall)}
-            >
+            <Link to="/browser/threejs-game" replace className="tabRowLink">
+              <div
+                className={
+                  activeBrowserTab == browserSite.ThreeJSBall
+                    ? "browserTab activeTab"
+                    : "browserTab"
+                }
+                onClick={() => changeActiveTab(browserSite.ThreeJSBall)}
+              >
                 <h3>ThreeJS Game</h3>
-            </div>
-              </Link>
+              </div>
+            </Link>
           </div>
           <div className="searchBar">
             {width <= 825 ? (
