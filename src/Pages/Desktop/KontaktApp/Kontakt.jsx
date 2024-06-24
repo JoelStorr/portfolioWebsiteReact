@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Kontakt.css";
 
-export default function Kontakt({ width, Programm }) {
+export default function Kontakt({ width }) {
   return (
     <div className="kontaktApp">
       {width <= 825 ? (
