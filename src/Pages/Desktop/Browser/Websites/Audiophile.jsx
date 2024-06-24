@@ -4,39 +4,39 @@ import "./WebsiteConetent.css";
 export default function Audiophile() {
   const images = [
     {
-      url: `./images/audiophile/HomePage.png`,
+      url: `/images/audiophile/HomePage.png`,
       title: "Home Page",
     },
     {
-      url: `./images/audiophile/Category.png`,
+      url: `/images/audiophile/Category.png`,
       title: "Category Page",
     },
     {
-      url: `./images/audiophile/ProductPage.png`,
+      url: `/images/audiophile/ProductPage.png`,
       title: "Product Page",
     },
     {
-      url: `./images/audiophile/CartPopup.png`,
+      url: `/images/audiophile/CartPopup.png`,
       title: "Cart Popup",
     },
     {
-      url: `./images/audiophile/checkout.png`,
+      url: `/images/audiophile/checkout.png`,
       title: "Checkout Page",
     },
     {
-      url: `./images/audiophile/checkoutComplete.png`,
+      url: `/images/audiophile/checkoutComplete.png`,
       title: "Checkout Complete Popup",
     },
     {
-      url: `./images/audiophile/HomePageTablet.png`,
+      url: `/images/audiophile/HomePageTablet.png`,
       title: "Home Page Tablet",
     },
     {
-      url: `./images/audiophile/productTablet.png`,
+      url: `/images/audiophile/productTablet.png`,
       title: "Product Page Tablet",
     },
     {
-      url: `./images/audiophile/CheckoutTablet.png`,
+      url: `/images/audiophile/CheckoutTablet.png`,
       title: "Checkout Page Tablet",
     },
   ];

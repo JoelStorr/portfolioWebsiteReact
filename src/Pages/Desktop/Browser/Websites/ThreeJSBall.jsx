@@ -4,15 +4,15 @@ import "./WebsiteConetent.css";
 export default function ThreeJSBall() {
   const images = [
     {
-      url: `./images/threeJSBall/start.png`,
+      url: `/images/threeJSBall/start.png`,
       title: "Editor View",
     },
     {
-      url: `./images/threeJSBall/mid.png`,
+      url: `/images/threeJSBall/mid.png`,
       title: "Editor View",
     },
     {
-      url: `./images/threeJSBall/end.png`,
+      url: `/images/threeJSBall/end.png`,
       title: "User Card Preview",
     },
     

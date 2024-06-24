@@ -4,19 +4,19 @@ import "./WebsiteConetent.css";
 export default function ThreeDTShirtDesigner() {
   const images = [
     {
-      url: `./images/3dShirtDesigner/Home.png`,
+      url: `/images/3dShirtDesigner/Home.png`,
       title: "3D Shirt Designer Home View",
     },
     {
-      url: `./images/3dShirtDesigner/ColorEditor.png`,
+      url: `/images/3dShirtDesigner/ColorEditor.png`,
       title: "3D Shirt Designer Color Editor View",
     },
     {
-      url: `./images/3dShirtDesigner/ImageUpload.png`,
+      url: `/images/3dShirtDesigner/ImageUpload.png`,
       title: "3D Shirt Designer Image Upload Editor View",
     },
     {
-      url: `./images/3dShirtDesigner/ImageTexture.png`,
+      url: `/images/3dShirtDesigner/ImageTexture.png`,
       title: "3D Shirt Designer Image Shirt Texture View",
     },
   ];

@@ -4,15 +4,15 @@ import "./WebsiteConetent.css";
 export default function ShapeCSS() {
   const images = [
     {
-      url: "./images/shapecss/shapecss1.png",
+      url: "/images/shapecss/shapecss1.png",
       title: "SunFlower",
     },
     {
-      url: "./images/shapecss/shapecss2.png",
+      url: "/images/shapecss/shapecss2.png",
       title: "SunFlower",
     },
     {
-      url: "./images/shapecss/shapecss3.png",
+      url: "/images/shapecss/shapecss3.png",
       title: "SunFlower",
     },
   ];

@@ -4,35 +4,35 @@ import "./WebsiteConetent.css";
 export default function Portfolio() {
   const images = [
     {
-      url: `./images/portfolio/Home.png`,
+      url: `/images/portfolio/Home.png`,
       title: "Home Seite",
     },
     {
-      url: `./images/portfolio/AppStore.png`,
+      url: `/images/portfolio/AppStore.png`,
       title: "App Store Seite",
     },
     {
-      url: `./images/portfolio/Code.png`,
+      url: `/images/portfolio/Code.png`,
       title: "Code Seite",
     },
     {
-      url: `./images/portfolio/AboutMe.png`,
+      url: `/images/portfolio/AboutMe.png`,
       title: "About Me Seite",
     },
     {
-      url: `./images/portfolio/HomeMobile.jpg`,
+      url: `/images/portfolio/HomeMobile.jpg`,
       title: "Home Mobile Seite",
     },
     {
-      url: `./images/portfolio/AboutMeMobile.jpg`,
+      url: `/images/portfolio/AboutMeMobile.jpg`,
       title: "About Me Mobile Seite",
     },
     {
-      url: `./images/portfolio/BrowserMobile.jpg`,
+      url: `/images/portfolio/BrowserMobile.jpg`,
       title: "Browser Mobile Seite",
     },
     {
-      url: `./images/portfolio/AppStoreMobile.jpg`,
+      url: `/images/portfolio/AppStoreMobile.jpg`,
       title: "App Store Mibile Seite",
     },
   ];

@@ -15,6 +15,8 @@
     border-radius: 5px 5px 0 0;
     cursor: pointer;
     user-select: none;
+    color: white;
+    text-decoration: none;
 }
 
 .browserTab h3 {
@@ -112,11 +114,22 @@
     padding: 0;
 }
 
-.moreTab ul li {
+/* .moreTab ul li {
     padding: 2rem;
     background-color: #3D3D3D;
     margin: 1rem 1rem;
     border-radius: 1rem;
+} */
+
+.moreTab .link {
+    padding: 2rem;
+    background-color: #3D3D3D;
+    margin: 1rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:medium;
 }
 
 .activeli {

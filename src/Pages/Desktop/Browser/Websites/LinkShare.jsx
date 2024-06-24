@@ -4,35 +4,35 @@ import "./WebsiteConetent.css";
 export default function LinkShare() {
   const images = [
     {
-      url: `./images/linkshare/EditorView.png`,
+      url: `/images/linkshare/EditorView.png`,
       title: "Editor View",
     },
     {
-      url: `./images/linkshare/ProfileView.png`,
+      url: `/images/linkshare/ProfileView.png`,
       title: "Editor View",
     },
     {
-      url: `./images/linkshare/UserCardPreview.png`,
+      url: `/images/linkshare/UserCardPreview.png`,
       title: "User Card Preview",
     },
     {
-      url: `./images/linkshare/login.png`,
+      url: `/images/linkshare/login.png`,
       title: "Login View",
     },
     {
-      url: `./images/linkshare/register.png`,
+      url: `/images/linkshare/register.png`,
       title: "Register View",
     },
     {
-      url: `./images/linkshare/EditorTablet.png`,
+      url: `/images/linkshare/EditorTablet.png`,
       title: "Editor Tablet View",
     },
     {
-      url: `./images/linkshare/ProfileTablet.png`,
+      url: `/images/linkshare/ProfileTablet.png`,
       title: "Profile Tablet View",
     },
     {
-      url: `./images/linkshare/PreviewTablet.png`,
+      url: `/images/linkshare/PreviewTablet.png`,
       title: "Profile Tablet View",
     },
   ];

@@ -7,6 +7,7 @@ import Audiophile from "./Websites/Audiophile";
 import LinkShare from "./Websites/LinkShare";
 import ThreeJSBall from "./Websites/ThreeJSBall";
 import ThreeDTShirtDesigner from "./Websites/3dTShirtDesigner";
+import { Outlet } from "react-router-dom";
 
 export default function Browser({ width }) {
   const BrowserSite = {
@@ -21,22 +22,22 @@ export default function Browser({ width }) {
 
   const [activeTab, setActiveTab] = useState(BrowserSite.LinkShare);
 
-  function displayWebPage() {
-    switch (activeTab) {
-      case BrowserSite.ShapeCSS:
-        return <ShapeCSS />;
-      case BrowserSite.Portfolio:
-        return <Portfolio />;
-      case BrowserSite.Audiophile:
-        return <Audiophile />;
-      case BrowserSite.LinkShare:
-        return <LinkShare />;
-      case BrowserSite.ThreeJSBall:
-        return <ThreeJSBall />;
-      case BrowserSite.TShirtDesigner3D:
-        return <ThreeDTShirtDesigner />
-    }
-  }
+  // function displayWebPage() {
+  //   switch (activeTab) {
+  //     case BrowserSite.ShapeCSS:
+  //       return <ShapeCSS />;
+  //     case BrowserSite.Portfolio:
+  //       return <Portfolio />;
+  //     case BrowserSite.Audiophile:
+  //       return <Audiophile />;
+  //     case BrowserSite.LinkShare:
+  //       return <LinkShare />;
+  //     case BrowserSite.ThreeJSBall:
+  //       return <ThreeJSBall />;
+  //     case BrowserSite.TShirtDesigner3D:
+  //       return <ThreeDTShirtDesigner />
+  //   }
+  // }
 
   return (
     <div className="browser">
@@ -46,7 +47,7 @@ export default function Browser({ width }) {
         browserSite={BrowserSite}
         width={width}
       />
-      <div className="browserContent">{displayWebPage()}</div>
+      <div className="browserContent"><Outlet /></div>
     </div>
   );
 }
