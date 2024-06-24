@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {Routes, Route, useLocation} from 'react-router-dom';
+import { Routes, Route, useLocation } from "react-router-dom";
 import TopBar from "./TopBar/TopBar";
 import MainDesktop from "./MainDesktop/MainDesktop";
 import AppBar from "./AppBar/AppBar";
@@ -20,7 +20,6 @@ function Desktop() {
     Kontakt: "Kontakt",
   };
 
-
   const [width, setWidth] = useState(window.innerWidth);
 
   const location = useLocation();
@@ -34,9 +33,6 @@ function Desktop() {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
-
-  
-
 
   return (
     <>
@@ -56,32 +52,15 @@ function Desktop() {
           />
           <Route
             path="/browser"
-            element={
-              <Browser
-                width={width}
-                Programm={Programm}
-              />
-            }
+            element={<Browser width={width} Programm={Programm} />}
           />
           <Route
             path="/xcode"
-            element={
-              <XCode
-                width={width}
-                
-                Programm={Programm}
-              />
-            }
+            element={<XCode width={width} Programm={Programm} />}
           />
           <Route
             path="/about"
-            element={
-              <Kontakt
-                width={width}
-                
-                Programm={Programm}
-              />
-            }
+            element={<Kontakt width={width} Programm={Programm} />}
           />
         </Routes>
       </div>
@@ -89,13 +68,9 @@ function Desktop() {
       <div className="desktop">
         <TopBar />
         <div className="widgetHolder">
-          <Widgets
-            width={width}
-          />
+          <Widgets width={width} />
         </div>
-        <MainDesktop
-          width={width}
-        />
+        <MainDesktop width={width} />
         <AppBar />
         <h1 className="tagline">Frontend Developer</h1>
       </div>
