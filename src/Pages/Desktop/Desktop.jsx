@@ -20,7 +20,6 @@ function Desktop() {
     Kontakt: "Kontakt",
   };
 
-  const [programm, setProgramm] = useState(Programm.None);
 
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -36,11 +35,7 @@ function Desktop() {
     };
   }, []);
 
-  function changeSowftware(newProgramm) {
-    if (newProgramm in Programm) {
-      setProgramm(newProgramm);
-    }
-  }
+  
 
 
   return (
@@ -96,8 +91,6 @@ function Desktop() {
         <div className="widgetHolder">
           <Widgets
             width={width}
-            programmEnum={Programm}
-            changeProgramm={changeSowftware}
           />
         </div>
         <MainDesktop

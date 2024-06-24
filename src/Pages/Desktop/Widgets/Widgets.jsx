@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./Widgets.css";
 
@@ -163,11 +164,11 @@ function ClockWidget() {
   );
 }
 
-function SpecialeDayWidget({changeProgramm, programmEnum}) {
+function SpecialeDayWidget() {
   return (
-    <div
+    <Link
+      to="/appStore"
       className="specialDayWidget"
-      onClick={() => changeProgramm(programmEnum.AppStore)}
     >
       <h1>
         <span>20</span> Days
@@ -178,19 +179,19 @@ function SpecialeDayWidget({changeProgramm, programmEnum}) {
       <h1>
         <span>10</span> Minutes
       </h1>
-    </div>
+    </Link>
   );
 }
 
-function ContactWidget({changeProgramm, programmEnum}) {
+function ContactWidget() {
   return (
-    <div
-      className="contactWidget"
-      onClick={() => changeProgramm(programmEnum.Kontakt)}
-    >
+    <div to="/about" className="contactWidget">
       <img src="/images/ProfilePic.jpg" />
+
       <div>
-        <h1>Joel Storr</h1>
+        <Link to="/about" className="">
+          <h1>Joel Storr</h1>
+        </Link>
         <div className="contactInfoHolder">
           <div>
             <h3>Frontend Developer</h3>
