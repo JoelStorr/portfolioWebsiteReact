@@ -81,6 +81,7 @@ p {
     color: #01628f;
     font-weight: 500;
     user-select: none;
+    z-index: -1;
 }
 
 @media screen and (max-width: 950px) {
