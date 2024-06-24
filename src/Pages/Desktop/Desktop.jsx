@@ -24,7 +24,6 @@ import ThreeJSBall from "./Browser/Websites/ThreeJSBall";
 import Portfolio from "./Browser/Websites/Portfolio";
 
 function Desktop() {
-  
   const [width, setWidth] = useState(window.innerWidth);
   const location = useLocation();
 
@@ -51,71 +50,26 @@ function Desktop() {
           <Route path="/" element={<></>} />
 
           {/* NOTE: AppStore Routes */}
-          <Route
-            path="/appstore"
-            element={<AppStore width={width}/>}
-          >
-            <Route 
-              element={<WhenIChanged />}
-              index={true}
-            />
-            <Route 
-              path="issue"
-              element={<IssueTracker />}
-            />
-            <Route 
-              path="dubdub"
-              element={<DubDubGrub/>}
-            />
-            <Route
-              path="gh"
-              element={<GitHubFollowers />}
-            />
-            <Route 
-              path="sidebar"
-              element={<></>}
-            />
-
+          <Route path="/appstore" element={<AppStore width={width} />}>
+            <Route element={<WhenIChanged />} index={true} />
+            <Route path="issue" element={<IssueTracker />} />
+            <Route path="dubdub" element={<DubDubGrub />} />
+            <Route path="gh" element={<GitHubFollowers />} />
+            <Route path="sidebar" element={<></>} />
           </Route>
           {/* NOTE: Browser Routes  */}
-          <Route
-            path="/browser"
-            element={<Browser width={width} />}
-          >
-
-            <Route 
-              index
-              element={<LinkShare />}
-            />
-            <Route
-              path="audiophile"
-              element={<Audiophile/>}
-            />
-            <Route 
-              path="shirt-designer"
-              element={<ThreeDTShirtDesigner/>}
-            />
-            <Route 
-              path="shape-css"
-              element={<ShapeCSS />}
-            />
-            <Route 
-              path="portfolio"
-              element={<Portfolio />}
-            />
-            <Route 
-              path="threejs-game"
-              element={<ThreeJSBall />}
-            />
+          <Route path="/browser" element={<Browser width={width} />}>
+            <Route index element={<LinkShare />} />
+            <Route path="audiophile" element={<Audiophile />} />
+            <Route path="shirt-designer" element={<ThreeDTShirtDesigner />} />
+            <Route path="shape-css" element={<ShapeCSS />} />
+            <Route path="portfolio" element={<Portfolio />} />
+            <Route path="threejs-game" element={<ThreeJSBall />} />
           </Route>
-          <Route
-            path="/xcode"
-            element={<XCode width={width} />}
-          />
-          <Route
-            path="/about"
-            element={<Kontakt width={width} />}
-          />
+          {/* NOTE: XCode Routes */}
+          <Route path="/xcode" element={<XCode width={width} />} />
+
+          <Route path="/about" element={<Kontakt width={width} />} />
         </Routes>
       </div>
 
