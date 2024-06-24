@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import "./MainDesktop.css";
 
 export default function MainDesktop({ width, changeProgramm, programmEnum }) {
+
+  const location = useLocation();
+
   return (
     <div className="mainDesktop">
       {width <= 825 ? null : (
-        <Link to="/" className="desktopSpacer">
+        <Link to="/" className={
+         location.pathname === "/" ? "desktopSpacer noPointer" : "desktopSpacer"
+        }>
           {/* <div
             className="desktopSpacer"
             // onClick={() => changeProgramm(programmEnum.None)}

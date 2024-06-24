@@ -26,12 +26,18 @@ p {
 
 .desktopSpacer {
     flex: 1;
+    
+}
+
+.noPointer{
+    cursor: default;
 }
 
 
 .programmHolder {
     color: white;
-    cursor: default;
+    cursor: none;
+    
     position: absolute;
     top: 4rem;
     left: 0;
