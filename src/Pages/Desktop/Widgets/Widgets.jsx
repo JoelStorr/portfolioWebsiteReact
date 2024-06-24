@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Widgets.css";
 
-export default function Widgets({ width, programmEnum, changeProgramm }) {
+export default function Widgets({ width }) {
   function setDeviceLayout() {
     if (width <= 825 && width > 390) {
       return (
@@ -35,12 +35,10 @@ export default function Widgets({ width, programmEnum, changeProgramm }) {
           </div>
           <div className="widgetRow2">
             <SpecialeDayWidget
-              programmEnum={programmEnum}
-              changeProgramm={changeProgramm}
+              
             />
             <ContactWidget
-              programmEnum={programmEnum}
-              changeProgramm={changeProgramm}
+              
             />
           </div>
         </div>
