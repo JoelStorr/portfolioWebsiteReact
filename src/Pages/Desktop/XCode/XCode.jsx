@@ -337,9 +337,12 @@ function XCodeSideBarLeft({
       <div className="xcodeSideBarHeader">
         {width <= 825 ? (
 
-          <Link to="/">
+          <Link to="/" className="homeLink">
+          <button>
             <img src="/images/icons/chevron-left-solid.svg" />
-            Home
+            <p>Home</p>
+
+          </button>
           </Link>
         ) : (
           <></>

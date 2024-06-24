@@ -46,6 +46,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  text-decoration: none;
 }
 
 button:hover {
@@ -55,6 +56,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.homeLink{
+    text-decoration: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -71,3 +76,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+

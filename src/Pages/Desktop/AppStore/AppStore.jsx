@@ -50,9 +50,11 @@ export default function AppStore({width, Programm}) {
           {sidebarState ? (
             <div className="appStore-sideViewMobile-Holder">
               <div className="appStore-backButton">
-                <Link to="/">
+                <Link to="/" className="homeLink">
+                <button>
                   <img src="/images/icons/chevron-left-solid.svg" />
                   Home
+                </button>
                 </Link>
               </div>
               <AppStoreSideBar

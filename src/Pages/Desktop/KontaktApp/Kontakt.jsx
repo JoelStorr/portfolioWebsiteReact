@@ -19,11 +19,12 @@ export default function Kontakt({ width, Programm }) {
 
       <div className="kontaktAppMainView">
         {width <= 825 ? (
-          <Link to="/">
-            <img src="/images/icons/chevron-left-solid.svg" />
-            <p>Home</p>
+          <Link to="/" className="homeLink">
+            <button>
+              <img src="/images/icons/chevron-left-solid.svg" />
+              <p>Home</p>
+            </button>
           </Link>
-         
         ) : (
           <></>
         )}

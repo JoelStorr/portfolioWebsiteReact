@@ -120,9 +120,12 @@ export default function BrowserHeader({
           </div>
           <div className="searchBar">
             {width <= 825 ? (
-              <Link to="/">
+              <Link to="/" className="homeLink">
+              <button>
+
                 <img src="/images/icons/chevron-left-solid.svg" />
                 <p>Home</p>
+              </button>
               </Link>
               
             ) : (

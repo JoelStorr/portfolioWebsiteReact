@@ -25,3 +25,7 @@ html * {
 .mainCloseBtn {
   z-index: 10;
 }
+
+.homeLink {
+  text-decoration: none;
+}
