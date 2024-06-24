@@ -11,15 +11,7 @@ import XCode from "./XCode/XCode";
 import Widgets from "./Widgets/Widgets";
 
 function Desktop() {
-  const Programm = {
-    None: "None",
-    AppStore: "AppStore",
-    Browser: "Browser",
-    XCode: "XCode",
-    Writing: "Writing",
-    Kontakt: "Kontakt",
-  };
-
+  
   const [width, setWidth] = useState(window.innerWidth);
 
   const location = useLocation();
@@ -48,19 +40,19 @@ function Desktop() {
 
           <Route
             path="/appstore"
-            element={<AppStore width={width} Programm={Programm} />}
+            element={<AppStore width={width}/>}
           />
           <Route
             path="/browser"
-            element={<Browser width={width} Programm={Programm} />}
+            element={<Browser width={width} />}
           />
           <Route
             path="/xcode"
-            element={<XCode width={width} Programm={Programm} />}
+            element={<XCode width={width} />}
           />
           <Route
             path="/about"
-            element={<Kontakt width={width} Programm={Programm} />}
+            element={<Kontakt width={width} />}
           />
         </Routes>
       </div>

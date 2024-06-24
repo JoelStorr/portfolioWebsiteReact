@@ -8,7 +8,7 @@ import LinkShare from "./Websites/LinkShare";
 import ThreeJSBall from "./Websites/ThreeJSBall";
 import ThreeDTShirtDesigner from "./Websites/3dTShirtDesigner";
 
-export default function Browser({ width, Programm }) {
+export default function Browser({ width }) {
   const BrowserSite = {
     ShapeCSS: "ShapeCss",
     Portfolio: "Portfolio",
@@ -45,8 +45,6 @@ export default function Browser({ width, Programm }) {
         changeActiveTab={setActiveTab}
         browserSite={BrowserSite}
         width={width}
-        
-        Programm={Programm}
       />
       <div className="browserContent">{displayWebPage()}</div>
     </div>

@@ -6,7 +6,7 @@ import IssueTracker from "./AppDetail/IssueTracker";
 import DubDubGrub from "./AppDetail/DubDubGrub";
 import GitHubFollowers from "./AppDetail/GitHubFollowers";
 
-export default function AppStore({width, Programm}) {
+export default function AppStore({width}) {
   const Projects = {
     WhenIChanged: "WhenIChanged",
     IssueTracker: "IssueTracker",

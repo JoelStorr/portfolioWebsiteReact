@@ -12,7 +12,7 @@ let CodeView = {
   fastApi: "fastApi",
 };
 
-export default function XCode({ width, Programm }) {
+export default function XCode({ width }) {
   let [codeView, setCodeView] = useState(CodeView.fastApi);
   let [sidebar, setSideBar] = useState(true);
   function chooseCodeView() {
@@ -39,8 +39,6 @@ export default function XCode({ width, Programm }) {
               width={width}
               codeView={codeView}
               setCodeView={setCodeView}
-              
-              Programm={Programm}
               setSideBar={setSideBar}
               sidebar={sidebar}
             />
@@ -316,8 +314,6 @@ function XCodeSideBarLeft({
   width,
   codeView,
   setCodeView,
-  
-  Programm,
   setSideBar = () => {},
   sidebar,
 }) {

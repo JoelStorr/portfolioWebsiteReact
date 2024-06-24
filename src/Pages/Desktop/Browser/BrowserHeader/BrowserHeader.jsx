@@ -7,8 +7,6 @@ export default function BrowserHeader({
   changeActiveTab,
   browserSite,
   width,
-  
-  Programm,
 }) {
   let [showTabs, setShowTabs] = useState(false);
 
@@ -210,10 +208,13 @@ export default function BrowserHeader({
           </div>
           <div className="searchBar">
             {width <= 825 ? (
-              <button onClick={() => setProgramm(Programm.None)}>
+              <Link to="/" className="homeLink">
+              <button>
                 <img src="/images/icons/chevron-left-solid.svg" />
-                <p>Home</p>
+                Home
               </button>
+
+              </Link>
             ) : (
               <>
                 <p className="backArrowBrowser navigationButton">&#10132;</p>
