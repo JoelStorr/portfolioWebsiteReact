@@ -45,6 +45,18 @@ p {
     border-radius: 10px;
     pointer-events: none;
 }
+.programmHolderSmall {
+    color: white;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    z-index: 3;
+    width: 60%;
+    height: 90%;
+    margin-left: 20px;
+    border-radius: 10px;
+    pointer-events: none;
+}
 
 
 .widgetHolder {

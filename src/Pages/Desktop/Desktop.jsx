@@ -43,6 +43,8 @@ function Desktop() {
         className={
           location.pathname === "/"
             ? "programmHolder"
+            : location.pathname === "/about"
+            ? "programmHolderSmall programmHolderActive"
             : "programmHolder programmHolderActive"
         }
       >
