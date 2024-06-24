@@ -11,15 +11,15 @@ export default function DubDubGrub() {
 
   const slides = [
     {
-      url: `images/DubDubGrub/DStart.jpg`,
+      url: `/images/DubDubGrub/DStart.jpg`,
       title: "SunFlower",
     },
     {
-      url: `images/DubDubGrub/DPlaces.jpg`,
+      url: `/images/DubDubGrub/DPlaces.jpg`,
       title: "Mountanse",
     },
     {
-      url: `images/DubDubGrub/DProfile.jpg`,
+      url: `/images/DubDubGrub/DProfile.jpg`,
       title: "Lamps",
     },
   ];
@@ -30,6 +30,9 @@ export default function DubDubGrub() {
     
   return (
     <>
+    <head>
+      <base href="/"/>
+    </head>
       <div className="appDetailHeader">
         <div className="appDetailAppIcon">DG</div>
         <div>

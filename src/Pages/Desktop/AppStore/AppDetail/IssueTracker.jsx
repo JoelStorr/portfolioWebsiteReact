@@ -10,15 +10,15 @@ export default function IssueTracker() {
 
   const slides = [
     {
-      url: "images/IssueTracker/IssueTags.jpg",
+      url: "/images/IssueTracker/IssueTags.jpg",
       title: "SunFlower",
     },
     {
-      url: "images/IssueTracker/IssueIssueDetail.jpg",
+      url: "/images/IssueTracker/IssueIssueDetail.jpg",
       title: "Mountanse",
     },
     {
-      url: "images/IssueTracker/IssueAwards.jpg",
+      url: "/images/IssueTracker/IssueAwards.jpg",
       title: "Lamps",
     },
    

@@ -1,132 +1,93 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import "./AppStore.css";
-import WhenIChanged from "./AppDetail/WhenIChanged";
-import IssueTracker from "./AppDetail/IssueTracker";
-import DubDubGrub from "./AppDetail/DubDubGrub";
-import GitHubFollowers from "./AppDetail/GitHubFollowers";
 
-export default function AppStore({width}) {
-  const Projects = {
-    WhenIChanged: "WhenIChanged",
-    IssueTracker: "IssueTracker",
-    DubDubGrub: "DubDubGrub",
-    GitHubFollowers: "GitHubFollowers",
-    ARDemos: "ARDemos",
-    WidgetKit: "WidgetKit",
-  };
-
-  const [shownProject, setShownProject] = useState(Projects.WhenIChanged);
-  const [sidebarState, setSidebarState] = useState(true)
-
-  function changeShownApps(currApp) {
-    if (currApp in Projects) {
-      setShownProject(currApp);
-      setSidebarState(false);
-    }
-  }
-
-  function showApp() {
-    switch (shownProject) {
-      case Projects.WhenIChanged:
-        return <WhenIChanged />;
-      case Projects.IssueTracker:
-        return <IssueTracker />;
-      case Projects.DubDubGrub:
-        return <DubDubGrub />;
-      case Projects.GitHubFollowers:
-        return <GitHubFollowers />;
-      case Projects.ARDemos:
-        return <p>AR Demos</p>;
-      case Projects.WidgetKit:
-        return <p>Widget Kit</p>;
-    }
-  }
+export default function AppStore({ width }) {
+  const location = useLocation();
 
   return (
     <>
       {width <= 825 ? (
         <div className="appStore">
-          {sidebarState ? (
+          {location.pathname === "/appstore/sidebar" ? (
             <div className="appStore-sideViewMobile-Holder">
               <div className="appStore-backButton">
                 <Link to="/" className="homeLink">
-                <button>
-                  <img src="/images/icons/chevron-left-solid.svg" />
-                  Home
-                </button>
+                  <button>
+                    <img src="/images/icons/chevron-left-solid.svg" />
+                    Home
+                  </button>
                 </Link>
               </div>
-              <AppStoreSideBar
-                shownProject={shownProject}
-                changeShownApps={changeShownApps}
-                Projects={Projects}
-              />
+              <AppStoreSideBar />
             </div>
           ) : (
             <div className="appStore-mainViewMobile-Holder">
               <div className="appStore-backButton">
-                <button onClick={() => setSidebarState(true)}>
-                  <img src="/images/icons/chevron-left-solid.svg" />
-                  Back
-                </button>
+                <Link to="/appstore/sidebar" replace className="homeLink">
+                  <button>
+                    <img src="/images/icons/chevron-left-solid.svg" />
+                    Menu
+                  </button>
+                </Link>
               </div>
-              <div className="appStore-mainView">{showApp()}</div>
+              <div className="appStore-mainView">
+                <Outlet />
+              </div>
             </div>
           )}
         </div>
       ) : (
         <div className="appStore">
-          <AppStoreSideBar
-            shownProject={shownProject}
-            changeShownApps={changeShownApps}
-            Projects={Projects}
-          />
-          <div className="appStore-mainView">{showApp()}</div>
+          <AppStoreSideBar />
+          <div className="appStore-mainView">
+            <Outlet />
+          </div>
         </div>
       )}
     </>
   );
 }
 
-
-function AppStoreSideBar({shownProject, changeShownApps, Projects}){
-
+function AppStoreSideBar() {
   return (
     <div className="appStore-sideBar">
       <h2>Projekte</h2>
       <ul>
         <li
-          onClick={() => changeShownApps(Projects.WhenIChanged)}
           className={
-            shownProject == Projects.WhenIChanged ? "activeListElement" : ""
+            location.pathname == "/appstore" ? "activeListElement" : ""
           }
         >
-          When I Changed
+          <Link to="/appstore" replace>
+            When I Changed
+          </Link>
         </li>
         <li
-          onClick={() => changeShownApps(Projects.IssueTracker)}
           className={
-            shownProject == Projects.IssueTracker ? "activeListElement" : ""
+            location.pathname == "/appstore/issue" ? "activeListElement" : ""
           }
         >
-          Issue Tracker
+          <Link to="/appstore/issue" replace>
+            Issue Tracker
+          </Link>
         </li>
         <li
-          onClick={() => changeShownApps(Projects.DubDubGrub)}
           className={
-            shownProject == Projects.DubDubGrub ? "activeListElement" : ""
+            location.pathname == "/appstore/dubdub" ? "activeListElement" : ""
           }
         >
-          DubDubGrub - Cloud Kit App
+          <Link to="/appstore/dubdub" replace>
+            DubDubGrub - Cloud Kit App
+          </Link>
         </li>
         <li
-          onClick={() => changeShownApps(Projects.GitHubFollowers)}
           className={
-            shownProject == Projects.GitHubFollowers ? "activeListElement" : ""
+            location.pathname == "/appstore/gh" ? "activeListElement" : ""
           }
         >
-          Github Follower Tracker
+          <Link to="/appstore/gh" replace>
+            Github Follower Tracker
+          </Link>
         </li>
       </ul>
     </div>

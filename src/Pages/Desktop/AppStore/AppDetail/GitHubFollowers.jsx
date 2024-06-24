@@ -4,11 +4,11 @@ import "./AppDetail.css";
 export default function GitHubFollowers() {
   const slides = [
     {
-      url: "images/GHFollowers/GHSearch.jpg",
+      url: "/images/GHFollowers/GHSearch.jpg",
       title: "SunFlower",
     },
     {
-      url: "images/GHFollowers/GHProfile.jpg",
+      url: "/images/GHFollowers/GHProfile.jpg",
       title: "Mountanse",
     },
   ];

@@ -10,19 +10,19 @@ export default function WhenIChanged() {
 
   const slides = [
     {
-      url: "images/WhenIChanged/WActiveHabit.jpg",
+      url: "/images/WhenIChanged/WActiveHabit.jpg",
       title: "SunFlower",
     },
     {
-      url: "images/WhenIChanged/WSpecialDayEditor.jpg",
+      url: "/images/WhenIChanged/WSpecialDayEditor.jpg",
       title: "Mountanse",
     },
     {
-      url: "images/WhenIChanged/WPassivHabit.jpg",
+      url: "/images/WhenIChanged/WPassivHabit.jpg",
       title: "Lamps",
     },
     {
-      url: "images/WhenIChanged/WDetail.jpg",
+      url: "/images/WhenIChanged/WDetail.jpg",
       title: "Chip",
     }
   ];

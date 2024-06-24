@@ -9,11 +9,14 @@ import Browser from "./Browser/Browser";
 import Kontakt from "./KontaktApp/Kontakt";
 import XCode from "./XCode/XCode";
 import Widgets from "./Widgets/Widgets";
+import WhenIChanged from "./AppStore/AppDetail/WhenIChanged";
+import IssueTracker from "./AppStore/AppDetail/IssueTracker";
+import DubDubGrub from "./AppStore/AppDetail/DubDubGrub";
+import GitHubFollowers from "./AppStore/AppDetail/GitHubFollowers";
 
 function Desktop() {
   
   const [width, setWidth] = useState(window.innerWidth);
-
   const location = useLocation();
 
   function handleWindowSizeChange() {
@@ -41,7 +44,29 @@ function Desktop() {
           <Route
             path="/appstore"
             element={<AppStore width={width}/>}
-          />
+          >
+            <Route 
+              element={<WhenIChanged />}
+              index={true}
+            />
+            <Route 
+              path="issue"
+              element={<IssueTracker />}
+            />
+            <Route 
+              path="dubdub"
+              element={<DubDubGrub/>}
+            />
+            <Route
+              path="gh"
+              element={<GitHubFollowers />}
+            />
+            <Route 
+              path="sidebar"
+              element={<></>}
+            />
+
+          </Route>
           <Route
             path="/browser"
             element={<Browser width={width} />}
