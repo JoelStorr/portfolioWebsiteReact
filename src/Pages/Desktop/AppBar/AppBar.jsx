@@ -1,14 +1,12 @@
 import "./AppBar.css";
+import { Link } from "react-router-dom";
 
 export default function AppBar({ changeProgramm, programmEnum }) {
   return (
     <div className="appBar">
-      <div
-        className="appBarSpacer"
-        onClick={() => changeProgramm(programmEnum.None)}
-      >
-        <p> </p>
-      </div>
+      <Link to="/" className="appBarSpacer">
+        <p></p>
+      </Link>
       <div className="appContainer">
         <ul>
           <li>
@@ -37,11 +35,10 @@ export default function AppBar({ changeProgramm, programmEnum }) {
           </li>
         </ul>
       </div>
-      <div
-        className="appBarSpacer"
-        onClick={() => changeProgramm(programmEnum.None)}
-      >
-      </div>
+      <Link to="/" className="appBarSpacer">
+        <p></p>
+      </Link>
+     
     </div>
   );
 }

@@ -101,11 +101,9 @@ function Desktop() {
           />
         </div>
         <MainDesktop
-          changeProgramm={changeSowftware}
-          programmEnum={Programm}
           width={width}
         />
-        <AppBar changeProgramm={changeSowftware} programmEnum={Programm} />
+        <AppBar />
         <h1 className="tagline">Frontend Developer</h1>
       </div>
     </>
