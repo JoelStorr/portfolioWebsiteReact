@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import "./Kontakt.css";
 
@@ -111,11 +110,11 @@ export default function Kontakt({ width }) {
             <div className="kontakSkillSection">
               <div className="programmingLanguage">
                 <img src="/images/icons/comment-regular.svg"></img>
-                <p>German</p>
+                <p>Deutsch</p>
               </div>
               <div className="programmingLanguage">
                 <img src="/images/icons/comment-regular.svg"></img>
-                <p>English</p>
+                <p>Englisch</p>
               </div>
             </div>
           </div>
@@ -128,7 +127,7 @@ export default function Kontakt({ width }) {
               </div>
               <div className="programmingLanguage">
                 <img src="/images/icons/css3.svg"></img>
-                <p>CSS</p>
+                <p>CSS / SASS</p>
               </div>
               <div className="programmingLanguage">
                 <img src="/images/icons/js.svg"></img>
@@ -143,14 +142,23 @@ export default function Kontakt({ width }) {
                 <p>Vue JS</p>
               </div>
               <div className="programmingLanguage">
+                <img src="/images/icons/vuejs.svg"></img>
+                <p>Nuxt</p>
+              </div>
+              <div className="programmingLanguage">
                 <img src="/images/icons/cube-solid.svg"></img>
                 <p>Three JS</p>
               </div>
               <div className="programmingLanguage">
                 <img src="/images/icons/cube-solid.svg"></img>
-                <p>Babylon JS</p>
+                <p>React Three Fiber</p>
+              </div>
+              <div className="programmingLanguage">
+                <img src="/images/icons/cube-solid.svg"></img>
+                <p>GSAP</p>
               </div>
             </div>
+
             <h3>IOS Dev</h3>
             <div className="kontakSkillSection">
               <div className="programmingLanguage">
@@ -186,8 +194,17 @@ export default function Kontakt({ width }) {
                 <p>Flutter / Dart</p>
               </div>
             </div>
+
             <h3>Ausprobiert</h3>
             <div className="kontakSkillSection">
+              <div className="programmingLanguage">
+                <img src="/images/icons/js.svg"></img>
+                <div>
+                  <p>Node JS</p>
+                  <p>Express</p>
+                  <p>Socket IO</p>
+                </div>
+              </div>
               <div className="programmingLanguage">
                 <img src="/images/icons/php.svg"></img>
                 <div>
@@ -202,6 +219,18 @@ export default function Kontakt({ width }) {
                   <p>Python</p>
                   <p>FastAPI</p>
                   <p>Flask</p>
+                </div>
+              </div>
+              <div className="programmingLanguage">
+                <img src="/images/icons/js.svg"></img>
+                <div>
+                  <p>Svelte</p>
+                </div>
+              </div>
+              <div className="programmingLanguage">
+                <img src="/images/icons/cube-solid.svg"></img>
+                <div>
+                  <p>Babylon JS</p>
                 </div>
               </div>
             </div>
