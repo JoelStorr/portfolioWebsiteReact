@@ -41,18 +41,16 @@ function TopBar() {
           <p>
             Joel Storr
             <br />
-            Uthleder Stra&szlig;e
-            <br />
-            26
+            Uthleder Stra&szlig;e 26
             <br />
             28790 Schwanewede
           </p>
 
           <h2>Kontakt</h2>
           <p>
-            Telefon: 015123676238
+            Telefon: 0151 23676238
             <br />
-            Telefax: 04209914601
+            Telefax: 04209 914601
             <br />
             E-Mail: info@joelstorr.de
           </p>

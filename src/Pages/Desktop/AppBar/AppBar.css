@@ -71,3 +71,15 @@
         top: -15px
     }
 }
+
+@media screen and (max-height: 800px) {
+    .appContainer {
+        top: -15px;
+        transition: top 0s;
+        z-index: 0;
+    }
+
+    .appBar:hover .appContainer {
+        top: -15px
+    }
+}

@@ -143,8 +143,8 @@ p {
     }
 }
 
-@media screen and (max-height: 830px) {
+@media screen and (max-height: 850px) and (max-width: 1200px){
     .tagline {
             display: none;
-        }
+    }
 }
