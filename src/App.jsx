@@ -5,6 +5,7 @@ import Desktop from "./Pages/Desktop/Desktop";
 
 
 import "./App.css"
+import { redirect, useParams } from "react-router-dom";
 
 
 
@@ -14,14 +15,22 @@ function App() {
   window.addEventListener("click", () =>
     setDisplayState(window.clickedObject)
   );
+ 
+
+
+   useEffect(() => {
+     // console.log(window.clickedObject)
+
+      
+
+
+   }, [displayState]);
+
+
+
   
 
-  useEffect(() => {
-    // console.log(window.clickedObject)
-  }, [ displayState]);
-
-  
-  
+ 
   // function onClickHandler(){
   //   document.getElementById("base-ui").style.display = "none"
   //   document.getElementById("root").style.display = "none"

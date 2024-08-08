@@ -65,10 +65,10 @@ export default function BrowserHeader({
                       Audiophile
                     </Link>
                     <Link
-                      to="/browser/shirt-designer"
+                      to="/browser/shirtdesigner"
                       replace
                       className={
-                        location.pathname == "browser/shirt-designer"
+                        location.pathname == "browser/shirtdesigner"
                           ? "activeli link"
                           : "link"
                       }
@@ -95,10 +95,10 @@ export default function BrowserHeader({
                       Portfolio
                     </Link>
                     <Link
-                      to="/browser/shape-css"
+                      to="/browser/shapecss"
                       replace
                       className={
-                        location.pathname == "/browser/shape-css"
+                        location.pathname == "/browser/shapecss"
                           ? "activeli link"
                           : "link"
                       }
@@ -111,10 +111,10 @@ export default function BrowserHeader({
                     </Link>
 
                     <Link
-                      to="/browser/threejs-game"
+                      to="/browser/threejsgame"
                       replace
                       className={
-                        location.pathname == "/browser/threejs-game"
+                        location.pathname == "/browser/threejsgame"
                           ? "activeli link"
                           : "link"
                       }
@@ -180,7 +180,7 @@ export default function BrowserHeader({
                 <h3>Audiophile</h3>
               </div>
             </Link>
-            <Link to="/browser/shirt-designer" replace className="tabRowLink">
+            <Link to="/browser/shirtdesigner" replace className="tabRowLink">
               <div
                 className={
                   activeBrowserTab == browserSite.TShirtDesigner3D
@@ -192,7 +192,7 @@ export default function BrowserHeader({
                 <h3>3D T-Shirt Designer</h3>
               </div>
             </Link>
-            <Link to="/browser/shape-css" replace className="tabRowLink">
+            <Link to="/browser/shapecss" replace className="tabRowLink">
               <div
                 className={
                   activeBrowserTab == browserSite.ShapeCSS
@@ -217,7 +217,7 @@ export default function BrowserHeader({
               </div>
             </Link>
 
-            <Link to="/browser/threejs-game" replace className="tabRowLink">
+            <Link to="/browser/threejsgame" replace className="tabRowLink">
               <div
                 className={
                   activeBrowserTab == browserSite.ThreeJSBall

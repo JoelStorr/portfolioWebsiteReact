@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useParams, redirect, useNavigate } from "react-router-dom";
 import TopBar from "./TopBar/TopBar";
 import MainDesktop from "./MainDesktop/MainDesktop";
 import AppBar from "./AppBar/AppBar";
@@ -26,16 +26,47 @@ import Portfolio from "./Browser/Websites/Portfolio";
 function Desktop() {
   const [width, setWidth] = useState(window.innerWidth);
   const location = useLocation();
+  
+  const queryParameters = new URLSearchParams(window.location.search);
+  let page = queryParameters.get("page");
+  let navigate = useNavigate()
+  console.log("Page:  " + page)
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
+
+  function handleReroute(page){
+    if (page) {
+      console.log("run redirect")
+
+      const newPath = Array.from(page).map((char)=>{
+        if(char === '-'){
+          return '/'
+        }
+        return char
+      }).join('')
+
+      console.log(newPath);
+
+      navigate("/"+newPath);
+    }
+  }
+
   useEffect(() => {
+    
+    
     window.addEventListener("resize", handleWindowSizeChange);
     return () => {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
+
+  useEffect(()=>{
+     handleReroute(page);
+  }, [page])
+
+
 
   return (
     <>
@@ -63,10 +94,10 @@ function Desktop() {
           <Route path="/browser" element={<Browser width={width} />}>
             <Route index element={<LinkShare />} />
             <Route path="audiophile" element={<Audiophile />} />
-            <Route path="shirt-designer" element={<ThreeDTShirtDesigner />} />
-            <Route path="shape-css" element={<ShapeCSS />} />
+            <Route path="shirtdesigner" element={<ThreeDTShirtDesigner />} />
+            <Route path="shapecss" element={<ShapeCSS />} />
             <Route path="portfolio" element={<Portfolio />} />
-            <Route path="threejs-game" element={<ThreeJSBall />} />
+            <Route path="threejsgame" element={<ThreeJSBall />} />
           </Route>
           {/* NOTE: XCode Routes */}
           <Route path="/xcode" element={<XCode width={width} />} />
