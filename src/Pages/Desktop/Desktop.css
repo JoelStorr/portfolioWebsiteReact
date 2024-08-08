@@ -142,3 +142,9 @@ p {
         font-size: 10rem;
     }
 }
+
+@media screen and (max-height: 830px) {
+    .tagline {
+            display: none;
+        }
+}

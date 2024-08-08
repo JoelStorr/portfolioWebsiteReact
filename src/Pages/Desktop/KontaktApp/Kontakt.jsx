@@ -89,7 +89,6 @@ export default function Kontakt({ width }) {
             faszinieren und inspirieren mich heute, kreative Lösungen zu finden.
             <br />
             <br />
-            <a href="#">Lebenslauf</a>
           </p>
           <hr />
 
