@@ -197,13 +197,13 @@ function ContactWidget() {
           </div>
           <div className="contactLinkHolder">
             <h3>Links:</h3>
-            <a
+            {/* <a
               href="https://de.linkedin.com/in/joel-storr-190316137"
               target="blank"
             >
               LinkedIn
-            </a>
-            <br />
+            </a> */}
+            {/* <br /> */}
             <a href="https://github.com/JoelStorr" target="blank">
               GitHub
             </a>

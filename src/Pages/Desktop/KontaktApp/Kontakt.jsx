@@ -39,7 +39,7 @@ export default function Kontakt({ width }) {
                 </div>
               </a>
 
-              <a
+              {/* <a
                 href="https://de.linkedin.com/in/joel-storr-190316137"
                 target="blank"
               >
@@ -49,7 +49,7 @@ export default function Kontakt({ width }) {
                     className="kontaktIcons"
                   />
                 </div>
-              </a>
+              </a> */}
 
               <a href="mailto:info@joelstorr.de">
                 <div className="iconHolder">

@@ -16,7 +16,7 @@ export default function AppBar({ changeProgramm, programmEnum }) {
               </div>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="https://de.linkedin.com/in/joel-storr-190316137"
               target="blank"
@@ -25,7 +25,7 @@ export default function AppBar({ changeProgramm, programmEnum }) {
                 <img src="/images/icons/linkedin-color.svg" />
               </div>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="mailto:info@joelstorr.de">
               <div className="appIconMoc xcodeIcon">
