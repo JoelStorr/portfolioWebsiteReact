@@ -34,12 +34,8 @@ export default function Widgets({ width }) {
             <ClockWidget />
           </div>
           <div className="widgetRow2">
-            <SpecialeDayWidget
-              
-            />
-            <ContactWidget
-              
-            />
+            <SpecialeDayWidget />
+            <ContactWidget />
           </div>
         </div>
       );
@@ -164,10 +160,7 @@ function ClockWidget() {
 
 function SpecialeDayWidget() {
   return (
-    <Link
-      to="/appStore"
-      className="specialDayWidget"
-    >
+    <Link to="/appStore" className="specialDayWidget">
       <h1>
         <span>20</span> Days
       </h1>
