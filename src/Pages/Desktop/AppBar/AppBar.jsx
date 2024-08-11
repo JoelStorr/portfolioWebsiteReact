@@ -38,7 +38,6 @@ export default function AppBar({ changeProgramm, programmEnum }) {
       <Link to="/" className="appBarSpacer">
         <p></p>
       </Link>
-     
     </div>
   );
 }
