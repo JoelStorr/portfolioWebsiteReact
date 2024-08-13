@@ -50,6 +50,21 @@ export default function BrowserHeader({
                 <div className="moreTabContainer">
                   <ul>
                     <Link
+                      to="/browser/weread"
+                      replace
+                      className={
+                        location.pathname === "/browser/weread"
+                          ? "activeli link"
+                          : "link"
+                      }
+                      onClick={() => {
+                        changeActiveTab(browserSite.Weread);
+                        switchTabs();
+                      }}
+                    >
+                      Weread
+                    </Link>
+                    <Link
                       to="/browser/audiophile"
                       replace
                       className={
@@ -156,6 +171,18 @@ export default function BrowserHeader({
       return (
         <div className="browserHeader">
           <div className="tabRow">
+            <Link to="/browser/weread" replace className="tabRowLink">
+              <div
+                className={
+                  activeBrowserTab == browserSite.Weread
+                    ? "browserTab activeTab"
+                    : "browserTab"
+                }
+                onClick={() => changeActiveTab(browserSite.Weread)}
+              >
+                <h3>Weread</h3>
+              </div>
+            </Link>
             <Link to="/browser" replace className="tabRowLink">
               <div
                 className={

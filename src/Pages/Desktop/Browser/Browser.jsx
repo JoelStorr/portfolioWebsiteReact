@@ -16,7 +16,8 @@ export default function Browser({ width }) {
     Audiophile: "Audiophile",
     LinkShare: "LinkShare",
     ThreeJSBall: "ThreeJSBall",
-    TShirtDesigner3D: "TShirtDesigner3D"
+    TShirtDesigner3D: "TShirtDesigner3D",
+    Weread: "Weread"
 
   };
 

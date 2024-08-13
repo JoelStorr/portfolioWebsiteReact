@@ -22,6 +22,7 @@ import ThreeDTShirtDesigner from "./Browser/Websites/3dTShirtDesigner";
 import ShapeCSS from "./Browser/Websites/ShapeCSS";
 import ThreeJSBall from "./Browser/Websites/ThreeJSBall";
 import Portfolio from "./Browser/Websites/Portfolio";
+import Weread from "./Browser/Websites/Weread";
 
 function Desktop() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -93,6 +94,7 @@ function Desktop() {
           {/* NOTE: Browser Routes  */}
           <Route path="/browser" element={<Browser width={width} />}>
             <Route index element={<LinkShare />} />
+            <Route path="weread" element={<Weread />} />
             <Route path="audiophile" element={<Audiophile />} />
             <Route path="shirtdesigner" element={<ThreeDTShirtDesigner />} />
             <Route path="shapecss" element={<ShapeCSS />} />
