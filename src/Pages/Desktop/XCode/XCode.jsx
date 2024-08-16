@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import SyntaxHighlighter from "react-syntax-highlighter";
+import {Light as SyntaxHighlighter} from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import dart from "react-syntax-highlighter/dist/esm/languages/hljs/dart";
+import python from "react-syntax-highlighter/dist/esm/languages/hljs/python";
 import "./XCode.css";
 
 let CodeView = {
@@ -552,10 +554,12 @@ function XCodeCodeElement({ codeString, language }) {
     overflowX: "hidden",
   };
 
+  SyntaxHighlighter.registerLanguage('dart', dart)
+  SyntaxHighlighter.registerLanguage('python', python)
   return (
     <div className="code">
       <SyntaxHighlighter
-        language={language}
+        language={'dart'}
         style={atomOneDark}
         customStyle={editorCustomStyle}
         wrapLongLines={true}
