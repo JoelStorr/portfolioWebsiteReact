@@ -4,36 +4,20 @@ import "./WebsiteConetent.css";
 export default function LinkShare() {
   const images = [
     {
-      url: `/images/linkshare/EditorView.png`,
-      title: "Editor View",
+      url: `/images/weread/home-header.png`,
+      title: "Home Page",
     },
     {
-      url: `/images/linkshare/ProfileView.png`,
-      title: "Editor View",
+      url: `/images/weread/home-page.png`,
+      title: "Home Page",
     },
     {
-      url: `/images/linkshare/UserCardPreview.png`,
-      title: "User Card Preview",
+      url: `/images/weread/home-login.png`,
+      title: "Home View Login",
     },
     {
-      url: `/images/linkshare/login.png`,
-      title: "Login View",
-    },
-    {
-      url: `/images/linkshare/register.png`,
-      title: "Register View",
-    },
-    {
-      url: `/images/linkshare/EditorTablet.png`,
-      title: "Editor Tablet View",
-    },
-    {
-      url: `/images/linkshare/ProfileTablet.png`,
-      title: "Profile Tablet View",
-    },
-    {
-      url: `/images/linkshare/PreviewTablet.png`,
-      title: "Profile Tablet View",
+      url: `/images/weread/book-search.png`,
+      title: "Search Results",
     },
   ];
 
@@ -41,10 +25,10 @@ export default function LinkShare() {
     <div className="websiteContent">
       <h1>Weread</h1>
       <div className="websiteContentSection">
-        {/* <div className="websiteContentCarousel">
-          <ImageCarousel slides={images} fit={true} fullHeightImage={true} />
-        </div> */}
-        <div className="websiteContentCarousel"></div>
+        <div className="websiteContentCarousel">
+          <ImageCarousel slides={images} fit={true} fullHeightImage={false} />
+        </div>
+
         <div className="websiteContentUsedTech">
           <h3>Benutzte Technologien</h3>
           <ul>
@@ -61,13 +45,19 @@ export default function LinkShare() {
             >
               GitHub Repo
             </a>
+            <a
+              href="https://www.figma.com/proto/kpxTSAoXcT2F2os0zKkaGQ/WeRead?page-id=0%3A1&node-id=6-2&viewport=-7811%2C725%2C1.12&t=k3ZujQTloS0OsjSk-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=6%3A2&show-proto-sidebar=1"
+              target="blank"
+            >
+              Figma Designs
+            </a>
           </div>
         </div>
       </div>
       <div className="websiteContentAbout">
         <h3>Über das Projekt</h3>
         <p>
-          <b>Aktuelles Projekt (die Bilder der UI folgen in Kürze)</b> <br />
+          <b>Aktuelles Projekt (die Bilder sind erste Desings)</b> <br />
           WeRead ist eine sozialer Reading Tracker mit starkem Focus auf
           Community. Basierend auf der Google Books API können Bücher
           gespeichert und deren Lesefortschritt aufgezeichnet werden. Hierbei
