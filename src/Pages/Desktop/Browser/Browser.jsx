@@ -11,17 +11,24 @@ import { Outlet } from "react-router-dom";
 
 export default function Browser({ width }) {
   const BrowserSite = {
-    ShapeCSS: "ShapeCss",
-    Portfolio: "Portfolio",
-    Audiophile: "Audiophile",
-    LinkShare: "LinkShare",
-    ThreeJSBall: "ThreeJSBall",
-    TShirtDesigner3D: "TShirtDesigner3D",
-    Weread: "Weread"
-
+    ShapeCSS: "shapecss",
+    Portfolio: "portfolio",
+    Audiophile: "audiophile",
+    LinkShare: "linkshare",
+    ThreeJSBall: "threejsgame",
+    TShirtDesigner3D: "shirtdesigner",
+    Weread: "weread"
   };
 
-  const [activeTab, setActiveTab] = useState(BrowserSite.LinkShare);
+  
+  let page = window.location.pathname
+  let pageSplit = page.split("/");
+  pageSplit.shift();
+
+
+  console.log(pageSplit)
+
+  const [activeTab, setActiveTab] = useState(pageSplit.length == 1 ? BrowserSite.LinkShare :pageSplit[1]);
 
   // function displayWebPage() {
   //   switch (activeTab) {

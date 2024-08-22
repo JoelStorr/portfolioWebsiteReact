@@ -21,6 +21,7 @@
 
 .tabRowLink{
     text-decoration: none;
+    background-color: #282C33;
 }
 .browserTab div{
     text-decoration: none;
@@ -50,6 +51,7 @@
     display: flex;
     align-items: center;
     font-size: 2rem;
+    color: #2887FA;
 }
 
 .searchBar button img {
@@ -72,6 +74,7 @@
     flex-direction: row;
     align-items: center;
     background-color: #343b49;
+    z-index: 1;
 }
 
 .navigationButton {
