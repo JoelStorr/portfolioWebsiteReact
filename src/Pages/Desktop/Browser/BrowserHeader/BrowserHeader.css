@@ -19,13 +19,15 @@
     text-decoration: none;
 }
 
-.tabRowLink{
+.tabRowLink {
     text-decoration: none;
     background-color: #282C33;
 }
-.browserTab div{
+
+.browserTab div {
     text-decoration: none;
 }
+
 .browserTab h3 {
     margin: 0;
     padding: 0;
@@ -139,7 +141,7 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size:medium;
+    font-size: medium;
 }
 
 .activeli {
